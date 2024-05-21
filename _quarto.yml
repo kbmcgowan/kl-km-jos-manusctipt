@@ -5,13 +5,10 @@ execute:
   freeze: auto
 
 format:
-  html:
+  apaquarto-html:
     toc: true
     comments:
-      hypothesis: true
-  docx: default
-  jats: default
-  agu-pdf: default
-
-
+      utterances:
+        repo: kbmcgowan/play-manuscript
+  apaquarto-docx: default
 

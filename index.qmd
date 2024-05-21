@@ -1,96 +1,55 @@
 ---
-title: La Palma Earthquakes
+title: "Removing the disguise: the matched guise technique and listener awareness"
+filters:
+  - critic-markup
 author:
-  - name: Steve Purves
-    orcid: 0000-0002-0760-5497
+  - name: Kyler Laycock
+    orcid: 0000-0002-3731-0841
     corresponding: true
-    email: steve@curvenote.com
-    roles:
-      - Investigation
-      - Project administration
-      - Software
-      - Visualization
-    affiliations:
-      - Curvenote
-  - name: Rowan Cockett
-    orcid: 0000-0002-7859-8394
+    email: laycock.21@buckeyemail.osu.edu
+    affiliations: The Ohio State University
+  - name: Kevin B McGowan
+    orcid: 0000-0002-8214-1901
     corresponding: false
-    roles: []
-    affiliations:
-      - Curvenote
+    email: kbmcgowan@vowel.space
+    affiliations: The University of Kentucky
 keywords:
-  - La Palma
-  - Earthquakes
+  - 
 abstract: |
-  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). ...
-plain-language-summary: |
-  Earthquake data for the island of La Palma from the September 2021 eruption is found ...
+  Sociophonetic perception is often studied using versions of the matched guise technique. Linguists using this technique appear united in the methodological assumptions that participants believe the manipulation and that this belief influences perception below the level of introspective awareness. We report an audiovisual matched guise experiment with a novel 'unhidden' instruction condition. The basic task is a replication of the Strand effect [@strandJohnson1996; @strand1999]. Participants in the 'unhidden' condition were instructed that the man or woman in the photo did not represent the voice they were listening to. Participants in both guises exhibited the Strand effect to nearly numerically identical extents. This result suggests that participants need not believe a link exists between a voice and a purported social category for visually-cued social information to influence segmental perception. We explore the implications of this result for the MGT and for theories of social awareness and speech perception more broadly.
 key-points:
-  - A web scraping script was developed to pull data from the Instituto Geogràphico Nacional into a machine-readable form for analysis
-  - Earthquake events on La Palma are consistent with the presence of both mantle and crustal reservoirs.
+  - This is where the first key point goes
+  - and this is where a second key point goes
+  - and I bet we have a third one, knowing us like I do.
 date: last-modified
-bibliography: references.bib
+bibliography: jos-laycock-mcgowan.bib
 citation:
-  container-title: Earth and Space Science
-number-sections: true
+  container-title: Awareness and Control of Sociolinguistic Variation
+number-sections: false
 ---
 
-## Introduction
+# Introduction
 
-```{r}
-eruptions <- c(1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021)
-n_eruptions <- length(eruptions)
-```
+A great deal of attention has been paid in the phonetics and sociophonetics literatures to the perception of the voiceless fricatives \[ʃ] and \[s] in English. To a first approximation, these fricatives differ in the distance between the point of lingual articulation and the teeth, which give them their characteristic sibilance [@fant1960,@shadle1991]. English \[s] has a short resonating chamber behind the teeth; it is typically produced by holding the tongue blade near enough to the alveolar ridge to cause turbulent airflow. English \[ʃ] has a comparatively larger resonating chamber; it is typically produced with a more posterior, palato-alveolar tongue position and lip rounding both of which serve to reinforce this posteriority. But listeners do not perceive via {++this type of++}{>>KM<<} first approximation{++; we are sensitive to fine phonetic details far beyond these gross, categorical, differences++}{>>KM<<}. Indeed, these two fricatives have been exciting to researchers precisely because of the sensitivity listeners bring to their perception and how that perception interacts with both linguistic and social knowledge.
 
-```{r}
-#| label: fig-timeline
-#| fig-cap: Timeline of recent earthquakes on La Palma
-#| fig-alt: An event plot of the years of the last 8 eruptions on La Palma.
-#| fig-height: 1.5
-#| fig-width: 6
-par(mar = c(3, 1, 1, 1) + 0.1)
-plot(eruptions, rep(0, n_eruptions), 
-  pch = "|", axes = FALSE)
-axis(1)
-box()
-```
+## Coarticulatory and Social Information Influence \[ʃ]-\[s] perception
 
-```{r}
-#| output: false
-avg_years_between_eruptions <- mean(diff(eruptions[-n_eruptions]))
-avg_years_between_eruptions
-```
+{>>KL: ok, this is the specific section the editors didn't like I think vis-a-vis "rewriting the introduction to state more strongly why this study is important to sociolinguistics, and not mainly interesting to cognitive linguists"<<}
+Listeners are sensitive to articulatory mismatches between the fricatives \[ʃ]-\[s] and neighboring sounds. @whalen1984 conducted a series of experiments to investigate listeners' responses to articulatory mismatches in synthetic speech. Overall, the result of these investigations was that subcategorical phonetic mismatches slow phonetic judgments. In onset position, in isolation, or in coda position, misleading coarticulatory information inhibited reaction times. Listeners, Whalen cautions in the conclusion, are sensitive to articulatory patterns that are below the level of conscious awareness and not available to direct experimenter scrutiny. While listeners will readily fill-in missing or ambiguous information, the presence of actively *conflicting* articulatory information is inhibitory.
 
-Based on data up to and including 1971, eruptions on La Palma happen every `r round(avg_years_between_eruptions, 1)` years on average.
+A commonly used methodology involves the creation of synthetic fricative continua. These continua have endpoints in prototypical examples of \[ʃ] and \[s] with some number of equal-sized acoustic steps generated, synthesized, or even mixed between these. Somewhere in the middle of such a continuum will be fricative-like noise that is ambiguous as to category membership: not clearly a \[ʃ] and not clearly an \[s].  \cite{May1976} paired a continuum from \[ʃ] (2.9 kHz) to \[s] (4.4 kHz) with synthetic \[æ] vowels to form CV pairs. May found that listeners perceived a higher proportion of the fricative continuum as \[ʃ] when paired with vowel stimuli from a smaller vocal tract. The logic here is that smaller resonating chambers between the lingual articulation and teeth will have a higher mean frequency than larger resonating chambers. Listeners' use of apparent vocal tract size in perception reflect their knowledge of this variation [@munson2011].
 
-Studies of the magma systems feeding the volcano, such as @marrero2019, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).
+@MannRepp1980 replicated this finding, extending it to natural productions of vowels spoken by a male or female-identified talker. Similar to May's results with simulated vocal tract size, Mann \& Repp found a higher proportion of the fricative continuum was heard as \[ʃ] when paired with the speech of the female talker. This early work, like others of the period [@ohala1984], theorized size as being a relatively deterministic feature of talker sexual dimorphism. One consequence of this view is that gender-related variation in the speech signal is considered mechanistic, universal, and following from purely physical laws. Vocal tract size is presumably not available for individual performance and so listener knowledge of this variation can be correspondingly simple. Vocal tract size may influence perception, but it does so implicitly, automatically, and below the level of introspective awareness.
 
-Eight eruptions have been recorded since the late 1400s (@fig-timeline).
+{++ @MannRepp1980 also replicated and extended previous work [@kunisakifujisaki1977; @whalen1981] demonstrating that listeners report hearing more of the synthetic fricative continuum as \[s] when followed by a rounded vowel quality such as English \[u] than when followed by an unrounded quality such as \[i] or \[a]. Listeners experience the fricative continuum differently in the presence of anticipatory coarticulation. The presence of nasal coarticulation on a vowel similarly allows listeners to make a lexical decision between words like *bend* and *bed* as soon as that information is present in the acoustic signal [@beddormcgowanbolandcoetzeebrasher2013; @beddorcoetzeestylermcgowanboland2018]. Mann \& Repp's participants in this study experienced auditory evidence of posteriority in the ambiguous portion of the fricative continuum as the presence of coarticulation with a following rounded vowel. As with vocal tract length, above, the behavioral result was a shift in the listeners' fricative category boundary toward \[s]. ++}{>>KM: clarifying and putting this back at least for now.<<}
 
-Data and methods are discussed in @sec-data-methods.
+@strandJohnson1996 conducted a pair of experiments investigating the influence of purported gender of a talker on the perception of the \[ʃ]-\[s] boundary. In their experiment 1, listeners heard a \[ʃ]-\[s] continuum paired with voices previously normed as prototypical female, non-prototypical female, non-prototypical male, and prototypical male voices. The result replicates @MannRepp1980 and extends it to show that the influence of a gendered voice correlates with the protypicality of that voice (exp1). They then extend this research to show that presenting listeners with prototypically-gendered videos of their purported talker can, again, shift perceptions of the \[ʃ]-\[s] such that listeners report hearing a higher proportion of the continuum as \[ʃ] when watching a female talker and a higher proportion of \[s] when watching a male talker. The AV condition of their experiment 2 is reminiscent of @McGurkMacDonald1976 and is presented in that context. A striking feature of the McGurk Effect is its automaticity; participants can not choose to perceive the two components of a fused percept independently. It is unclear from @strandJohnson1996 and subsequent work whether the perceptual influence of visually-presented social information is implicit and automatic, like vocal tract size, the McGurk effect, etc., or whether the effect disappears when listeners are aware of the guise manipulation.
 
-Let $x$ denote the number of eruptions in a year. Then, $x$ can be modeled by a Poisson distribution
+This is an incomplete sample of the literature on the perception of these fricatives. We hope, however, that the message is clear that even when arriving at a purely linguistic percept, listeners' judgments depend on a rich constellation of evidence and expectation. Vocal tract size, formant transitions, following vowel quality [@MannRepp1980], and coarticulatory cues, along with the acoustic properties of the fricative itself, can all shape how listeners report experiencing that fricative. Rather than relying on a single, invariant, phonetic cue, listeners take the entire fricative and context into account @whalen1991.
 
-$$
-p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
-$$ {#eq-poisson}
+{~~One imagines~> It is conceivable that~~} {>>KM<<} such exquisite sensitivity to the phonetic cues conveying linguistic category membership might restrict language users' freedom to communicate and perceive social information via the same phonetic signal. This would be the prediction of a phonetic theory in which linguistic information and social information battle for control of the air waves --where listeners must normalize away social variation to recover linguistic information. Instead, with these fricatives, at least, we can observe the opposite. The fricatives /ʃ/ and /s/ often carry social meaning [@podesvakajino2014; @mackMunson2012b] with /s/ being "perhaps the most iconic phonetic variable in the field" [@calder2018]. The implication is that the social and linguistic meanings of particular phonetic cues are not in competition with one another.
 
-where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
-
-| Name                 | Year   |
-| -------------------- | ------ |
-| Current              | 2021   |
-| Teneguía             | 1971   |
-| Nambroque            | 1949   |
-| El Charco            | 1712   |
-| Volcán San Antonio   | 1677   |
-| Volcán San Martin    | 1646   |
-| Tajuya near El Paso  | 1585   |
-| Montaña Quemada      | 1492   |
-
-: Recent historic eruptions on La Palma {#tbl-history}
-
-@tbl-history summarises the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.
+## Phonetics, Speech Perception, and the Social-Construction of Gender
 
 ![Map of La Palma](images/la-palma-map.png){#fig-map}
 
