@@ -5,6 +5,9 @@ execute:
   freeze: auto
 
 format:
+  html:
+    mermaid: 
+      theme: neutral
   apaquarto-html:
     toc: true
     comments:
