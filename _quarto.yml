@@ -5,10 +5,6 @@ execute:
   freeze: auto
 
 format:
-  html:
-    mermaid: 
-      theme: neutral
-    output-file: "index.html"
   apaquarto-html:
     toc: true
     comments:
