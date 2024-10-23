@@ -26,6 +26,7 @@ citation:
 number-sections: false
 suppress-title-page: true
 format:
+  pdf: default
   html:
     theme: simplex
     fontsize: 1.2em
@@ -196,7 +197,7 @@ game --where listeners must normalize away social variation to recover
 linguistic information or lose linguistic information in favor of the
 social. Instead, with these fricatives at least, we can observe the
 opposite. The fricatives [ʃ] and [s] often carry social meaning
-[@podesvakajino2014; @mackMunson2012b] with [s] being "perhaps the
+[@podesvaKajino2014; @mackMunson2012b] with [s] being "perhaps the
 most iconic phonetic variable in the field" [@calder2018]. The
 implication is that the social and linguistic meanings of particular
 phonetic cues are not necessarily in competition with one another.
@@ -265,9 +266,9 @@ guise studies are common in which visual information serves as a 'guise'
 for identical voice recordings; researchers sometimes disregard that
 even so-called standard voices carry social information @rubin1992 and
 sometimes take the combination of voice and visual stimuli into account
-[@mcgowan2015; @campbell-kibler2016; @gnevsheva2017]. This latter type
+[@McGowan2015; @campbell-kibler2016; @gnevsheva2017]. This latter type
 of guise manipulation has been called ‘inverted’ matched guise
-[@mcgowan2015] or simply ‘identification’ [@drager2013].
+[@McGowan2015] or simply ‘identification’ [@drager2013].
 
 But uniting these linguistic researchers, and delineating them from
 colleagues in social psychology [for discussion, see
@@ -358,7 +359,7 @@ shared with us, contain two parts, both of which are drawn from
 synthetic continua: a fricative onset and a VC rime. The fricative
 onsets comprise a synthetic six step /ʃ-s/
 continuum. These steps were generated with the Klatt Synthesizer in
-Praat [@praat2001] using parameters identical to @Munson2011
+Praat [@praat2001] using parameters identical to @munson2011
 ranging between the values of Munson's second and eighth continuum steps
 (which were, in turn, based on the parameters used in
 @strandJohnson1996). Centers of Gravity ranged from 3.2 kHz
@@ -734,36 +735,36 @@ incongruous condition. As is visible in the bottom row of @fig-scurve, the effec
 significant. The interaction of Onset and Face also behaves quite
 differently in the Incongruous model. Onset x Face is negatively
 associated with 'sack' responses at Onset step 1
-($β=-0.66, SE=0.24, p < 0.001$) but positively associated with 'sack'
-responses and significant at Onset step 3 ($β=0.27, SE=0.11, p < 0.05$).
+($β=-0.66$, $SE=0.24$, $p < 0.001$) but positively associated with 'sack'
+responses and significant at Onset step 3 ($β=0.27$, $SE=0.11$, $p < 0.05$).
 
 Interestingly, the significant effect of Rime observed in the Congruous
 model also holds, nearly identically, in the Incongruous model. Rime
 level 1, the male end of the continuum, is again positively associated
-with 'sack' responses ($β=0.77, SE=0.10, p < 0.001$) as is Rime level 2
-($β=0.41, SE=0.10, p < 0.001$). Rime level 3 is also not statistically
+with 'sack' responses ($β=0.77$, $SE=0.10$, $p < 0.001$) as is Rime level 2
+($β=0.41$, $SE=0.10$, $p < 0.001$). Rime level 3 is also not statistically
 significant in the Incongruous model. Rime level 4, on the female end of
 the continuum, is negatively associated with 'sack' responses and
-significant ($β=-0.36, SE=0.10, p < 0.001$).
+significant ($β=-0.36$, $SE=0.10$, $p < 0.001$).
 
-Finally, the quantitative analysis of the primary objective of this experiment, exploring the effect of unhiding the matched guise manipulation from participants, largely supports the qualitative analysis. As can be observed in @fig-coefs, there is no significant main effect of Instruction condition in either model. Still, a somewhat more nuanced picture emerges from the interactions of Instruction condition with Onset and the 3 way interaction of Instruction, Onset, and Face in the Congruous trials. The interaction of Instruction with Onset is significant, or nearly so, at every step of the fricative continuum other than the most significant. In the [ʃ]-like portion of the continuum, the interaction with face is positively associated with 'sack' responses at step 1 ($β=0.65, SE=0.28, p < 0.05$) and 2 ($β=0.44, SE=0.18, p < 0.05$). The interaction of guise with the most ambiguous onset step is not
-significant ($β=0.011, SE=0.12$). The interaction of Instruction with
+Finally, the quantitative analysis of the primary objective of this experiment, exploring the effect of unhiding the matched guise manipulation from participants, largely supports the qualitative analysis. As can be observed in @fig-coefs, there is no significant main effect of Instruction condition in either model. Still, a somewhat more nuanced picture emerges from the interactions of Instruction condition with Onset and the 3 way interaction of Instruction, Onset, and Face in the Congruous trials. The interaction of Instruction with Onset is significant, or nearly so, at every step of the fricative continuum other than the most significant. In the [ʃ]-like portion of the continuum, the interaction with face is positively associated with 'sack' responses at step 1 ($β=0.65$, $SE=0.28$, $p < 0.05$) and 2 ($β=0.44$, $SE=0.18$, $p < 0.05$). The interaction of guise with the most ambiguous onset step is not
+significant ($β=0.011$, $SE=0.12$). The interaction of Instruction with
 Onset step 4, on the [s] end of the continuum is negatively associated
-with 'sack' responses and statistically significant ($β=-0.43, SE=0.12, p < 0.001$). Instruction x Onset step4 is also negatively associated with 'sack' responses but does not reach significance at the standard alpha level
-($β=-0.40, SE=0.22, p = 0.067$). The 3-way interaction of Instruction x
+with 'sack' responses and statistically significant ($β=-0.43$, $SE=0.12$, $p < 0.001$). Instruction x Onset step4 is also negatively associated with 'sack' responses but does not reach significance at the standard alpha level
+($β=-0.40$, $SE=0.22$, $p = 0.067$). The 3-way interaction of Instruction x
 Onset x Face is positively associated with 'sack' responses at step 2
-($β=0.41, SE=0.17, p < 0.05$) and weakly, but not significantly,
-negatively associated with 'sack' responses at step 5 ($β=-0.38, SE=0.21, p = 0.080$).
+($β=0.41$, $SE=0.17$, $p < 0.05$) and weakly, but not significantly,
+negatively associated with 'sack' responses at step 5 ($β=-0.38$, $SE=0.21$, $p = 0.080$).
 
 There is also no main effect of Instruction in the Incongruous trials.
 The 3-way interaction of Instruction x Onset x Face, while justified by
 model selection for inclusion in this model, also does not reach
 statistical significance. However the 2-way interaction of Instruction
 with Onset step is positively associated with 'sack' responses at Onset
-step 2 ($β=0.53, SE=0.21, p < 0.05$) and approaches significance at step
+step 2 ($β=0.53$, $SE=0.21$, $p < 0.05$) and approaches significance at step
 3, where it is weakly positively associated
-($β=0.18, SE=0.11, p = 0.095$) and step 5 where it is weakly negatively
-associated ($β=-0.32, SE=0.19, p = 0.086$).
+($β=0.18$, $SE=0.11, $p = 0.095$) and step 5 where it is weakly negatively
+associated ($β=-0.32$, $SE=0.19$, $p = 0.086$).
 
 ## Response Times
 
@@ -782,10 +783,10 @@ to the right of the zero line are associated with an increase in log
 response time. Notably, the longest response times are associated with
 the most ambiguous steps of the [ʃ]-[s] onset continuum. Onset step
 3 is positively associated with response time and significant in both
-the congruous ($β=0.08, SE=0.007, p < 0.001$) and incongruous
-($β=0.07, SE=0.007, p < 0.001$ ) models. The same is true of step 4 in
-the congruous ($β=0.07, SE=0.007, p < 0.001$) and incongruous
-($β=0.07, SE=0.007, p < 0.001$) models as well. On the other hand, steps
+the congruous ($β=0.08$, $SE=0.007$, $p < 0.001$) and incongruous
+($β=0.0$7, $SE=0.007$, $p < 0.001$ ) models. The same is true of step 4 in
+the congruous ($β=0.07$, $SE=0.007$, $p < 0.001$) and incongruous
+($β=0.07$, $SE=0.007$, $p < 0.001$) models as well. On the other hand, steps
 1, 2, and 5 are all negatively associated with response time and also
 significant in both models (see @fig-coefs-logRT).
 
@@ -800,19 +801,19 @@ Apart from generally higher variability in the incongruous conditions,
 there is no positive or negative trend in response times between the two
 Congruity models. For example, within the Incongruous model response
 times given the interaction of Onset step 3 \* Face are longer
-($β=-0.009, SE=0.007, p = 0.17$), which would seem to support our
+($β=-0.009$, $SE=0.007$, $p = 0.17$), which would seem to support our
 prediction, but response times for Onset step 4 \* Face are shorter
-($β-0.02, SE=0.007, p < 0.01$), the opposite of what we predicted. The
+($β-0.02$, $SE=0.007$, $p < 0.01$), the opposite of what we predicted. The
 exact opposite pattern appears within the Congruous model where response
-times are shorter given Onset 3 \* Face ($β=-0.02, SE=0.007, p < 0.01$)
-but longer given Onset step 4 \* Face ($β=0.04, SE=0.007, p < 0.001$).
+times are shorter given Onset 3 \* Face ($β=-0.02$, $SE=0.007$, $p < 0.01$)
+but longer given Onset step 4 \* Face ($β=0.04$, $SE=0.007$, $p < 0.001$).
 These crossing patterns can be seen in @fig-coefs-logRT.
 
 Given the replication of the Strand effect in the Congruous, but not the
 Incongruous conditions described in the previous section, it may be
 notable that there is a significant main effect of Face in the Congruous
 model where it is negatively associated with response time
-($β=0.22, SE=0.08, p < 0.05$) and not significant in the Incongruous
+($β=0.22$, $SE=0.08$, $p < 0.05$) and not significant in the Incongruous
 model.
 
 # Discussion
@@ -930,7 +931,7 @@ knowledge do listeners draw on during perception and when?"
 [@barrett2014 p. 205] writes, "any assumption of essentialism will
 ultimately marginalize those individuals who do not fit the essentialist
 understandings of human behavior". It may not feel brutal or reductive
-to read [@May1976]'s findings about large and small vocal tracts as if
+to read [@may1976]'s findings about large and small vocal tracts as if
 they refer to male and female vocal tracts, respectively, but it does
 necessarily imply that tall, long-necked women and short, squat-necked
 men need to find some other way of labeling themselves. The idea that
