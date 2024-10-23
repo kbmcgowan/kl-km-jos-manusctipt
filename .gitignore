@@ -17,3 +17,8 @@ index.log
 index.out
 index.pdf
 index.tex
+*.aux
+*.log
+*.out
+index.pdf
+index.tex
