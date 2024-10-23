@@ -655,7 +655,7 @@ continuum steps, should show more 'sack' responses consistent with
 having been shown a male face and no such effect is evident in this
 plot.
 
-Indeed, a striking feature of figures [-@fig-scurve] and [-@fig-rimes] is how the apparent influence of gender information flips between congruous and incongruous conditions in the former but remains essentially constant in the latter. Taken together, these plots suggest that cues to gender in F0 is a stronger predictor of listeners' reported percept in this matched guise task than just the purported gender of the face.
+Indeed, a striking feature of these figures ([-@fig-scurve; -@fig-rimes]) is how the apparent influence of gender information flips between congruous and incongruous conditions in the former but remains essentially constant in the latter. Taken together, these plots suggest that cues to gender in F0 is a stronger predictor of listeners' reported percept in this matched guise task than just the purported gender of the face.
 
 Finally, the main objective of this experiment was to explore the role
 of listener awareness in the matched guise technique. Here again there
