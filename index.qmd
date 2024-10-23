@@ -27,6 +27,7 @@ bibliography: jos-laycock-mcgowan.bib
 citation:
   container-title: Awareness and Control of Sociolinguistic Variation
 number-sections: false
+suppress-title-page: true
 editor: 
   markdown: 
     wrap: 72
@@ -362,7 +363,7 @@ decreased both parameters from unmodified.  Following the separate creations of 
 synthesized fricative token was concatenated with each CV rime of
 /æk/ resulting in a total of 60 unique auditory stimuli.
 These manipulations are described in greater detail in Bouavichith et
-al's section 2.1 and summarized visually in Figure @fig-stimuli. Unlike
+al's section 2.1 and summarized visually in @fig-stimuli. Unlike
 MGT studies that ask a talented, multi-dialectal talker to consciously
 change their speech style [e.g. @wright2023], these stimuli were produced by one female and one male talker who were
 asked to record speech in their normal voices. As these talkers
@@ -373,7 +374,7 @@ reflection, but many of these indexical features are likely implicit, unavailabl
 ![@bouavichithEtAl2019 auditory stimulus continua. S1, S2, S3, S4, and
 S5 represent continuum steps from most *sack*-like to most *shack*-like
 fricatives. F0 and F1:F2 Ratio plots show the manipulations to the Male
-and Female voiced vowels.](images/figure1.png){#fig-stimuli}
+and Female voiced vowels.](images/figure1.png){#fig-stimuli width=80% fig-align="center"}
 
 ## Explicit Evaluations of Auditory Stimuli
 
@@ -398,8 +399,7 @@ sexuality not listed. Crucially, no participants rated the female voice as male,
 ### Visual Stimuli
 
 The visual stimuli used in this study, again identical to the images
-used in [@bouavichithEtAl2019], are shown in Figure
-[\[fig:stim\]](#fig:stim){reference-type="ref" reference="fig:stim"}.
+used in [@bouavichithEtAl2019], are shown in @fig-visual.
 These included two face images, used for the guise manipulation, which
 were retrieved from the Chicago Face Database [@ChicagoFaceDatabase], a
 resource containing high-resolution, normed images of faces indexed by
@@ -418,10 +418,8 @@ of orthographic targets both to maintain consistency with Bouavichith et
 al's design and to facilitate future eye tracking investigation of this
 phenomenon.
 
-
 ![Stimuli comprised *shack* and *sack* targets (top)
-and a gender-protypical 'male' and 'female' face (bottom)](images/facesanddrawings.jpg){width=80%}
-
+and a gender-protypical 'male' and 'female' face (bottom)](images/facesanddrawings.jpg){#fig-visual width=80% fig-align="center"}
 
 ## Procedure
 
@@ -592,16 +590,13 @@ remaining response times were log-transformed.
 
 
 !['sack' responses plotted as a function of [ʃ]-[s] fricative (Onset)
-continuum steps and purported gender presented by the face.](images/Scurve.png){width=80%}
+continuum steps and purported gender presented by the face.](images/Scurve.png){#fig-scurve fig-align="center" width=80%}
 
-Figure [\[fig:scurve\]](#fig:scurve){reference-type="ref"
-reference="fig:scurve"} presents listeners' percepts on this 2AFC task.
+@fig-scurve presents listeners' percepts on this 2AFC task.
 The horizontal axis in each of these four plots is the fricative
 (syllable Onset) continuum step. Step 1 of the continuum is most
 [ʃ]-like, step 6 is the most [s]-like, steps 3 & 4 are the most
-ambiguous. Darker lines in Figure
-[\[fig:scurve\]](#fig:scurve){reference-type="ref"
-reference="fig:scurve"} present trials using the female Face; lighter
+ambiguous. Darker lines in @fig-scurve present trials using the female Face; lighter
 lines present trials using the male Face. The Hidden and Unhidden
 instruction conditions are represented by the left and right columns of
 figures, respectively. The rows present the Congruous blocks where Face
@@ -615,16 +610,14 @@ purported gender suggested by the face is male than when the face is
 female. This pattern appears to hold in both the Hidden and Unhidden
 conditions, but only when gender identity of the talker who produced the
 CV rime stimuli was congruous with the gender presented in the visual
-portion of the guise. From Figure
-[\[fig:scurve\]](#fig:scurve){reference-type="ref"
-reference="fig:scurve"} it would appear that listeners' reported
+portion of the guise. From @fig-scurve it would appear that listeners' reported
 percepts more closely track the voice of the talker than the face in the
 picture when these sources of information are incongruous.
 
 
 !['sack' responses on ambiguous fricative trials
 plotted as a function of CV rime continuum steps and gender identity of
-stimulus talker.](images/ambiguous-by-rime-step.png){width=80%}
+stimulus talker.](images/ambiguous-by-rime-step.png){#fig-rimes fig-align="center" width=80%}
 
 
 We predicted that, since strong phonetic correlates of gender have been
@@ -632,11 +625,8 @@ manipulated over the course of the VC rime continua, the effect of
 incongruence should be strongest for the end points of the continua
 where the social information presented by the voice is, presumably, most
 salient and weaker as phonetically-cued gender information becomes more
-ambiguous. Figure [\[fig:rimes\]](#fig:rimes){reference-type="ref"
-reference="fig:rimes"} suggests that this prediction is at least
-partially borne out. Figure
-[\[fig:rimes\]](#fig:rimes){reference-type="ref" reference="fig:rimes"}
-plots proportion 'sack' responses to the ambiguous portion of the
+ambiguous. @fig-rimes suggests that this prediction is at least
+partially borne out. @fig-rimes plots proportion 'sack' responses to the ambiguous portion of the
 [ʃ]-[s] continuum (steps 3 & 4) as a function of rime continuum
 step. The meaning of line color has changed in this figure. Dark lines
 represent the male talker and lighter lines represent the female talker.
@@ -648,8 +638,7 @@ Hidden and Unhidden conditions while rows present the Congruous and
 Incongruous blocks.
 
 In a 2AFC task with unbiased stimuli, chance is 50%. Responses at the .5
-line in figure [\[fig:rimes\]](#fig:rimes){reference-type="ref"
-reference="fig:rimes"} suggest that the ambiguous fricatives remained
+line in @fig-rimes suggest that the ambiguous fricatives remained
 ambiguous while responses that tend to be above this line reflect a
 tendency toward [s] percepts and responses that tend to be below this
 line reflect a tendency toward [ʃ]. Across all 4 conditions we observe
@@ -658,10 +647,7 @@ F0 continua to lowest in step 5. When face and voice were congruous,
 virtually all male-voice (and male face) responses are above or at 50%
 'sack' and virtually all female-voiced (and female face) responses are
 at or *below* 50% 'sack'. This is the same pattern that can be observed
-at Onset continuum steps 3 & 4 in figure
-[\[fig:scurve\]](#fig:scurve){reference-type="ref"
-reference="fig:scurve"}. It is not clear from Figure
-[\[fig:rimes\]](#fig:rimes){reference-type="ref" reference="fig:rimes"}
+at Onset continuum steps 3 & 4 in @fig-scurve. It is not clear from @fig-rimes
 alone if there is any difference at all between the Congruous and
 Incongruous conditions. However, it is important to recall about the
 bottom row of this figure that male talker responses in the incongruous
@@ -672,15 +658,9 @@ continuum steps, should show more 'sack' responses consistent with
 having been shown a male face and no such effect is evident in this
 plot.
 
-Indeed, a striking feature of figures
-[\[fig:scurve\]](#fig:scurve){reference-type="ref"
-reference="fig:scurve"} and
-[\[fig:rimes\]](#fig:rimes){reference-type="ref" reference="fig:rimes"}
-is how the apparent influence of gender information flips between
-congruous and incongruous conditions in the former but remains
-essentially constant in the latter. Taken together, these plots suggest
-that cues to gender in F0 is a stronger predictor of listeners' reported
-percept in this matched guise task than just the purported gender of the
+Indeed, a striking feature of figures [-@fig-scurve] and [-@fig-rimes] is how the apparent influence of gender information flips between
+congruous and incongruous conditions in the former but remains essentially constant in the latter. Taken together, these plots suggest
+that cues to gender in F0 is a stronger predictor of listeners' reported percept in this matched guise task than just the purported gender of the
 face.
 
 Finally, the main objective of this experiment was to explore the role
@@ -714,12 +694,11 @@ coded using contrast coding.
 
 ![Beta coefficients for listener responses in the
 Congruous (black) and Incongruous (gray) logistic regression models
-plotted with 95% confidence intervals.](images/coefs_instruction.png){width=80%}
+plotted with 95% confidence intervals.](images/coefs_instruction.png){#fig-coefs width=80%}
 
 
 Beta coefficients for the two separate logistic mixed models are plotted
-together in Figure [\[fig:coefs\]](#fig:coefs){reference-type="ref"
-reference="fig:coefs"}. Terms plotted to the left of the dashed zero
+together in @fig-coefs. Terms plotted to the left of the dashed zero
 line have a negative influence on 'sack' percepts in the model while
 terms plotted to the right have a positive influence. As a consistency
 check we can observe that the levels of the Onset continuum behave in
@@ -754,9 +733,7 @@ associated with 'sack' responses and significant
 ($β=-0.49, SE=0.10, p < 0.001$).
 
 Unsurprisingly, the Strand effect has not been replicated in the
-incongruous condition. As is visible in the bottom row of Figure
-[\[fig:scurve\]](#fig:scurve){reference-type="ref"
-reference="fig:scurve"}, the effect of Face on 'sack' responses is not
+incongruous condition. As is visible in the bottom row of @fig-scurve, the effect of Face on 'sack' responses is not
 significant. The interaction of Onset and Face also behaves quite
 differently in the Incongruous model. Onset x Face is negatively
 associated with 'sack' responses at Onset step 1
@@ -772,32 +749,14 @@ significant in the Incongruous model. Rime level 4, on the female end of
 the continuum, is negatively associated with 'sack' responses and
 significant ($β=-0.36, SE=0.10, p < 0.001$).
 
-Finally, the quantitative analysis of the primary objective of this
-experiment, exploring the effect of unhiding the matched guise
-manipulation from participants, largely supports the qualitative
-analysis. As can be observed in Figure
-[\[fig:coefs\]](#fig:coefs){reference-type="ref" reference="fig:coefs"},
-there is no significant main effect of Instruction condition in either
-model. Still, a somewhat more nuanced picture emerges from the
-interactions of Instruction condition with Onset and the 3 way
-interaction of Instruction, Onset, and Face in the Congruous trials. The
-interaction of Instruction with Onset is significant, or nearly so, at
-every step of the fricative continuum other than the most significant.
-In the [ʃ]-like portion of the continuum, the interaction with face is
-positively associated with 'sack' responses at step 1
-($β=0.65, SE=0.28, p < 0.05$) and 2 ($β=0.44, SE=0.18, p < 0.05$). The
-interaction of guise with the most ambiguous onset step is not
+Finally, the quantitative analysis of the primary objective of this experiment, exploring the effect of unhiding the matched guise manipulation from participants, largely supports the qualitative analysis. As can be observed in @fig-coefs, there is no significant main effect of Instruction condition in either model. Still, a somewhat more nuanced picture emerges from the interactions of Instruction condition with Onset and the 3 way interaction of Instruction, Onset, and Face in the Congruous trials. The interaction of Instruction with Onset is significant, or nearly so, at every step of the fricative continuum other than the most significant. In the [ʃ]-like portion of the continuum, the interaction with face is positively associated with 'sack' responses at step 1 ($β=0.65, SE=0.28, p < 0.05$) and 2 ($β=0.44, SE=0.18, p < 0.05$). The interaction of guise with the most ambiguous onset step is not
 significant ($β=0.011, SE=0.12$). The interaction of Instruction with
 Onset step 4, on the [s] end of the continuum is negatively associated
-with 'sack' responses and statistically significant
-($β=-0.43, SE=0.12, p < 0.001$). Instruction x Onset step4 is also
-negatively associated with 'sack' responses but does not reach
-significance at the standard alpha level
+with 'sack' responses and statistically significant ($β=-0.43, SE=0.12, p < 0.001$). Instruction x Onset step4 is also negatively associated with 'sack' responses but does not reach significance at the standard alpha level
 ($β=-0.40, SE=0.22, p = 0.067$). The 3-way interaction of Instruction x
 Onset x Face is positively associated with 'sack' responses at step 2
 ($β=0.41, SE=0.17, p < 0.05$) and weakly, but not significantly,
-negatively associated with 'sack' responses at step 5
-($β=-0.38, SE=0.21, p = 0.080$).
+negatively associated with 'sack' responses at step 5 ($β=-0.38, SE=0.21, p = 0.080$).
 
 There is also no main effect of Instruction in the Incongruous trials.
 The 3-way interaction of Instruction x Onset x Face, while justified by
@@ -820,9 +779,7 @@ REML and nloptwrap optimizer) to predict logRT with Guise, Onset, Face
 and Rime (`logRT ~ Instruction * Onset * Face + Rime`). The models
 included random intercepts for subject. All categorical predictors were
 coded using contrast coding. Beta coefficients for both models are
-plotted in Figure
-[\[fig:coefs:logRT\]](#fig:coefs:logRT){reference-type="ref"
-reference="fig:coefs:logRT"}. Terms plotted to the left of the zero line
+plotted in @fig-coefs-logRT. Terms plotted to the left of the zero line
 are associated with a decrease in log response time while terms plotted
 to the right of the zero line are associated with an increase in log
 response time. Notably, the longest response times are associated with
@@ -833,13 +790,11 @@ the congruous ($β=0.08, SE=0.007, p < 0.001$) and incongruous
 the congruous ($β=0.07, SE=0.007, p < 0.001$) and incongruous
 ($β=0.07, SE=0.007, p < 0.001$) models as well. On the other hand, steps
 1, 2, and 5 are all negatively associated with response time and also
-significant in both models (see Figure
-[\[fig:coefs:logRT\]](#fig:coefs:logRT){reference-type="ref"
-reference="fig:coefs:logRT"}).
+significant in both models (see @fig-coefs-logRT).
 
 ![Beta coefficients for log-transformed response
 times in the Congruous (black) and Incongruous (gray) linear regression
-models plotted with 95% confidence intervals.](images/coefs-logRT_instructions.png){width=80%}
+models plotted with 95% confidence intervals.](images/coefs-logRT_instructions.png){#fig-coefs-logRT width=80%}
 
 
 We predicted overall slower response times in the Incongruous than
@@ -854,9 +809,7 @@ prediction, but response times for Onset step 4 \* Face are shorter
 exact opposite pattern appears within the Congruous model where response
 times are shorter given Onset 3 \* Face ($β=-0.02, SE=0.007, p < 0.01$)
 but longer given Onset step 4 \* Face ($β=0.04, SE=0.007, p < 0.001$).
-These crossing patterns can be seen in Figure
-[\[fig:coefs:logRT\]](#fig:coefs:logRT){reference-type="ref"
-reference="fig:coefs:logRT"}.
+These crossing patterns can be seen in @fig-coefs-logRT.
 
 Given the replication of the Strand effect in the Congruous, but not the
 Incongruous conditions described in the previous section, it may be
