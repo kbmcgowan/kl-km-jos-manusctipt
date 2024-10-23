@@ -18,10 +18,7 @@ keywords:
   - sociophonetic perception
 abstract: |
   Sociophonetic perception is often studied using versions of the matched guise technique. Linguists using this technique appear united in the methodological assumptions that participants believe the manipulation and that this belief influences perception below the level of introspective awareness. We report an audiovisual matched guise experiment with a novel 'unhidden' instruction condition. The basic task is a replication of the Strand effect [@strandJohnson1996; @strand1999]. Participants in the 'unhidden' condition were instructed that the man or woman in the photo did not represent the voice they were listening to. Participants in both guises exhibited the Strand effect to nearly numerically identical extents. This result suggests that participants need not believe a link exists between a voice and a purported social category for visually-cued social information to influence segmental perception. We explore the implications of this result for the MGT and for theories of social awareness and speech perception more broadly.
-key-points:
-  - This is where the first key point goes
-  - and this is where a second key point goes
-  - and I bet we have a third one, knowing us like I do.
+
 date: last-modified
 bibliography: jos-laycock-mcgowan.bib
 citation:
@@ -658,10 +655,7 @@ continuum steps, should show more 'sack' responses consistent with
 having been shown a male face and no such effect is evident in this
 plot.
 
-Indeed, a striking feature of figures [-@fig-scurve] and [-@fig-rimes] is how the apparent influence of gender information flips between
-congruous and incongruous conditions in the former but remains essentially constant in the latter. Taken together, these plots suggest
-that cues to gender in F0 is a stronger predictor of listeners' reported percept in this matched guise task than just the purported gender of the
-face.
+Indeed, a striking feature of figures [-@fig-scurve] and [-@fig-rimes] is how the apparent influence of gender information flips between congruous and incongruous conditions in the former but remains essentially constant in the latter. Taken together, these plots suggest that cues to gender in F0 is a stronger predictor of listeners' reported percept in this matched guise task than just the purported gender of the face.
 
 Finally, the main objective of this experiment was to explore the role
 of listener awareness in the matched guise technique. Here again there
