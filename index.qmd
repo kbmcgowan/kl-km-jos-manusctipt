@@ -201,7 +201,7 @@ might previously have been construed as purely linguistic decisions
 syllable affiliation influence the perception of these fricatives, so
 too do socially-constructed gender categories.
 
-## Matched Guise {#sub-mgt}
+## Matched Guise {#sub-mgt} XXX maybe this comes first? --kevin XXX
 
 The Matched Guise technique (MGT) has been deployed in numerous
 configurations but, at its core, the technique pairs a single linguistic
@@ -258,6 +258,8 @@ This work raises the likelihood of at least two levels of sociophonetic
 perception and suggests that further work is needed to understand the
 role of awareness, and the necessity of deception, for the "complex,
 multi-layered process" of perception [@BabelVolume].
+
+XXX through about here -- kevin XXX
 
 This paper reports an audiovisual matched guise experiment with both
 standard 'hidden' and novel 'unhidden' instruction conditions. The basic
