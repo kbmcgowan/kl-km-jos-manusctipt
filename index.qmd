@@ -67,58 +67,33 @@ in different guises ... seems more suitable for use in the bilingual situation w
 
 The predominantly protestant Ulster listeners in this task provided both subjective evaluations of the voice quality of each talker on 8 personal characteristics such as intelligence, generosity, and friendliness and were asked to name the region associate with each voice. While the personal characteristics ratings closely tracked expected ideologies for an Ulster judge responding to a Scottish, RP, Dublin, and Ulster accent, the participants proved almost entirely incapable of correctly labeling each variety [see also @clopperPisoni2004; @campbell-kiblerVolume]. Milroy and McClenaghan suggest in their conclusion that perhaps accent identification "takes place below the level of conscious awareness" with stereotypical associations of a given accent arising in the listener independently of a conscious ability to name that accent.
 
-
 [^1]: Although, in their response, [@levonFox2014] are careful to refer exclusively to *evaluation* rather than perception.
 
+The Matched Guise technique has been deployed in numerous configurations but, at its core, the technique pairs a single linguistic signal: such as an identical talker [@giles1970], identical recordings [@Niedzielski1999], identical texts with multiple talkers [@milroyMcClenaghan1977], or some combination of these. This signal is paired with multiple purported social categories to investigate the influence of those categories on participants' evaluations [@campbell-kibler2005; @campbell-kibler2007] or language attitudes [@hadodoVolume; @chan2021].
 
-## The adoption and extension of the Matched Guise Technique {#sub-mgt}
-
-The Matched Guise technique has been deployed in numerous configurations but, at its core, the technique pairs a single linguistic signal: such as an identical talker [@giles1970], identical recordings [@rubin1992; @Niedzielski1999], identical texts with multiple talkers [@milroyMcClenaghan1977], or some combination of these. This signal is paired with multiple purported social categories to investigate the influence of those categories on participants' evaluations [@campbell-kibler2005; @campbell-kibler2007] or language attitudes [@hadodoVolume; @chan2021].
-
-In social, segmental speech perception research, cross-modal audio/visual extensions of the MGT are common in which visual information serves as a 'guise' for identical voice recordings. This usage of the technique is far enough from the original studies in which social information was communicated entirely through the voice that researchers sometimes disregard that even so-called standard voices carry social information [@rubin1992] while others and sometimes take the combination of voice and visual stimuli into account [@McGowan2015; @campbell-kibler2016; @gnevsheva2017]. This type of guise manipulation has been called ‘inverted’ matched guise [@McGowan2015] or simply ‘identification’ [@drager2013].
-
-But uniting these linguistic researchers, and delineating them from
+In social, segmental speech perception research, cross-modal audio/visual extensions of the MGT are common in which visual information serves as a 'guise' for identical voice recordings. [@campbell-kibler2016; @gnevsheva2017; @McGowan2015; @rubin1992]. This type of guise manipulation has been called ‘inverted’ matched guise [@McGowan2015] or simply ‘identification’ [@drager2013]. The task has been adopted from its original context of bilingual evaluations but uniting these linguistic researchers, and delineating them from
 colleagues in social psychology [for discussion, see
 @rosseelGrondelaers2019], is the methodological assumption that the
-connection of voice to social type needs to happen below the level of
-conscious awareness. Awareness here, though generally not explicitly
-acknowledged, appears to be construed narrowly as participants’ ability
-to identify and comment on the existence of a guise manipulation. As
-researchers we demonstrate our assumption that the Matched Guise
-technique must be shielded from listener awareness through attempt to
-deceive participants about the intentional use of guise to elicit
-evidence of social evaluations, language attitudes, segmental speech
-perception, memory, etc.
+connection of voice to social type is available to participants' introspective awareness and therefore requires that listeners not become aware of the guise manipulation.
 
 Researchers go to great lengths to ensure this lack of awareness [e.g.
-@pharaoKristiansen2019; @grondelaersVanGent2019]. However, the majority
-of studies cannot speak to this lack of awareness during phonetic
+@pharaoKristiansen2019; @grondelaersVanGent2019].
+
+However, the majority
+of studies cannot speak to this lack of awareness during segmental
 perception because the data provided by the participants is relatively
 late in processing and involves layers of potential introspection and
 evaluation that block access to the initial online percept for listeners
-and researchers alike. @mcgowanBabel2020 performed an audio/visual MGT
-with both a task designed to get at phonetic perception of individual
-segments and a sociolinguistic interview intended to investigate
-listeners' judgements about the purported speaker. Every participant was
-shown both guises and while segmental and social perceptions were
-aligned with the identity of the purported talker in the initial guise
-presentation, these perceptions diverged in the second guise – with
-phonetic perceptions remaining unchanged and social evaluations tracking
-the change of guise. Of particular relevance to the present study,
-despite the fact that the fricatives used in @mcgowanBabel2020 were not
-different across guises, participants often commented on how the
-fricatives participated in communicating the purported social identity.
-This work raises the likelihood of at least two levels of sociophonetic
-perception and suggests that further work is needed to understand the
-role of awareness, and the necessity of deception, for the "complex,
+and researchers alike. 
+
+"complex,
 multi-layered process" of perception [@BabelVolume].
 
 ### 
 
 Articulatorily, these fricatives mainly differ in the distance between the point of lingual articulation and the teeth. The size of the resulting space behind the teeth gives these sounds their characteristic sibilance [@fant1960; @shadle1991]. English [s] has a short resonating chamber behind the teeth; it is typically produced by holding the tongue tip near enough to the alveolar ridge to cause relatively high frequency turbulent airflow. English [ʃ] has a comparatively larger resonating chamber; it is typically produced with a more posterior, palato-alveolar tongue position which creates a larger resonating chamber between the place of articulation and the teeth, causing lower frequency noise than an [s] for the same talker. Concomittant with this articulatory difference for English listeners is a cultural association of masculinity with larger, longer vocal tracts and femininity with smaller, shorter vocal tracts [@may1976; @ohala1994; @eckert2012]. [s] produced from a larger vocal tract will typically be lower in frequency than an [s] produced from a smaller vocal tract, and listeners know this [@may1976]. This effect is, in practice, entirely separable from between-talker differences in fundamental frequency (F0) and, like F0, can be used to perform and perceive gender identity.
 
-A commonly used methodology in speech perception research involves the creation of synthetic fricative continua between [ʃ] and [s] . These continua have endpoints in prototypical examples of [ʃ] and [s] with some number of acoustic steps spliced, synthesized, or even mixed between these. Near the middle of such a continuum will be a synthetic fricative that is ambiguous as to category membership: not clearly a [ʃ] and not clearly an [s]. @may1976 paired such a continuum from [ʃ] (centered at 2.9 kHz) to [s]
-(centered at 4.4 kHz) with synthetic [æ] vowels to form simple CV syllables. May found that listeners perceived a higher proportion of the fricative continuum as [ʃ] when paired with vowel stimuli from a smaller vocal tract. The logic here is that smaller resonating chambers between the lingual articulation and teeth will have a higher mean frequency than larger resonating chambers. Listeners' use of apparent vocal tract size in perception reflect their knowledge of this variation [@munson2011].
+A commonly used methodology in speech perception research involves the creation of synthetic fricative continua between [ʃ] and [s] . These continua have endpoints in prototypical examples of [ʃ] and [s] with some number of acoustic steps spliced, synthesized, or even mixed between these. Near the middle of such a continuum will be a synthetic fricative that is ambiguous as to category membership: not clearly a [ʃ] and not clearly an [s]. @may1976 paired such a continuum from [ʃ] (centered at 2.9 kHz) to [s] (centered at 4.4 kHz) with synthetic [æ] vowels to form simple CV syllables. May found that listeners perceived a higher proportion of the fricative continuum as [ʃ] when paired with vowel stimuli from a smaller vocal tract. The logic here is that smaller resonating chambers between the lingual articulation and teeth will have a higher mean frequency than larger resonating chambers. Listeners' use of apparent vocal tract size in perception reflect their knowledge of this variation [@munson2011].
 
 Previous research in sociophonetic perception has established that listeners are so acutely sensitive to the alignment of these acoustic facts and cultural associations that perceived gender and fricative category participate in a relationship that is highly reminiscent of a phonetic trading relation [@repp1982] such that, for example, fricative sounds consistent with a larger vocal tract are perceived as more masculine [@bouavichithEtAl2019] and, in tandem, believing that a talker identifies as male can lead listeners to perceive more [ʃ]-like sounds as [s] [@strandJohnson1996; @munson2011].
 
