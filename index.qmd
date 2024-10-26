@@ -50,7 +50,7 @@ editor:
 
 There is abundant, converging evidence from experimental, ethnographic, and sociocultural approaches to the study of language that gender is performed by talkers and perceived by interlocutors through a stylistic bricolage [@zimman2017] comprising both non-linguistic and linguistic resources [@barrett2014; @bucholtz2002]. Gender is a culturally-situated practice, and, crucially, social meaning is performed by embodied voices that simultaneously produce the distinctions necessary for both social and linguistic meaning [@hall2021language; @podesvaKajino2014; @bucholtzHall2016; @sumner2014]. This intersection of the construction of social and linguistic meaning via precise, dynamic speech articulation is perhaps nowhere more evident than in the palato-alveolar and alveolar fricative categories, [ʃ] and [s]; the first segments in words like *ship* and *sip* in English [@strand1999; @mackMunson2012b; @calder2018].
 
-There is little consensus, however, around the extent to which language users are aware of, and can control, these fine gradations of social meaning in production and perception. In the context of this chapter we are using 'awareness' to refer to explicit, conscious awareness of the tripartite relationship between a social label, its phonetic reflexes, and the connections between these [@bakhtin1981]. The cognitive reality of this tripartite relationship between the concepts of gender identities and instances of fine phonetic detail is essential for the performance of those identities. This observation holds regardless of talker and listener awareness. This observation remains true even if what the listener believes about the talker is false; a monolingual American listener might expect a Beijing voice to be non-rhotic [@mcgowan2016] or a gay male voice to have a lisp [@mackmunson2012]. Expectations need not be accurate to shape perception [@preston1996].
+There is little consensus, however, around the extent to which language users are aware of, and can control, these fine gradations of social meaning in production and perception. In the context of this chapter we are using 'awareness' to refer to explicit, conscious awareness of the tripartite relationship between a social label, its phonetic reflexes, and the connections between these [@BabelIssue; @bakhtin1981]. The cognitive reality of this tripartite relationship between the concepts of gender identities and instances of fine phonetic detail is essential for the performance of those identities. This observation holds regardless of talker and listener awareness. This observation remains true even if what the listener believes about the talker is false; a monolingual American listener might expect a Beijing voice to be non-rhotic [@mcgowan2016] or a gay male voice to have a lisp [@mackmunson2012]. Expectations need not be accurate to shape perception [@preston1996].
 
 Relatedly, one can *control*, in production, the phonetics of one's gender without explicit acknowledgement or introspective awareness that one is doing so or what those details might be. Indeed, children as young as 4, well before any effects of puberty might have arrived, can do precisely this [@perryOhdeAshmead2001] and many of our own college students, when first confronted with the idea that they participate in the social construction of gender through the fine phonetic details of their speech will respond with real, sometimes agitated, disbelief. Even trained, experienced sociolinguists and phoneticians tend to conceive of the fundamental frequency of the voice, the prevailing frequency of vocal fold vibration during voiced sounds, as a primary, biological phonetic detail associated with gender performance [@foulkesDocherty2006,  p. 411]; when this cue is neither necessary nor sufficient for the production and perception of gender identity [@zimman2017; @johnson2005].
 
@@ -60,6 +60,8 @@ Clarifying these definitions and exploring their implications for perception is 
 
 The other meaning of perception in common use in the various language disciplines describes a higher-level, sometimes implicit, sometimes explicit, evaluative judgment of talkers and voices [see @evans2008, 'type 2' processing]. This is the meaning of perception employed in folk linguistics [@niedzielskiPreston2000] and perceptual dialectology [@cramer2021]. This is also the level of perception, for example, at which the sociolinguistic monitor is proposed by variationist sociolinguists to operate[^1 ][@labovEtAl2011]. Importantly for the present study, this higher, evaluative level of perception is also the level for which the Matched Guise Technique (MGT) was originally developed.
 
+### Matched Guise: Perception, Evaluation, and Awareness {#sub-mgt}
+
 In their foundational use of the MGT, for example, @lambertEtAl1960 found that four bilingual Montrealer's voices evoked quite different social evaluations in their French vs their English guises. Using the same talkers in both guises allowed researchers to control for "idiosyncratic settings of the voice" that might distract judges from the focus of the experiment [@laver1968]. Lambert et al. were clearly concerned that the evaluative judgments they sought were subject to listeners' subjective awareness; taking pains to deceive participants with filler voices, withholding the information that some of the talkers in the study might be bilingual, and ultimately reporting that, "[t]here was no indication that any S became aware of the fact that bilingual speakers were used" [@lambertEtAl1960, p. 44]. @pharaoKristiansen2019 [p. 2] note that researchers, across both psychology of language and sociolinguistic traditions, go to great lengths to ensure this lack of awareness.
 
 One, perhaps surprising but recurring, demonstration of the two distinct uses of the term perception described here is that, when both levels are examined in the same study, listeners' low level perceptions and high level evaluations need not agree. @mcgowanBabel2020, for example, found that listeners' performance on an AXB vowel discrimination task and their answers in a subsequent interview about the voices heard in that task sometimes agreed, but sometimes diverged. When they diverged, the low level perceptions tracked vowel categories established by the listeners' earlier experience with the voice while high level evaluations of the talker much more closely tracked language ideologies regarding the Quechua-dominant or Spanish-dominant speaker social labels provided by the experiment. Indeed, several participants explicitly commented on the differences between the fricatives used by the two guises; speech sounds that had been held identical in the stimuli.
@@ -67,18 +69,16 @@ One, perhaps surprising but recurring, demonstration of the two distinct uses of
 In an early use of the MGT to study listeners' evaluations of regional accents in the UK and the Republic of Ireland, @milroyMcClenaghan1977 employed four speakers to each perform their own single accent: Received Pronunciation, Ulster, Dublin, or Scottish. They note that Lambert's bilingual investigation in which "unknown to the judges a single speaker was heard
 in different guises ... seems more suitable for use in the bilingual situation where it was originally developed than for use with different accents." (p. 2). The methodological consideration here is one of control, rather than awareness, on the part of both talker and listener. Milroy & McClenaghan express "grave reservations" that a single talker, even a talented mimic, could authentically control all four of the regional varieties to be evaluated. Unstated in this preoccupation with production is the corresponding concern that listeners will not *believe* the mimicked accents.
 
-The predominantly protestant Ulster listeners in this task provided both subjective evaluations of the voice quality of each talker on 8 personal characteristics such as intelligence, generosity, and friendliness and were asked to name the region associate with each voice. While the personal characteristics ratings closely tracked expected ideologies for an Ulster judge responding to a Scottish, RP, Dublin, and Ulster accent, the participants proved almost entirely incapable of correctly labeling each variety [see also @campbell-kiblerVolume; @clopperPisoni2004; @kristiansen2009]. Milroy and McClenaghan suggest in their conclusion that perhaps accent identification "takes place below the level of conscious awareness" with implicit stereotypical associations of a given accent arising in the listener independently of a conscious ability to explicitly name that accent.
+The predominantly protestant Ulster listeners in this task provided both subjective evaluations of the voice quality of each talker on 8 personal characteristics such as intelligence, generosity, and friendliness and were asked to name the region associate with each voice. While the personal characteristics ratings closely tracked expected ideologies for an Ulster judge responding to a Scottish, RP, Dublin, and Ulster accent, the participants proved almost entirely incapable of correctly labeling each variety [see also @campbell-kiblerIssue; @clopperPisoni2004; @kristiansen2009]. Milroy and McClenaghan suggest in their conclusion that perhaps accent identification "takes place below the level of conscious awareness" with implicit stereotypical associations of a given accent arising in the listener independently of a conscious ability to explicitly name that accent.
 
 [^1]: Although, in their response, [@levonFox2014] are careful to refer exclusively to *evaluation* rather than perception.
 
-This recurring disjunction in listeners' implicit and explicit responses, even within a speaker evaluation paradigm, points to what [@kristiansen2009, p. 169] has described as "layers of consciousness" and the reason that [@BabelVolume] describes perception as a "complex, multi-layered process". The picture that is emerging is one of simultaneous, layered complexity in the interactive process of social meaning making. A listener to even a single spoken word combines multi-modal sensory information, their own experiences with language, their own experiences with social meanings, and their context-driven expectations about the voice they are likely to hear, the words that voice is likely to produce, and the socioindexical properties that voice is likely to embody. And rather than the outcome of perception (broadly construed) being a simple lexical item, a set of speech segments, a single attitude, or a summary evaluative judgment, the listeners subjective experience appears to be a rich, potentially contradictory, superposition of all of these and more.
+This recurring disjunction in listeners' implicit and explicit responses, even within a speaker evaluation paradigm, points to what [@kristiansen2009, p. 169] has described as "layers of consciousness" and the reason that [@BabelIssue] describes perception as a "complex, multi-layered process". The picture that is emerging is one of simultaneous, layered complexity in the interactive process of social meaning making. A listener to even a single spoken word combines multi-modal sensory information, their own experiences with language, their own experiences with social meanings, and their context-driven expectations about the voice they are likely to hear, the words that voice is likely to produce, and the socioindexical properties that voice is likely to embody. And rather than the outcome of perception (broadly construed) being a simple lexical item, a set of speech segments, a single attitude, or a summary evaluative judgment, the listeners subjective experience appears to be a rich, potentially contradictory, superposition of all of these and more.
 
-Researchers looking to gain insight into these qualia and how they are formed need to try to understand ... something
+Researchers looking to gain insight into these qualia and how they are formed need to try to understand ... something XXX
 
 
-### Matched Guise: Perception, Evaluation, and Awareness
-
-The Matched Guise technique has been deployed in numerous configurations but, at its core, the technique pairs a single linguistic signal: such as an identical talker [@giles1970], identical recordings [@Niedzielski1999], identical texts with multiple talkers [@milroyMcClenaghan1977], or some combination of these. This signal is paired with multiple purported social categories to investigate the influence of those categories on participants' evaluations [@campbell-kibler2005; @campbell-kibler2007] or language attitudes [@hadodoVolume; @chan2021].
+The Matched Guise technique has been deployed in numerous configurations but, at its core, the technique pairs a single linguistic signal: such as an identical talker [@giles1970], identical recordings [@Niedzielski1999], identical texts with multiple talkers [@milroyMcClenaghan1977], or some combination of these. This signal is paired with multiple purported social categories to investigate the influence of those categories on participants' evaluations [@campbell-kibler2005; @campbell-kibler2007] or language attitudes [@hadodoIssue; @chan2021].
 
 In social, segmental speech perception research, cross-modal audio/visual extensions of the MGT are common in which visual information serves as a 'guise' for identical voice recordings. [@campbell-kibler2016; @gnevsheva2017; @McGowan2015; @rubin1992]. This type of guise manipulation has been called ‘inverted’ matched guise [@McGowan2015] or simply ‘identification’ [@drager2013]. The task has been adopted from its original context of bilingual evaluations but uniting these linguistic researchers, and delineating them from colleagues in social psychology [for discussion, see @rosseelGrondelaers2019], is the methodological assumption that the connection of voice to social type is available to participants' introspective awareness and therefore requires that listeners not become aware of the guise manipulation.
 
@@ -99,9 +99,9 @@ A commonly used methodology in speech perception research involves the creation 
 
 Previous research in sociophonetic perception has established that listeners are so acutely sensitive to the alignment of these acoustic facts and cultural associations that perceived gender and fricative category participate in a relationship that is highly reminiscent of a phonetic trading relation [@repp1982] such that, for example, fricative sounds consistent with a larger vocal tract are perceived as more masculine [@bouavichithEtAl2019] and, in tandem, believing that a talker identifies as male can lead listeners to perceive more [ʃ]-like sounds as [s] [@strandJohnson1996; @munson2011].
 
-The goal of the present study is to take advantage of this sociophonetic trading relation in listeners' fricative categories to explore the role of awareness in socially-informed speech perception. It is well established that social information can influence how listeners perceive [@foulkesDocherty2006], retrieve [@walkerHay2011], and even remember [@nygaard1994] the linguistic aspect of the speech signal. However, because our knowledge of these phenomena come from disparate intellectual traditions, working with a range of quantitative and qualitative methods, with differing assumptions about the role of introspective awareness during the integration of social and linguistic information [@babelCampbell-kiblerMcGowanVolume], one can come away from a detailed, rigorous review of the sociolinguistics, linguistic anthropology, and phonetics literature simultaneously convinced that listeners' use of social information happens both obligatorily above and below the level of conscious awareness.
+The goal of the present study is to take advantage of this sociophonetic trading relation in listeners' fricative categories to explore the role of awareness in socially-informed speech perception. It is well established that social information can influence how listeners perceive [@foulkesDocherty2006], retrieve [@walkerHay2011], and even remember [@nygaard1994] the linguistic aspect of the speech signal. However, because our knowledge of these phenomena come from disparate intellectual traditions, working with a range of quantitative and qualitative methods, with differing assumptions about the role of introspective awareness during the integration of social and linguistic information [@babelCampbell-kiblerMcGowanIssue], one can come away from a detailed, rigorous review of the sociolinguistics, linguistic anthropology, and phonetics literature simultaneously convinced that listeners' use of social information happens both obligatorily above and below the level of conscious awareness.
 
-## Coarticulatory and Social Information Influence [ʃ]-[s] perception
+## Coarticulatory and Social Information Influence [ʃ]-[s] perception {#sec-coart-soc}
 
 Listeners are sensitive to these socially-informative patterns of
 [ʃ]-[s] variation, but it is important to understand how similar this
@@ -198,7 +198,7 @@ conflict? In order to conduct this study, however, it is necessary to be
 precise about how we conceive of and operationalize gender for the
 purposes of a speech perception experiment.
 
-## Phonetics, Speech Perception, and the Social-Construction of Gender
+## Phonetics, Speech Perception, and the Social-Construction of Gender {#sub-gender}
 
 It has long seemed normal in phonetics to imagine that gender is a
 simple, binary projection from biological sex onto social identity
@@ -238,7 +238,7 @@ standard 'hidden' and novel 'unhidden' instruction conditions. The basic
 task is a replication of @strandJohnson1996. Listeners are asked to
 identify an ambiguous word as *sack* or *shack* on a [ʃ]-[s]
 continuum given manipulated beliefs about the gender identity of the
-talker [@trippMunson2022; @steckerDOnofrioVolume]. As described above,
+talker [@trippMunson2022; @steckerDOnofrioIssue]. As described above,
 numerous previous replications have found that listeners perceive more
 of the ambiguous continuum as [ʃ] when they believe the speaker
 identifies as a woman and more as [s] when they believe the speaker
@@ -257,9 +257,9 @@ participants were asked to provide a *sack*/*shack* lexical decision
 either with, or without, explicit instructions to disregard the visual
 stimulus.
 
-# Method
+# Method {#sec-method}
 
-## Participants
+## Participants {#sub-participants}
 
 120 participants (self-identified 59 female, 61 male; ages 20 to 75)
 were recruited to complete the online experiment online. These
@@ -276,9 +276,9 @@ results from the online administration were generally consistent with
 results collected under laboratory conditions. Four participants were
 excluded for low accuracy rates (below 85%).
 
-## Stimulus Materials
+## Stimulus Materials {#sub-stimuli}
 
-### Auditory Stimuli
+### Auditory Stimuli {#sub-stimuli-auditory}
 
 The auditory stimuli used in this study are the same wav-format files
 used in [@bouavichithEtAl2019]. The stimuli, which were generously
@@ -316,7 +316,7 @@ S5 represent continuum steps from most *sack*-like to most *shack*-like
 fricatives. F0 and F1:F2 Ratio plots show the manipulations to the Male
 and Female voiced vowels.](images/figure1.png){#fig-stimuli width=80% fig-align="center"}
 
-## Explicit Evaluations of Auditory Stimuli
+## Explicit Evaluations of Auditory Stimuli {#sub-stim-evals}
 
 Because voices carry social information, we elicited explicit social ratings to better understand how our auditory stimuli might influence participants' perception of the identities of the two talkers.40 undergraduate students at the Ohio State University (25 female, 15 male, ages 18-26) who participated in an in-person pilot version of the inverse matched guise experiment were asked to make judgments regarding the gender, gender prototypicality, and sexuality of a natural, unresynthesized, production of *sack* produced by each of the two talkers. Participants listened to the recording and then selected from a fixed set of responses; no free form responses were elicited.
 
@@ -336,7 +336,7 @@ most likely heterosexual, and 16% indicated homosexual and, again, 1
 each indicating the speaker was most likely bisexual, or another
 sexuality not listed. Crucially, no participants rated the female voice as male, or the male voice as female. The variation among ratings may be due to the presentation of options beyond binary female and male categories, and/or to the current cultural understanding of gender performance as distinct from sex. Despite this variability in responses, no 'implausible' answers were given. All things being equal, it is reasonable for a listener to believe there may be little perceptual difference in cis and trans voices for either male or female performances @zimman2018, and reasonable to consider 'unsure' the most acceptable option in lieu of asking the talker for their gender identity.
 
-### Visual Stimuli
+### Visual Stimuli {#sub-stimuli-visual}
 
 The visual stimuli used in this study, again identical to the images
 used in [@bouavichithEtAl2019], are shown in @fig-visual.
@@ -361,7 +361,7 @@ phenomenon.
 ![Stimuli comprised *shack* and *sack* targets (top)
 and a gender-protypical 'male' and 'female' face (bottom)](images/facesanddrawings.jpg){#fig-visual width=80% fig-align="center"}
 
-## Procedure
+## Procedure {#sub-procedure}
 
 The experiment was created in OpenSesame v3.3 [@opensesame] and exported
 for the web using OSWeb v1.4.14.0. Modifications to the experiment
@@ -423,9 +423,9 @@ instance. In both congruous and incongruous conditions, all 60 unique
 trials (30 per face) were presented twice to each participant for a
 total of 120 trials.
 
-# Predicted Results
+# Predicted Results {#sec-predictions}
 
-## Face: male or female
+## Face: male or female {#sub-pred-face}
 
 Consistent with previous results, we expect to replicate the Strand
 effect; in general, we anticipate that more of the [ʃ]-[s] continuum
@@ -435,7 +435,7 @@ However, these general predictions about the Face presentation when the
 congruence of auditory and visual components of the guise are taken as a
 whole.
 
-## Congruence: pairing of face and voice
+## Congruence: pairing of face and voice {#sub-pred-congruence}
 
 To our knowledge, the influence of congruence has not been directly
 investigated for listeners' joint perception of gender and fricative
@@ -475,7 +475,7 @@ independently normed for ambiguity [@bouavichithEtAl2019 p. 1040, Table
 anticipate an interaction between Face and Rime step but only in the
 incongruous trials and only at the extremes of the rime continuum.
 
-## Guise: Hidden or Unhidden
+## Guise: Hidden or Unhidden  {#sub-pred-guise}
 
 The primary goal of this experiment was to explore the role of listener
 awareness and control in the matched guise technique. The tremendous
@@ -499,7 +499,7 @@ different cognitive processing paths, perhaps drawing on different
 levels of knowledge and awareness, and that these differences may be
 visible in response times between the Instruction conditions.
 
-# Results
+# Results  {#sec-results}
 
 Participants provided a total of 14,400 trials (120 trials from each of
 120 online participants; 3600 trials in each instruction
@@ -526,7 +526,7 @@ response times were within a range between 200 and 2000ms. To increase
 normality of the distribution of response times across participants, the
 remaining response times were log-transformed.
 
-## [ʃ]-[s] Percepts
+## [ʃ]-[s] Percepts  {#sub-results-fricative}
 
 @fig-scurve presents listeners' percepts on this 2AFC task.
 The horizontal axis in each of these four plots is the fricative
@@ -609,7 +609,7 @@ other, that effect is so weak as to be essentially invisible in these
 visual interrogations of the data. Categorical responses in the Hidden
 and Unhidden instruction conditions appear to be identical.
 
-## Logistic Regression and Quantitative Analysis
+## Logistic Regression and Quantitative Analysis {#sub-results-stats}
 
 These qualitative assessments of listener responses can be examined
 further through quantitative analysis. Through model comparison we
@@ -693,7 +693,7 @@ step 2 ($β=0.53$, $SE=0.21$, $p < 0.05$) and approaches significance at step
 ($β=0.18$, $SE=0.11, $p = 0.095$) and step 5 where it is weakly negatively
 associated ($β=-0.32$, $SE=0.19$, $p = 0.086$).
 
-## Response Times
+## Response Times {#sub-results-rt}
 
 As with the logistic regression models, we again opted to separate
 Congruence into a pair of 3-way models for linear mixed model analysis
@@ -844,7 +844,7 @@ for the male voice). As listeners, we do not have veridical access to
 the speech sounds intended by a talker. Instead, we must combine the
 speech signal with our phonological knowledge, lexical knowledge, social
 expectations, visual input, expectations of the social world
-[@BabelVolume] and other sensory information to arrive at a percept. The
+[@BabelIssue] and other sensory information to arrive at a percept. The
 implication is that perception is more holistic than is dreamt of in our
 phonologies. Category boundaries, whether for speech sounds or social
 categories, are fuzzy and perception needs to be fast. We retain
@@ -884,7 +884,7 @@ knowledge and linguistic knowledge are deeply intertwined in speech
 perception and it is perverse to assume that the language subsystem
 underlying this ability would necessarily distinguish them.
 
-## References {.unnumbered}
+# References {#sec-references .unnumbered}
 
 ::: {#refs}
 :::
