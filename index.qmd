@@ -79,9 +79,11 @@ The Matched Guise technique has been deployed in numerous configurations but, at
 
 In social, segmental speech perception research, cross-modal audio/visual extensions of the MGT are common in which visual information serves as a 'guise' for identical voice recordings. [@campbell-kibler2016; @gnevsheva2017; @McGowan2015; @rubin1992]. This type of guise manipulation has been called ‘inverted’ matched guise [@McGowan2015] or simply ‘identification’ [@drager2013]. The inverse MGT has traveled far from its original context of bilingual evaluations but uniting these linguistic researchers, and delineating them from colleagues in social psychology [for discussion, see @rosseelGrondelaers2019], is the foundational methodological assumption that the connection of voice to social type is available to participants' introspective awareness and therefore requires that listeners not become aware of the guise manipulation.
 
-A central focus of @mcgowanBabel2020 [pp. 246-248]'s analysis, particularly of their interview results, 
-However, the majority
-of studies cannot speak to this lack of awareness during segmental
+A central focus of @mcgowanBabel2020 [pp. 246-248]'s discussion, particularly of their interview results, centers on the question of whether deception was successful and listeners *believed* the two MGT guise manipulations. In part this is because they observe a stark disjunction between the segmental and evaluative levels of perception. In part, belief is especially important in a paper that reports the outcome of an unusual within-subjects MGT which presents both guises to each participant. But more fundamentally, and of interest to anyone employing the MGT for language perception or evaluation research, the assumption of belief, of the requirement that listeners not become aware of the deception inherent in whatever version of the signal/social label guise manipulation being deployed, is at the core of the MGT, and has been from the beginning.
+
+However, the majority of studies cannot speak directly to this lack of awareness. XXX
+
+during segmental
 perception because the data provided by the participants is relatively
 late in processing and involves layers of potential introspection and
 evaluation that block access to the initial online percept for listeners
