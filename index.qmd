@@ -26,12 +26,15 @@ citation:
 number-sections: false
 suppress-title-page: true
 format:
-  pdf: default
+  pdf:
+    fonsize: 12pt
+    mainfont: 'Gentium Plus'
+    sansfont: 'Source Sans Pro'
   html:
     theme: simplex
     fontsize: 1.2em
     linestretch: 1.7
-    mainfont: Noto Serif, Helvetica Neue, Helvetica, Arial, sans
+    mainfont: Gentiumn Plus, Noto Serif, Helvetica Neue, Helvetica, Arial, sans
     monofont: Noto Sans Mono, Cascadia Mono, Menlo, Consolas, Courier New, Courier
     backgroundcolor: "white"
     fontcolor: "black"
