@@ -128,7 +128,7 @@ Praat [@praat2001] using parameters from @munson2011 ranging between the values 
 For the VC rime, two additional continua were modified from natural productions of [æk] spoken by cisgender male and female talkers in the carrier phrase "Say sack again". These five-step rime continua were created by evenly spacing mean F0 across consecutive steps such that the male /æk/ continuum increased F0 frequency and formant spacing from their unmodified values while the female talker's /æk/ continuum decreased both parameters from unmodified.  Following the separate creations of these continua, each synthesized fricative token was concatenated with each CV rime of /æk/ resulting in a total of 60 unique auditory stimuli.  Each fricative step + rime step stimulus item was played independently as the auditory stimulus item in the perception experiment.
 
 These manipulations are described in greater detail in Bouavichith et al's section 2.1 and are summarized visually in @fig-stimuli. Unlike MGT studies that ask a talented, multi-dialectal talker to consciously change their speech style [e.g. @wright2023], these stimuli were produced by one female and one male talker who were asked to record speech in their normal voices. As these talkers
-were advanced doctoral students in a linguistics PhD program, some of the elements of such an identity are likely available to conscious reflection, but many of these indexical features are likely implicit, unavailable for conscious control, even for them. 
+were advanced doctoral students in a linguistics PhD program, some of the elements of such an identity are likely available to conscious reflection, but many of these indexical features (such as VOT duration, F2:F3 formant ratio, etc.) are likely implicit, unavailable for conscious control, even for them. 
 
 <!-- https://discord.com/channels/@me/1185287511069691914/1300513683792723988 -->
 
@@ -151,7 +151,7 @@ The visual stimuli used in this study, again identical to the images used in [@b
 These included two face images, used for the guise manipulation, which were retrieved from the Chicago Face Database [@ChicagoFaceDatabase], a resource containing high-resolution, normed images of faces indexed by gender and ethnicity. The faces selected were normalized for both physical attributes (i.e., measurements of particular facial dimensions), subjective ratings such as attractiveness, and for gender and gender prototypicality. As in Bouavichith et al., CFD-WF-015-006-N
 was selected as the representation of the gender-protypical female talker and CFD-WM-029-023-N was selected as the representation of the gender-prototypical male talker. Both images were converted to greyscale at the command line using ImageMagick [@imagemagick].
 
-Additionally, two gray-scale line drawings were used as visual representations of *shack* and *sack*. These images were used in place of orthographic targets both to maintain consistency with Bouavichith et al's design and to facilitate future eye tracking investigation of this phenomenon.
+Additionally, two gray-scale line drawings were used as visual representations of *shack* and *sack*. These images were used in place of orthographic targets both to maintain consistency with Bouavichith et al's design and to facilitate future eye tracking investigation of this phenomenon. This is a divergence from the original Strand & Johnson design, which represented target words orthographically.
 
 ![Stimuli comprised *shack* and *sack* targets (top) and a gender-protypical 'male' and 'female' face (bottom)](images/facesanddrawings.jpg){#fig-visual width=80% fig-align="center"}
 
@@ -244,12 +244,12 @@ identification in our congruous trials (when Face and Voice do not
 conflict) but a failure to replicate for the incongruous trials (when
 Face and Voice provide conflicting social information). This difference
 may be stronger with the male voice, given both Johnson, Strand, and
-D'Imperio's finding but also [@king2021].
+D'Imperio's finding [see also @king2021].
 
 We make a similar prediction for reaction times.
 [@johnsonstranddimperio1999] did not collect reaction time data, but
 [@McGowan2011] reports longer reaction times for incongruous trials,
-albeit in a very different task, and [@whalen1984] would seem to suggest
+albeit in a very different task, and [@whalen1984] results with subcategorical, coarticulatory mismatches for fricative identification would seem to suggest
 that this should hold for listeners' identification of fricatives on a
 [ʃ]-[s] continuum. Specifically, we predict longer reaction times,
 in general, for the Incongruous conditions. Furthermore, when gender
@@ -271,104 +271,34 @@ incongruous trials and only at the extremes of the rime continuum.
 
 ## Guise: Hidden or Unhidden  {#sec-pred-guise}
 
-The primary goal of this experiment was to explore the role of listener
-awareness and control in the matched guise technique. The tremendous
-care researchers take to ensure that the guise manipulation is hidden
-from participants suggests a kind of imagined fragility of
-the effects of social information on language perception. From this
-view: listeners who become aware of the guise manipulation will have
-introspective access to and deliberative control over the influence of
-visual social information on perception. If this is true, explaining the
-guise manipulation, in the unhidden condition, should have a strongly
-negative effect on the Strand effect. Alternatively, if the influence of
-social information is not available to introspection or deliberative
-control, we should see no change between the (traditional) hidden
-matched guise and the unhidden guise.
+The primary goal of this experiment was to explore the role of listener awareness and control in the matched guise technique. The care researchers take to ensure that the guise manipulation is hidden from participants suggests a kind of imagined fragility of
+the effects of social information on language perception. From this view: listeners who become aware of the guise manipulation will have introspective access to and deliberative control over the influence of visual social information on perception. If this is true, explaining the guise manipulation, in the unhidden condition, should have a strongly negative effect on the Strand effect. Alternatively, if the influence of social information is not available to introspection or deliberative control, we should see no change between the (traditional) hidden matched guise and the unhidden guise.
 
-Additionally, we speculate that there may be a response time difference
-between the Hidden and Unhidden guises even if there is no apparent
-difference in percept between the conditions. It can certainly be the
-case that participants will arrive at the same behavioral responses via
-different cognitive processing paths, perhaps drawing on different
-levels of knowledge and awareness, and that these differences may be
-visible in response times between the Instruction conditions.
+Additionally, we speculate that there may be a response time difference between the Hidden and Unhidden guises even if there is no apparent difference in percept between the conditions. It can certainly be the case that participants will arrive at the same behavioral responses via different cognitive processing paths, perhaps drawing on different levels of knowledge and awareness, and that these differences may be visible in response times between the Instruction conditions.
 
 # Results  {#sec-results}
 
-Participants provided a total of 14,400 trials (120 trials from each of
-120 online participants; 3600 trials in each instruction
-x congruity condition). It is not clear what it means to be 'accurate'
-when asked to perceive fricatives from a continuum so accuracy was
-calculated only for responses to the [ʃ] and [s] endpoints. Overall,
-participants were highly accurate (96.8%) but four participants were
-excluded from further analysis for accuracy below the pre-determined 85%
-threshold reducing the total number of trials to 13,920. Trials were
-coded as correct if the participant responded 'shack' to onset step 1 or
-'sack' to onset step 6. The four excluded participants all scored 67.5%
-accuracy or lower.
+Participants provided a total of 14,400 trials (120 trials from each of 120 online participants; 3600 trials in each instruction
+x congruity condition). It is not clear what it means to be 'accurate' when asked to perceive fricatives from a continuum so accuracy was calculated only for responses to the [ʃ] and [s] endpoints. Overall, participants were highly accurate (96.8%) but four participants were excluded from further analysis for accuracy below the pre-determined 85% threshold reducing the total number of trials to 13,920. Trials were coded as correct if the participant responded 'shack' to onset step 1 or 'sack' to onset step 6. The four excluded participants all scored 67.5% accuracy or lower.
 
-An additional 50 trials were excluded due to response times that were
-either too fast or too slow. To reduce the effects of response time
-outliers on subsequent analyses, all response times shorter than 50 ms
-(N=0) and longer than 5000ms (N=50) were excluded. The 5000ms response
-time cutoff was used instead of imposing an in-experiment time limit on
-responses to a trial to ensure that participants were required to
-respond to each trial. Altogether, 530 trials were
-excluded, leaving data from 13,870 trials for analysis (approximately
-96.3% of the initial data set). The majority (96.8%) of the remaining
-response times were within a range between 200 and 2000ms. To increase
-normality of the distribution of response times across participants, the
-remaining response times were log-transformed.
+An additional 50 trials were excluded due to response times that were either too fast or too slow. To reduce the effects of response time outliers on subsequent analyses, all response times shorter than 50 ms (N=0) and longer than 5000ms (N=50) were excluded. The 5000ms response time cutoff was used instead of imposing an in-experiment time limit on responses to a trial to ensure that participants were required to respond to each trial. Altogether, 530 trials were excluded, leaving data from 13,870 trials for analysis (approximately 96.3% of the initial data set). The majority (96.8%) of the remaining response times were within a range between 200 and 2000ms. To increase normality of the distribution of response times across participants, the remaining response times were log-transformed.
 
 ## [ʃ]-[s] Percepts  {#sec-results-fricative}
 
-@fig-scurve presents listeners' percepts on this 2AFC task.
-The horizontal axis in each of these four plots is the fricative
-(syllable Onset) continuum step. Step 1 of the continuum is most
-[ʃ]-like, step 6 is the most [s]-like, steps 3 & 4 are the most
-ambiguous. Darker lines in @fig-scurve present trials using the female Face; lighter
-lines present trials using the male Face. The Hidden and Unhidden
-instruction conditions are represented by the left and right columns of
-figures, respectively. The rows present the Congruous blocks where Face
-and Coda speaker voice shared a gender identity (top) and Incongruous
-trials where Face and Coda speaker voice mismatched in gender identity
-(bottom).
+@fig-scurve presents listeners' percepts on this 2AFC task. The horizontal axis in each of these four plots is the fricative
+(syllable Onset) continuum step. Step 1 of the continuum is most [ʃ]-like, step 6 is the most [s]-like, steps 3 & 4 are the most
+ambiguous. Darker lines in @fig-scurve present trials using the female Face; lighter lines present trials using the male Face. The Hidden and Unhidden instruction conditions are represented by the left and right columns of figures, respectively. The rows present the Congruous blocks where Face and Coda speaker voice shared a gender identity (top) and Incongruous trials where Face and Coda speaker voice mismatched in gender identity (bottom).
 
-!['sack' responses plotted as a function of [ʃ]-[s] fricative (Onset)
-continuum steps and purported gender presented by the face.](images/Scurve.png){#fig-scurve fig-align="center" width=80%}
+![*sack* responses plotted as a function of [ʃ]-[s] fricative (Onset) continuum steps and purported gender presented by the face.](images/Scurve.png){#fig-scurve fig-align="center" width=80%}
 
-A successful replication of the Strand effect would mean that a higher
-proportion of the ambiguous stimuli would be heard as [s] when the
-purported gender suggested by the face is male than when the face is
-female. This pattern appears to hold in both the Hidden and Unhidden
-conditions, but only when gender identity of the talker who produced the
-CV rime stimuli was congruous with the gender presented in the visual
-portion of the guise. From @fig-scurve it would appear that listeners' reported
-percepts more closely track the voice of the talker than the face in the
-picture when these sources of information are incongruous.
-
+A successful replication of the Strand effect would mean that a higher proportion of the ambiguous stimuli would be heard as [s] when the purported gender suggested by the face is male than when the face is female. This pattern appears to hold in both the Hidden and Unhidden conditions, but only when gender identity of the talker who produced the CV rime stimuli was congruous with the gender presented in the visual portion of the guise. From @fig-scurve it would appear that listeners' reported percepts more closely track the voice of the talker than the face in the picture when these sources of information are incongruous.
 
 !['sack' responses on ambiguous fricative trials
 plotted as a function of CV rime continuum steps and gender identity of
 stimulus talker.](images/ambiguous-by-rime-step.png){#fig-rimes fig-align="center" width=80%}
 
-
-We predicted that, since strong phonetic correlates of gender have been
-manipulated over the course of the VC rime continua, the effect of
-incongruence should be strongest for the end points of the continua
-where the social information presented by the voice is, presumably, most
-salient and weaker as phonetically-cued gender information becomes more
-ambiguous. @fig-rimes suggests that this prediction is at least
-partially borne out. @fig-rimes plots proportion 'sack' responses to the ambiguous portion of the
-[ʃ]-[s] continuum (steps 3 & 4) as a function of rime continuum
-step. The meaning of line color has changed in this figure. Dark lines
-represent the male talker and lighter lines represent the female talker.
-Step 1 on this continuum includes the most natural token for the male
-talker and the most manipulated token for the female talker while step 5
-includes the most natural token for the male talker and the most
-manipulated token for the female talker. As before, columns present the
-Hidden and Unhidden conditions while rows present the Congruous and
-Incongruous blocks.
+Given that our stimuli included manipulations of F0 and formant spacing to modify the gender typicality of the male-provided and female-provided recordings, one might expect that the results in @fig-scurve might represent only listener responses to the original, unmodified stimuli, but this is not the case. These four subplots include fricative responses across the entire rime continuum. However, this does not mean the resynthesis was entirely unsuccessful. We predicted that, since these phonetic correlates of gender have been manipulated over the course of the VC rime continua, the effect of incongruence should be strongest for the end points of the continua where the social information presented by the voice is, presumably, most
+salient and weaker as phonetically-cued gender information becomes more ambiguous. @fig-rimes suggests that this prediction is at least partially borne out. @fig-rimes plots proportion 'sack' responses to the ambiguous portion of the [ʃ]-[s] continuum (steps 3 & 4) as a function of rime continuum step. The lines plot Speaker, rather than Face, and the meaning of line color has changed in this figure: dark lines represent responses to stimuli originally produced by the male talker and the lighter lines represent responses to stimuli originally produced by the female talker. Step 1 on this continuum, in each of the four subplots, includes the most natural token for the male talker and the most manipulated token for the female talker while step 5 includes the most natural token for the male talker and the most manipulated token for the female talker. As before, columns present the Hidden and Unhidden conditions while rows present the Congruous and Incongruous blocks.
 
 In a 2AFC task with unbiased stimuli, chance is 50%. Responses at the .5
 line in @fig-rimes suggest that the ambiguous fricatives remained
@@ -391,7 +321,9 @@ continuum steps, should show more 'sack' responses consistent with
 having been shown a male face and no such effect is evident in this
 plot.
 
-Indeed, a striking feature of these figures ([-@fig-scurve; -@fig-rimes]) is how the apparent influence of gender information flips between congruous and incongruous conditions in the former but remains essentially constant in the latter. Taken together, these plots suggest that cues to gender in the voice is a stronger predictor of listeners' reported percept in this matched guise task than just the purported gender of the face.
+Indeed, a striking feature of these figures ([-@fig-scurve; -@fig-rimes]) is how the apparent influence of gender information flips between congruous and incongruous conditions in the former but remains essentially constant in the latter. Taken together, these plots suggest that cues to gender in the voice is a stronger predictor of listeners' reported percept in this matched guise task than just the purported gender of the face but that, while manipulations of F0 and formant spacing may shift the gender *typicality* of a prototypical female or male voice at this low, segmental level, 
+
+XXX in the conclusion: return to typicality but not gender and talk about how high level evaluative judgments that the female voice 'sounds male' after resynthesis, even judgments made by the experimenters themselves, do not necessarily predict or imply listener reactions to the kind of low level, segmental percept we are eliciting here.
 
 Finally, the main objective of this experiment was to explore the role
 of listener awareness in the matched guise technique. Here again there
@@ -452,7 +384,7 @@ associated with 'sack' responses and significant
 ($β=-0.49$, $SE=0.10$, $p < 0.001$).
 
 Unsurprisingly, the Strand effect has not been replicated in the
-incongruous condition. As is visible in the bottom row of @fig-scurve, the effect of Face on 'sack' responses is not
+Incongruous condition. As is visible in the bottom row of @fig-scurve, the effect of Face on 'sack' responses is not
 significant. The interaction of Onset and Face also behaves quite
 differently in the Incongruous model. Onset x Face is negatively
 associated with 'sack' responses at Onset step 1
@@ -467,6 +399,8 @@ with 'sack' responses ($β=0.77$, $SE=0.10$, $p < 0.001$) as is Rime level 2
 significant in the Incongruous model. Rime level 4, on the female end of
 the continuum, is negatively associated with 'sack' responses and
 significant ($β=-0.36$, $SE=0.10$, $p < 0.001$).
+
+XXX for conclusion the stats bear out our interpretation of the rime plot
 
 Finally, the quantitative analysis of the primary objective of this experiment, exploring the effect of unhiding the matched guise manipulation from participants, largely supports the qualitative analysis. As can be observed in @fig-coefs, there is no significant main effect of Instruction condition in either model. Still, a somewhat more nuanced picture emerges from the interactions of Instruction condition with Onset and the 3 way interaction of Instruction, Onset, and Face in the Congruous trials. The interaction of Instruction with Onset is significant, or nearly so, at every step of the fricative continuum other than the most significant. In the [ʃ]-like portion of the continuum, the interaction with face is positively associated with 'sack' responses at step 1 ($β=0.65$, $SE=0.28$, $p < 0.05$) and 2 ($β=0.44$, $SE=0.18$, $p < 0.05$). The interaction of guise with the most ambiguous onset step is not
 significant ($β=0.011$, $SE=0.12$). The interaction of Instruction with
@@ -557,7 +491,7 @@ influence on response times in either condition.
 The finding that the Matched Guise effect holds for speech perception
 both when hidden from the participant and when unhidden is inconsistent
 with a model of processing in which social knowledge simply acts as a
-filter on linguistic knowledge. Social knowledge influences perception
+filter on linguistic knowledge. Social knowledge can influence perception
 even when listeners are aware that it is, or may be, false. This result
 parallels previous results for accentedness and attractiveness judgments
 [@campbell-kibler2020]. A similar result may be present, for social
