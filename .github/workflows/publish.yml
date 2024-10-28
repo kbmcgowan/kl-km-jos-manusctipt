@@ -19,6 +19,7 @@ jobs:
         with:
           version: pre-release
           tinytex: true
+          packages: fonts-sil-gentiumplus
 
 
       - name: Render and Publish
