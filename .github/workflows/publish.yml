@@ -5,6 +5,10 @@ on:
 
 name: Quarto Publish
 
+name: install google fonts
+
+on: push
+          
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -14,12 +18,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: set up fonts
+        run: |
+          wsudo apt-get install "fonts-sil-gentiumplus"
+          
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: pre-release
           tinytex: true
-          packages: fonts-sil-gentiumplus
 
 
       - name: Render and Publish
