@@ -3,10 +3,7 @@ on:
   push:
     branches: main
 
-name: Quarto Publish
-
-name: install google fonts
-          
+name: Quarto Publish          
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
