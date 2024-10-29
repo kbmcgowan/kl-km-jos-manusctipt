@@ -12,8 +12,8 @@ author:
     email: kbmcgowan@uky.edu
     affiliations: "University of Kentucky"
 keywords:
-  - awareness
-  - control
+  - awareness & control
+  - gender
   - inverted matched guise
   - sociophonetic perception
 abstract: |
