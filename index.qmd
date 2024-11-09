@@ -46,24 +46,6 @@ editor:
     wrap: 72
 ---
 
-XXX in the conclusion: this evidence is consistent with Drager & Kirtley 2016's claom p. 9 that "individuals do not need to be aware of variation in order for that variation to be socially meaningful"
-
-XXX in the discussion maybe?  from Hay & Drager 2010 "they in fact knew that the speaker was from New Zealand. In Hay et al.
-(2006a), we argued that the above result was observed because it was not
-necessary for a listener to believe a speaker was from a particular region
-in order for that region to influence perception; the mere exposure to the
-concept of a region with a different dialect is enough to cause a shift in
-perception toward variants of that dialect."
-
-XXX cite bradlow and pisoni in Laycock & McGowan analysis 
-from allen & miller 2004: Bradlow and Pisoni 1999
-found that, holding talker identity constant for a given lis-
-tener over the course of a single experimental session, word
-recognition performance improved from the first portion of
-the session to the final portion of the session, after listeners
-had accumulated experience with the speech of the talker
-over the course of the experiment.
-Evidence from another domain,
 # Introduction {#sec-intro}
 
 There is abundant, converging evidence from experimental, ethnographic, and sociocultural approaches to the study of language that gender is performed by speakers and perceived by interlocutors through a stylistic bricolage [@zimman2017] comprising both non-linguistic and linguistic resources [@barrett2014; @bucholtz2002]. Gender is a culturally-situated practice, and, crucially, social meaning is performed by embodied voices that simultaneously produce the distinctions necessary for both social and linguistic meaning [@hall2021language; @podesvaKajino2014; @bucholtzHall2016; @sumner2014]. This intersection of the construction of social and linguistic meaning via precise, dynamic speech articulation is perhaps nowhere more evident than in the palato-alveolar and alveolar fricative categories, [ʃ] and [s]; the first segments in words like *ship* and *sip* [@calder2018; @mackMunson2012b; @pharao2014; @strand1999].
@@ -341,7 +323,9 @@ plot.
 
 Indeed, a striking feature of these figures ([-@fig-scurve; -@fig-rimes]) is how the apparent influence of gender information flips between congruous and incongruous conditions in the former but remains essentially constant in the latter. Taken together, these plots suggest that cues to gender in the voice is a stronger predictor of listeners' reported percept in this matched guise task than just the purported gender of the face but that, while manipulations of F0 and formant spacing may shift the gender *typicality* of a prototypical female or male voice at this low, segmental level, 
 
+<!--
 XXX in the conclusion: return to typicality but not gender and talk about how high level evaluative judgments that the female voice 'sounds male' after resynthesis, even judgments made by the experimenters themselves, do not necessarily predict or imply listener reactions to the kind of low level, segmental percept we are eliciting here.
+-->
 
 Finally, the main objective of this experiment was to explore the role
 of listener awareness in the matched guise technique. Here again there
@@ -417,8 +401,6 @@ with 'sack' responses ($β=0.77$, $SE=0.10$, $p < 0.001$) as is Rime level 2
 significant in the Incongruous model. Rime level 4, on the female end of
 the continuum, is negatively associated with 'sack' responses and
 significant ($β=-0.36$, $SE=0.10$, $p < 0.001$).
-
-XXX for conclusion the stats bear out our interpretation of the rime plot
 
 Finally, the quantitative analysis of the primary objective of this experiment, exploring the effect of unhiding the matched guise manipulation from participants, largely supports the qualitative analysis. As can be observed in @fig-coefs, there is no significant main effect of Instruction condition in either model. Still, a somewhat more nuanced picture emerges from the interactions of Instruction condition with Onset and the 3 way interaction of Instruction, Onset, and Face in the Congruous trials. The interaction of Instruction with Onset is significant, or nearly so, at every step of the fricative continuum other than the most significant. In the [ʃ]-like portion of the continuum, the interaction with face is positively associated with 'sack' responses at step 1 ($β=0.65$, $SE=0.28$, $p < 0.05$) and 2 ($β=0.44$, $SE=0.18$, $p < 0.05$). The interaction of guise with the most ambiguous onset step is not
 significant ($β=0.011$, $SE=0.12$). The interaction of Instruction with
@@ -499,7 +481,9 @@ information, in the within-participants guise manipulation of
 [@mcgowanBabel2020]. In that study, the authors use participants'
 metalinguistic commentaries to assess the extent to which the guise
 manipulations were or were not 'believed'. The results of the present
-study suggests that that belief may be irrelevant. The present result
+study suggests that such belief may be irrelevant which lends support to @DragerKirtley2016's (p. 9) proposal that "individuals do not
+need to be aware of variation in order for that variation to be socially
+meaningful." The present result
 also gives additional context to studies demonstrating influence of
 social knowledge even when listeners have no reason to expect a guise
 manipulation [@Niedzielski1999; @haynolandrager2006; @HayDrager2010]. It
