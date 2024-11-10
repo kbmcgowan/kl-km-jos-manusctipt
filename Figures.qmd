@@ -1,6 +1,5 @@
 ---
 title: "Figures For: Removing the disguise: the matched guise technique, incongruity, and listener awareness"
-date: last-modified
 bibliography: jos-laycock-mcgowan.bib
 citation:
   container-title: Awareness and Control of Sociolinguistic Variation
@@ -15,12 +14,6 @@ format:
     monofont: Noto Sans Mono, Cascadia Mono, Menlo, Consolas, Courier New, Courier
     backgroundcolor: "white"
     fontcolor: "black"
-  docx:
-    toc: false
-    number-sections: false
-    highlight-style: github
-    reference-doc: custom-reference-doc.docx
-
 editor: 
   markdown: 
     wrap: 72
@@ -29,21 +22,18 @@ editor:
 
 ![@bouavichithEtAl2019 auditory stimulus continua. S1, S2, S3, S4, S5 and S6 represent continuum steps from most *sack*-like to most *shack*-like fricatives. F0 and Formant spacing ratio plots show the manipulations to the Male and Female voiced vowels.](images/figure1.png){#fig-stimuli width=80% fig-align="center"}
 
-{{< pagebreak >}}
 
 ![Stimuli comprised *shack* and *sack* targets (top) and a gender-protypical 'male' and 'female' face (bottom)](images/facesanddrawings.jpg){#fig-visual width=80% fig-align="center"}
 
-{{< pagebreak >}}
 
 ![*sack* responses plotted as a function of [ʃ]-[s] fricative (Onset) continuum steps and purported gender presented by the face.](images/Scurve.png){#fig-scurve fig-align="center" width=80%}
 
-{{< pagebreak >}}
 
 !['sack' responses on ambiguous fricative trials
 plotted as a function of CV rime continuum steps and gender identity of
 stimulus talker.](images/ambiguous-by-rime-step.png){#fig-rimes fig-align="center" width=80%}
 
-{{< pagebreak >}}
+
 
 ![Beta coefficients for listener responses in the
 Congruous (black) and Incongruous (gray) logistic regression models
