@@ -6,7 +6,7 @@ author:
     corresponding: true
     email: laycock.21@buckeyemail.osu.edu
     affiliations: "The Ohio State University"
-  - name: "&nbsp;Kevin B McGowan"
+  - name: "&nbsp;Kevin B. McGowan"
     orcid: 0000-0002-8214-1901
     corresponding: false
     email: kbmcgowan@uky.edu
