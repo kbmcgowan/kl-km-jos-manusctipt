@@ -1,0 +1,2026 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Removing the disguise: the matched guise technique, incongruity, and listener awareness},
+  pdfauthor={Kyler Laycock; ~Kevin B. McGowan},
+  pdfkeywords={awareness, control, gender, inverted matched
+guise, sociophonetic perception},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Removing the disguise: the matched guise technique, incongruity,
+and listener awareness}
+\author{Kyler Laycock \and ~Kevin B. McGowan}
+\date{2024-11-11}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Sociophonetic perception is often studied using versions of the matched
+guise technique. Linguists using this technique appear united in the
+methodological assumptions that participants believe the manipulation
+and that this belief influences perception below the level of
+introspective awareness. We report an audiovisual matched guise
+experiment with a novel `unhidden' instruction condition. The basic task
+is a replication of the Strand effect (Strand and Johnson 1996; Strand
+1999). Participants in the `unhidden' condition were instructed that the
+man or woman in the photo did not represent the voice they were
+listening to. Participants in both guises exhibited the Strand effect to
+nearly numerically identical extents. This result suggests that
+participants need not believe a link exists between a voice and a
+purported social category for visually-cued social information to
+influence segmental perception. We explore the implications of this
+result for the MGT and for theories of social awareness and speech
+perception more broadly.
+\end{abstract}
+
+
+\section{Introduction}\label{sec-intro}
+
+There is abundant, converging evidence from experimental, ethnographic,
+and sociocultural approaches to the study of language that gender is
+performed by speakers and perceived by interlocutors through a stylistic
+bricolage (Zimman 2017) comprising both non-linguistic and linguistic
+resources (Barrett 2014; Bucholtz 2002). Gender is a culturally-situated
+practice, and, crucially, social meaning is performed by embodied voices
+that simultaneously produce the distinctions necessary for both social
+and linguistic meaning (Hall, Borba, and Hiramoto 2021; Podesva and
+Kajino 2014; Bucholtz and Hall 2016; Sumner et al. 2014). This
+intersection of the construction of social and linguistic meaning via
+precise, dynamic speech articulation is perhaps nowhere more evident
+than in the palato-alveolar and alveolar fricative categories, {[}ʃ{]}
+and {[}s{]}; the first segments in words like \emph{ship} and \emph{sip}
+(Calder 2018; Mack and Munson 2012a; Pharao et al. 2014; Strand 1999).
+
+There is little consensus, however, around the extent to which language
+users are aware of, and can control, these fine gradations of social
+meaning in production and perception. In the context of this chapter we
+are using `awareness' to refer to explicit, conscious awareness of the
+tripartite relationship between a social label, its phonetic reflexes,
+and the connections between these (Babel this issue; D'Onofrio 2021;
+Bakhtin 1981). The cognitive reality of this tripartite relationship
+between the concepts of gender identities and instances of fine phonetic
+detail is essential for the performance of those identities. This
+observation holds regardless of speaker and listener awareness. This
+observation remains true even if what the listener believes about the
+speaker is false; a monolingual American listener might expect a Beijing
+voice to be non-rhotic (McGowan 2016), Japanese women to use final
+particles (Inoue 2003), or a gay male voice to have a lisp (Mack and
+Munson 2012b). Expectations need not be accurate to shape perception
+(Preston 1996).
+
+Relatedly, one can \emph{control}, in production, the phonetics of one's
+gender without explicit acknowledgement or introspective awareness that
+one is doing so or what those details might be. Indeed, children as
+young as 4, well before any effects of puberty might have arrived, can
+do precisely this (Perry, Ohde, and Ashmead 2001) and many of our own
+college students, when first confronted with the idea that they
+participate in the social construction of gender through the fine
+phonetic details of their speech will respond with real, sometimes
+agitated, disbelief. Even trained, experienced sociolinguists and
+phoneticians tend to conceive of the fundamental frequency of the voice,
+the prevailing frequency of vocal fold vibration during voiced sounds,
+as a primary, biological phonetic detail associated with gender
+performance (Foulkes and Docherty 2006, 411); when this cue is neither
+necessary nor sufficient for the production and perception of gender
+identity (Zimman 2017; Johnson 2005).
+
+In perception the concept of control is less intuitive, but it is
+necessary to explore perceptual control for the purposes of the present
+chapter. Here we owe much of our general conceptualization of `control'
+to (Babel this issue)`s application of the semiotic role of the
+interpretant in perception and Preston's (1996, 2016) four modes of
+awareness. Critical to our understanding of this phenomenon is the
+stipulation that the ability to 'perform' or to `employ' the linking
+relationship between a social label and its phonetic reflexes is just as
+clearly a task for the listening subject as it is for the speaker.
+Social meaning making occurs in interaction (Sharma this issue); a
+listener must be able to control, to link, the auditory cues of a
+performed gender identity to the cognitive representation of that
+identity just as much as a speaker's vocal tract must be capable of the
+gestural control required to implement the phonetics of that identity if
+the tripartite, dialogic construction of identity in discourse is to
+occur. Again, none of this \emph{requires} introspective awareness as
+perception and even attention are possible without awareness on the part
+of the perceiver (Craik, Rose, and Gopie 2015; Prinz 2015; Graziano and
+Webb 2015; Dehaene and Naccache 2001).
+
+Clarifying these definitions and exploring their implications for the
+sociophonetic perception of gender is important because gender
+perception is a phenomenon that crosses disciplinary and subdisciplinary
+boundaries and approaches to language and social meaning. With these
+varying disciplinary and subdisciplinary contexts come quite different,
+sometimes contradictory, assumptions and theoretical commitments about
+the extent to which language users can bring aspects of perception into
+introspective awareness and control (conscious or otherwise). Even more
+than this, there are at least two, quite distinct, meanings in regular
+use for the word `perception' (Drager and Kirtley 2016a; McGowan and
+Babel 2020).
+
+Researchers, typically working within the fields of segmental speech
+perception or word recognition, have used perception to describe a kind
+of low-level, implicit processing of sensory input (cf. Evans 2008,
+`type 1' processing) into linguistic units like segments (Lisker 1986;
+Pierrehumbert 2003), speech gestures (Fowler 1986), and words (Gaskell
+and Marslen-Wilson 2002; Goldinger 1998; Johnson 2006). Perception, thus
+construed, is typically assumed to be automatic and to occur below the
+level of conscious awareness (Joos 1948, 63) and inaccessible to
+introspection even, in the case of subcategorical phonetic differences,
+by researchers themselves (Whalen 1984). Indeed, lack of awareness is
+taken as evidence of a ``true perceptual phenomenon'' for the McGurk
+effect, (Repp 1982, 40), perceptual weighting of acoustic cues (p.~174),
+and phoneme restoration (Ganong 1980, 1).
+
+The other meaning of perception in common use in the various language
+disciplines describes a higher-level, sometimes implicit, sometimes
+explicit, evaluative judgment of talkers and voices (cf. Evans 2008,
+`type 2' processing). This is the meaning of perception employed in folk
+linguistics (Niedzielski and Preston 2000) and perceptual dialectology
+(Cramer 2021). This is also the level of perception, for example, at
+which the sociolinguistic monitor is proposed by variationist
+sociolinguists to operate\footnote{Although, in their response, (Levon
+  and Fox 2014) are careful to refer exclusively to \emph{evaluation}
+  rather than perception.} (Labov et al. 2011). Importantly for the
+present study, this higher, evaluative level of perception is also the
+level for which the Matched Guise Technique (MGT) was originally
+developed.
+
+\subsubsection{Matched Guise: Perception, Evaluation, and
+Awareness}\label{sec-mgt}
+
+In their foundational use of the MGT, Lambert et al. (1960) found that
+four bilingual Montrealers' voices evoked quite different social
+evaluations in their French vs.~their English guises. Using the same
+talkers in both guises allowed researchers to control for
+``idiosyncratic settings of the voice'' that might distract judges from
+the focus of the experiment (Laver 1968). Lambert et al.~were clearly
+concerned that the evaluative judgments they sought were subject to
+listeners' subjective awareness; taking pains to deceive participants
+with filler voices, withholding the information that some of the talkers
+in the study might be bilingual, and ultimately reporting that,
+``{[}t{]}here was no indication that any \emph{S} became aware of the
+fact that bilingual speakers were used'' (Lambert et al. 1960, 44).
+Pharao and Kristiansen (2019, 2) note that researchers, across both
+psychology of language and sociolinguistic traditions, go to great
+lengths to ensure this lack of awareness.
+
+One perhaps surprising, but recurring, demonstration of the two distinct
+uses of the term perception described here is that, when both levels are
+examined in the same study, listeners' low level perceptions and high
+level evaluations need not agree. McGowan and Babel (2020), for example,
+found that listeners' performance on an AXB vowel discrimination task
+and their answers in a subsequent interview about the voices heard in
+that task sometimes agreed, but sometimes diverged. When they diverged,
+the low level perceptions tracked vowel categories established by the
+listeners' initial experience with the voice, while high level
+evaluations of the talker much more closely tracked language ideologies
+regarding the Quechua-dominant or Spanish-dominant speaker social labels
+provided by the experiment. Indeed, several participants explicitly
+commented on the differences between the fricatives used by the two
+guises; speech sounds that had been held identical in the stimuli.
+McGowan and Babel attempt to demonstrate, through analysis of
+participants' explicit commentary on the AXB task, that participants
+\emph{believed} the guise manipulation, but the stark difference between
+performances on the AXB discrimination task and evaluative commentary on
+the voice in each guise, particularly in the second guise, leave open
+the possibility that listeners became aware of the guise manipulation
+and were responding out of politeness or a desire to do well in the
+experiment.
+
+In an early use of the MGT to study listeners' evaluations of regional
+accents in the UK and the Republic of Ireland, Milroy and McClenaghan
+(1977) employed four speakers to each perform their own single accent:
+Received Pronunciation, Ulster, Dublin, or Scottish. They note that
+Lambert's bilingual investigation, in which, ``unknown to the judges a
+single speaker was heard in different guises\ldots{} seems more suitable
+for use in the bilingual situation where it was originally developed
+than for use with different accents.'' (p.~2). The methodological
+consideration here is one of control rather than awareness on the part
+of both speaker and listener. Milroy \& McClenaghan express ``grave
+reservations'' that a single talker, even a talented mimic, could
+authentically control all four of the regional varieties to be
+evaluated. Unstated in this preoccupation with production is the
+corresponding concern that listeners will not \emph{believe} the
+mimicked accents.
+
+The predominantly protestant Ulster listeners in this task provided both
+subjective evaluations of the voice quality of each talker on 8 personal
+characteristics such as intelligence, generosity, and friendliness and
+were asked to name the region associated with each voice. While the
+personal characteristics ratings closely tracked expected ideologies for
+an Ulster judge responding to a Scottish, RP, Dublin, and Ulster accent,
+the participants proved almost entirely incapable of correctly labeling
+each variety (see also Campbell-Kibler, this issue; Clopper and Pisoni
+2004; Kristiansen 2009). Milroy and McClenaghan suggest in their
+conclusion that perhaps accent identification ``takes place below the
+level of conscious awareness,'' with implicit stereotypical associations
+of a given accent arising in the listener independently of a conscious
+ability to explicitly name that accent.
+
+This recurring disjunction in listeners' implicit and explicit
+responses, even within a speaker evaluation paradigm, points to what
+(Kristiansen 2009, 169) has described as ``layers of consciousness'' and
+motivates (Babel this issue) to describe perception as a ``complex,
+multi-layered process.'' The picture that is emerging is one of
+simultaneous, layered complexity in the interactive process of social
+meaning making. A listener to even a single spoken word combines
+multi-modal sensory information, their own experiences with language,
+their own experiences with social meanings, their stereotypes, and their
+context-driven expectations about the voice they are likely to hear, the
+words that voice is likely to produce, and the socioindexical properties
+that voice is likely to embody. And rather than the outcome of
+perception (broadly construed) being a simple lexical item, a set of
+speech segments, a single attitude, or a summary evaluative judgment,
+the listener's subjective experience appears to be a rich, potentially
+contradictory, superposition of all of these and more.
+
+The Matched Guise technique has been deployed in numerous
+configurations, but, at its core, the technique almost always pairs a
+single linguistic signal, such as an identical talker (e.g., Giles
+1970), identical recordings (e.g., Niedzielski 1999), identical texts
+with multiple talkers (e.g., Milroy and McClenaghan 1977), or some
+combination of these. The manipulated variable in the linguistic signal
+may be presumed to be unavailable to conscious introspection (Bender
+2005; D'Onofrio 2018) or a stereotype, available to metalinguistic
+commentary (Campbell-Kibler 2005; Squires 2013). This signal is paired
+with multiple purported social categories to investigate the influence
+of those categories on participants' evaluations (Campbell-Kibler 2005,
+2007) or language attitudes (Hadodo this issue; Chan 2021). In social,
+segmental speech perception research, cross-modal audio/visual
+extensions of the MGT are common in which visual information serves as a
+`guise' for identical voice recordings (Campbell-Kibler 2016; Gnevsheva
+2017; McGowan 2015; Jennifer Hay, Warren, and Drager 2006). This type of
+guise manipulation has been called `inverted' matched guise (McGowan
+2015) or simply `identification' (Drager 2013). The MGT has traveled far
+from its original context of bilingual evaluations, but uniting these
+linguistic researchers and delineating them from colleagues in social
+psychology (for discussion, see Rosseel and Grondelaers 2019), is the
+foundational methodological assumption that the connection of voice to
+social type is available to participants' introspective awareness, even
+when the variable under investigation is not, and therefore requires
+that listeners not become aware of the guise manipulation.
+
+A central focus of McGowan and Babel (2020, 246--48)'s discussion,
+particularly of their interview results, centers on the question of
+whether deception was successful and listeners \emph{believed} the two
+MGT guise manipulations. In part this is because they observe a stark
+disjunction between the segmental and evaluative levels of perception.
+Belief is especially important in a paper that reports the outcome of an
+unusual within-subjects MGT which presents both guises to each
+participant. But more fundamentally, and of interest to anyone employing
+the MGT for language perception or evaluation research, the assumption
+of belief, of the requirement that listeners not become aware of the
+deception inherent in whatever version of the signal/social label guise
+manipulation being deployed, is at the core of the MGT and has been from
+the beginning.
+
+However, the majority of studies cannot speak directly to this lack of
+awareness during segmental perception because the data provided by the
+participants is relatively late in processing and involves layers of
+potential introspection and evaluation that block access to the initial
+online percept for listeners and researchers alike. Niedzielski (1999)
+infers, on the basis of later, evaluative judgments of diphthong onset
+quality, that social information has blocked online access to phonetic
+detail, but this can not be confirmed by the task. Additionally, McGowan
+and Babel (2020) suggest that inferring segmental perception behavior
+from evaluative perception tasks is unwise given how dramatically
+responses to these two levels may disagree (see also Campbell-Kibler
+2012). To understand how awareness of the guise manipulation may
+influence perception behavior, the present study uses the inverted MGT
+to test listeners' segmental perceptions of an {[}ʃ{]}-{[}s{]} fricative
+continuum under both different guise and different awareness conditions.
+
+\subsubsection{Segmental perception: {[}ʃ{]}-{[}s{]}
+perception}\label{sec-fricative-gender}
+
+Listeners perceive a greater proportion of an {[}ʃ{]}-{[}s{]} continuum
+as {[}s{]} if they believe the talker to be male (Strand 1999), but the
+acoustic and sociophonetic motivations for why this might be have
+emerged slowly over nearly 50 years of research and have often been
+burdened by the assumption that the phonetic properties of gender are
+simple, automatic, and biologically determined (Johnson 2005). In the
+following two subsections, we will lay out our understanding of the
+relationship between this phonetic variation and its social
+interpretation as a form of interactive social meaning-making.
+
+Articulatorily, these fricatives mainly differ in the distance between
+the point of lingual articulation and the teeth. The size of the
+resulting space behind the teeth gives these sounds their characteristic
+sibilance (Fant 1960; Shadle 1991). English {[}s{]} has a short
+resonating chamber behind the teeth. English {[}ʃ{]} has a comparatively
+larger resonating chamber, causing lower frequency noise than an {[}s{]}
+for the same speaker. Concomitant with this articulatory difference for
+English listeners is a cultural association of masculinity with larger,
+longer vocal tracts and femininity with smaller, shorter vocal tracts
+(May 1976; Ohala 1994; Eckert 2012). In the aggregate, {[}s{]} produced
+from a larger vocal tract will typically be lower in frequency than an
+{[}s{]} produced from a smaller vocal tract, and listeners know this
+(May 1976). This effect is, in practice, entirely separable from
+between-speaker differences in fundamental frequency (F0) and, like F0,
+can be used to perform and perceive gender identity.
+
+A commonly used methodology in speech perception research involves the
+creation of synthetic fricative continua. These continua have endpoints
+in prototypical examples of {[}ʃ{]} and {[}s{]}, with some number of
+acoustic steps spliced, synthesized, or even mixed between these. Near
+the middle of such a continuum will be a synthetic fricative that is
+ambiguous as to category membership: not clearly {[}ʃ{]} and not clearly
+{[}s{]} for the vocal tract that produced the endpoints. May (1976)
+paired such a continuum from {[}ʃ{]} (centered at 2.9 kHz) to {[}s{]}
+(centered at 4.4 kHz) with synthetic {[}æ{]} vowels to form simple CV
+syllables. May found that listeners perceived a higher proportion of the
+fricative continuum as {[}ʃ{]} when paired with vowel stimuli from a
+smaller vocal tract. The logic here is that smaller resonating chambers
+between the lingual articulation and the teeth will have a higher mean
+frequency than larger resonating chambers. Listeners' use of apparent
+vocal tract size in perception reflects their knowledge of this
+variation (Munson 2011).
+
+Listeners are so acutely sensitive to the alignment of these acoustic
+facts and cultural associations that perceived gender and fricative
+category participate in a relationship that is highly reminiscent of a
+phonetic trading relation (Repp 1982). Not only can believing that a
+talker identifies as male lead listeners to perceive more {[}ʃ{]}-like
+sounds as {[}s{]} (Strand and Johnson 1996; Munson 2011), but a lower
+fricative consistent with a larger vocal tract is perceived as more
+masculine (Bouavichith et al. 2019), resulting in more looks to a
+prototypically male face than a prototypically female face when the task
+is listening to a word and answering ``who do you hear?''
+
+Strand and Johnson (1996) conducted a pair of experiments investigating
+the influence of the purported gender of a talker on segmental
+perception. In their first experiment, listeners heard a {[}ʃ{]}-{[}s{]}
+continuum paired with voices that had been previously normed as
+prototypically female, non-prototypically female, prototypically male,
+and non-prototypically male. Their result replicates and extends
+previous work (May 1976; Mann and Repp 1980) to show that the influence
+of a gendered voice on segmental perception correlates with the
+gender-protypicality of that voice. Their second experiment finds that
+presenting listeners with prototypically-gendered videos of their
+purported talker can, again, shift perceptions of the {[}ʃ{]}-{[}s{]}
+continuum such that listeners report hearing a higher proportion of the
+continuum as {[}ʃ{]} when watching a female talker and a higher
+proportion of the same continuum as {[}s{]} when watching a male talker.
+
+\subsection{Phonetics, Speech Perception, and the Social-Construction of
+Gender}\label{sec-gender}
+
+It has long seemed normal in phonetics to imagine that gender is a
+simple, automatic projection from biological sex onto social identity
+(Daniel et al. 2007; Samoliński, Grzanka, and Gotlib 2007; Sawusch 2005)
+that listeners can simply normalize away (Johnson 2005) to facilitate
+linguistic perception. Even within sociolinguistics and sociophonetics,
+where conceptualizations of gender have long been more nuanced,
+perception research has ``retained a basically binary view of gender''
+(Campbell-Kibler and miles-hercules 2021, 52). This may be due to the
+simple expedient that experimenters need our stimuli to \emph{work} for
+a large cross-section of listeners despite tremendous individual
+difference and cultural mismatches in both the range of gender
+categories and the fine phonetic detail available for the production and
+perception of those categories (Eckert and Podesva 2021). Listeners can
+only make use of this phonetic variation if it is indexed for them in
+experience or ideology (Drager 2010). Unfortunately, it can be
+essentially impossible for an experimenter to tell the difference
+between a genuine finding that a particular social variable does not
+influence perception, on the one hand, or an indexical mismatch between
+experimental stimuli and participants' indexical inventories (Barrett
+and Hall 2024) on the other. The creation and use of stimuli that are
+rated as highly gender-prototypical for a large group of listeners
+therefore maximizes the probability that a perception experiment will
+find an interpretable result.
+
+Therefore, it can not be overemphasized that an essentially binary view
+of gender is inconsistent with the available evidence: gendered
+variation in such phonetic cues as fundamental frequency, formants, and
+fricatives is not purely the result of vocal tract biology but also
+gestural coordination and performance. Small variations attributable to
+secondary sex characteristics become available as the semiotic building
+blocks of gender identity. People who identify as male, female,
+non-binary, intersex, etc. perform that identity through gestural style.
+Trans men, even while experiencing the very real physical consequences
+of hormone treatments, may also adopt masculinizing alternations to
+their speech gestures to achieve their ideal gendered voice (Zimman
+2018). Gender is more likely the product of, rather than an explanation
+for, linguistic variation (Eckert and Podesva 2021). Just as with words,
+genders are arbitrary; both the social labels and their acoustic
+correlates are language specific, and the constellations of meanings are
+socially-constructed in interaction (Eckert 2008).
+
+Vowels, in both their linguistic and social aspects, are the acoustic
+consequence of gestural control. The formant ratios that distinguish
+`male' from `female' in Norwegian are markedly different from the
+formant ratios that do this in Danish (Johnson 2006); what it means to
+be `male' versus `female' is quite different in Thailand than in Japan
+(Käng 2013; Alpert 2014). Children don't perform adult-like vowel
+formant patterns because they were born tiny men and women, children
+perform adult-like vowel formant patterns because they are socialized
+into gender and are using the cultural and linguistic resources
+available to communicate that gender to others just as adults do. Humans
+are meaning-making agents, not deterministically resonating meat tubes.
+
+In the earliest sociophonetic perception research, it was still possible
+to imagine that the kind of knowledge listeners drew on to perceive
+gender was knowledge of primary biological traits. We now understand, on
+the contrary, that the influence of gender-based expectations in speech
+perception is evidence of the influence of cultural knowledge on what
+might previously have been construed as purely linguistic decisions
+(Boyd, Fruehwald, and Hall-Lew 2021).
+
+One goal of the present study is to take advantage of the sociophonetic
+trading relation between listeners' gender and fricative categories to
+explore the role of awareness in socially-informed speech perception. It
+is well established that social information can influence how listeners
+perceive (Foulkes and Docherty 2006), retrieve (Walker and Hay 2011),
+and even remember (Nygaard, Sommers, and Pisoni 1994) the linguistic
+aspect of the speech signal. However, because our accounts of these
+phenomena come from disparate intellectual traditions, working with a
+range of quantitative and qualitative methods, with differing
+assumptions about the role of introspective awareness during the
+integration of social and linguistic information (Babel,
+Campbell-Kibler, and McGowan, this issue), one can come away from a
+detailed, rigorous review of the sociolinguistics, linguistic
+anthropology, and phonetics literature simultaneously convinced that
+listeners' use of social information happens both obligatorily above and
+below the level of conscious awareness.
+
+This paper reports an audiovisual matched guise experiment with both
+standard `hidden' and novel `unhidden' instruction conditions. The basic
+task is a replication of Strand and Johnson (1996). Listeners are asked
+to identify an ambiguous word as \emph{sack} or \emph{shack} on a
+{[}ʃ{]}-{[}s{]} continuum given manipulated beliefs about the gender
+identity of the talker (Tripp and Munson 2022; Stecker and D'Onofrio,
+this issue). Numerous previous replications have found that listeners
+perceive more of the ambiguous continuum as {[}ʃ{]} when they believe
+the speaker identifies as a woman and more as {[}s{]} when they believe
+the speaker identifies as a man, and that, furthermore, this effect is
+bi-directional, with fricative type influencing perception of gender for
+an ambiguous voice (Bouavichith et al. 2019). Unusually, participants in
+the present study's `unhidden' instruction condition were briefed in the
+instructions about the guise manipulation. They were instructed that the
+man or woman in the photo was not associated with the voice they were
+listening to. (Campbell-Kibler 2021), using a similar manipulation,
+finds that listeners have some ability to disregard social information
+when making accentedness or attractiveness judgments, but that influence
+of available social information, particularly from the voice, is
+difficult to disregard completely. In the present study, participants
+were asked to provide a \emph{sack}/\emph{shack} lexical decision either
+with, or without, explicit instructions to disregard the visual
+stimulus.
+
+\section{Method}\label{sec-method}
+
+\subsection{Participants}\label{sec-participants}
+
+120 participants (self-identified: 59 female, 61 male; ages 20 to 75)
+were recruited to complete the experiment online. These participants
+were recruited through prolific.com and had provided language history
+and demographic data as part of Prolific's general pre-screening
+questionnaire. Participation was restricted to a standard sample of
+desktop computer users located in the USA, who spent most of their
+childhoods in the US, spoke English as their first and primary language,
+and having no known language or hearing difficulties. Additionally, due
+to an audio playback restriction imposed by Apple Computer, the Safari
+web browser could not be used. Participants were urged only to accept
+the task if they could do so in a quiet space, free from distractions,
+and wearing headphones for the 6 to 10 minute duration of the experiment
+(average time: 6:51). Headphone usage was not verified within the
+instrument. No participants' data were excluded from analysis.
+
+Participants were paid \$3 for their time, prorated from a projected
+rate of \$20/hour (actual rate: \$26.29/hour). This same instrument was
+piloted in the Speech Perception lab of The Ohio State University, and,
+while reaction times online were generally slower than in-person,
+results from the online administration were generally consistent with
+pilot results collected under laboratory conditions. Four participants
+were excluded for low accuracy rates (below 85\%).
+
+\subsection{Stimulus Materials}\label{sec-stimuli}
+
+\subsubsection{Auditory Stimuli}\label{sec-stimuli-auditory}
+
+The auditory stimuli used in this study are the same wav-format files
+used in (Bouavichith et al. 2019). The stimuli, which were generously
+shared with us, contain two parts, both of which are drawn from
+synthetic continua: a fricative onset and a VC rime. The fricative
+onsets comprise a synthetic six step /ʃ-s/ continuum. These steps were
+generated with the Klatt Synthesizer in Praat (Boersma 2001) using
+parameters from Munson (2011) ranging between the values of Munson's
+second and eighth continuum steps (which were, in turn, based on the
+parameters used in Strand and Johnson (1996)). Centers of Gravity ranged
+from a low of 3.2 kHz (/ʃ/-like) to a high of 7 kHz (/s/-like). This
+continuum is essential to the design as it will allow us to observe any
+influence of purported gender on listeners' behavioral responses.
+
+For the VC rime, two additional continua were modified from natural
+productions of {[}æk{]} spoken by cisgender male and female talkers in
+the carrier phrase ``Say sack again.'' These five-step rime continua
+were created by evenly spacing mean F0 across consecutive steps such
+that the male-spoken /æk/ continuum increased F0 frequency and formant
+spacing from their unmodified values in a feminizing direction.
+Conversely, the female talker's /æk/ continuum decreased both parameters
+from her unmodified productions to create a continuum in a masculinizing
+direction. These continua essentially allow us to combine the designs of
+Strand \& Johnson's experiment 1 and experiment 2 in a single task.
+Listeners will be presented with a wide range of phonetic information
+from the unmodified gender-prototypical starting points through a range
+of increasingly non-prototypical continuum steps.
+
+Following the separate creations of these continua, each synthesized
+fricative token was concatenated with each CV rime of /æk/, resulting in
+a total of 60 unique auditory stimuli. Each fricative step + rime step
+stimulus item was played independently as the auditory stimulus item in
+the perception experiment. These manipulations are described in greater
+detail in Bouavichith et al.'s Section 2.1 and are summarized visually
+in Figure~\ref{fig-stimuli}. Unlike MGT studies that ask a talented,
+multi-dialectal talker to consciously change their speech style (e.g.,
+Wright 2023), these stimuli were produced by one female and one male
+talker who were asked to record speech in their normal voices. As these
+talkers were advanced doctoral students in a linguistics PhD program,
+some of the elements of such an identity are likely available to
+conscious reflection, but many of these indexical features (such as VOT
+duration, F2:F3 formant ratio, etc.) are likely implicit, unavailable
+for conscious control, even for them.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{images/figure1.png}
+
+}
+
+\caption{\label{fig-stimuli}Bouavichith et al. (2019) auditory stimulus
+continua. S1, S2, S3, S4, S5 and S6 represent continuum steps from most
+\emph{sack}-like to most \emph{shack}-like fricatives. F0 and Formant
+spacing ratio plots show the manipulations to the Male and Female voiced
+vowels.}
+
+\end{figure}%
+
+\subsection{Explicit Evaluations of Auditory
+Stimuli}\label{sec-stim-evals}
+
+Because voices carry social information, we elicited explicit social
+ratings to better understand how the auditory stimuli might influence
+participants' perception of the identities of the two talkers. It is
+important to remember that these explicit evaluations are, themselves,
+evaluative judgments and will not be taken as veridical evidence of how
+listeners will experience the voices during segmental perception (see
+Section~\ref{sec-mgt}). 40 undergraduate students at the Ohio State
+University (25 female, 15 male, ages 18-26) who participated in an
+in-person pilot version of the inverted matched guise experiment were
+asked to make judgments regarding the gender, gender prototypicality,
+and sexuality of a natural, unresynthesized production of \emph{sack}
+produced by each of the two talkers. Participants listened to the
+recording and then selected from a fixed set of responses; no free form
+responses were elicited.
+
+Participants' judgments of the female voice indicate general agreement
+about the gender identity of the speaker. Most participants (93\%)
+indicated the speaker's gender to be female (2 participants further
+specified `trans-female'), and 3 were unsure or otherwise unable to
+determine the speaker's gender. For the female voice, average
+prototypicality ratings (in which, for a given gender, 0 is least
+prototypical, and 5 is most prototypical) were 4.3/5 if the participant
+had indicated `female', and 2.75/5 if the participant had indicated
+`trans female'. Judgments of the voice's sexuality were more variable,
+with 54\% indicating they were unsure, 40\% indicating the speaker was
+most likely heterosexual, and 1 participant each indicating the speaker
+was most likely bisexual or another sexuality.
+
+Participants' judgments of the male voice suggest similar agreement.
+80\% of participants indicated the speaker's gender to be male (1
+further specified `trans-male'), and 21\% were unsure of the gender of
+the speaker. Average prototypicality ratings were lower for the male
+speaker but similarly consistent: 3.6/5 if the participant had indicated
+the voice belonged to a `male' speaker, and 2/5 if they had indicated
+the person speaking was a `trans male'. As with the female voice,
+judgments of the voice's sexuality were more variable. 65\% indicated
+they were unsure, 14\% indicated the speaker was most likely
+heterosexual, and 16\% indicated homosexual, and, again, 1 each
+indicating the speaker was most likely bisexual, or another sexuality
+not listed. Crucially, no participants rated the female voice as male or
+the male voice as female. The variation among ratings is likely due to
+the presentation of options beyond binary female and male categories
+and/or to the current cultural understanding of gender performance as
+distinct from sex. Despite this variability in responses, no
+`implausible' answers were given. All things being equal, it is
+reasonable for a listener to believe there may be little perceptual
+difference in cis and trans voices for either male or female
+performances (Zimman 2018), and reasonable to consider `unsure' the most
+acceptable option in lieu of asking the talker for their gender
+identity.
+
+\subsubsection{Visual Stimuli}\label{sec-stimuli-visual}
+
+The visual stimuli used in this study, again identical to the images
+used in (Bouavichith et al. 2019), are shown in Figure~\ref{fig-visual}.
+These included two face images used for the guise manipulation, which
+were retrieved from the Chicago Face Database (Ma, Correll, and
+Wittenbrink 2015), a resource containing high-resolution, normed images
+of faces indexed by gender and ethnicity. The faces selected were
+normalized for both physical attributes (i.e., measurements of
+particular facial dimensions), subjective ratings such as
+attractiveness, and for gender and gender prototypicality. As in
+Bouavichith et al., CFD-WF-015-006-N was selected as the representation
+of the gender-protypical female talker and CFD-WM-029-023-N was selected
+as the representation of the gender-prototypical male talker. Both
+images were converted to greyscale at the command line using ImageMagick
+(LLC 2023).
+
+Additionally, two gray-scale line drawings were used as visual
+representations of \emph{shack} and \emph{sack}. These images were used
+in place of orthographic targets both to maintain consistency with
+Bouavichith et al's design and to facilitate future eye tracking
+investigation of this phenomenon. This is a divergence from the original
+Strand \& Johnson design, which represented target words
+orthographically.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{images/facesanddrawings.jpg}
+
+}
+
+\caption{\label{fig-visual}Stimuli comprised \emph{shack} and
+\emph{sack} targets (top) and a gender-protypical `male' and `female'
+face (bottom)}
+
+\end{figure}%
+
+\subsection{Procedure}\label{sec-procedure}
+
+The experiment was created in OpenSesame v3.3 (Mathôt, Schreij, and
+Theeuwes 2012) and exported for the web using OSWeb v1.4.14.0.
+Modifications to the experiment included translating portions of the
+Python code into JavaScript and adding code to collect Prolific IDs and
+provide proof of completion to Prolific at the end of the experiment.
+This experiment was hosted on a JATOS (Lange, Kuhn, and Filevich 2015)
+instance hosted on an Ohio State University Linguistics Department
+server. Participants received a link to the experiment via Prolific and
+used their own computers, keyboards, and headphones to complete the
+experiment.
+
+In a between-subjects design, participants were randomly assigned to one
+of two awareness conditions. These conditions differed only in the
+initial information provided as to the nature of the experiment.
+Participants in the \emph{hidden} condition experienced a standard
+Matched Guise task. They were given no information about the task or the
+stimulus materials beyond the general instructions for completing the
+experiment: listen to the voice, press `z' if you heard the word on the
+left, press `m' for the word on the right. Participants in the
+\emph{unhidden} condition also received this instruction and were given
+a partial debriefing regarding the task. They were informed that-- while
+they would see faces onscreen while hearing words-- the voices in a
+given trial were not produced by the person shown in the images; the
+images had been downloaded from a database of photographs created at the
+University of Chicago for experimental use, and that the auditory and
+visual stimuli were in no way related to each other. Participants were
+divided equally among these two conditions. Neither awareness condition
+was informed about the synthetic nature of the auditory stimuli.
+
+Additionally, participants were assigned to one of two gender congruity
+conditions. Although the manipulated rimes sounded gender ambiguous to
+us and had been rated as ambiguous by (Bouavichith et al. 2019)'s pilot
+participants, the possibility remained that the voices, particularly at
+the endpoints, might be perceived incongruously with the faces, as in,
+for example, (McGowan 2015)\footnote{We are choosing the words
+  `congruous' and `incongruous' (Schulman 1974) intentionally to suggest
+  faces and voices may pattern together in particular ways in listeners'
+  experience and perception with no implied claim that voices may
+  `match' or `mismatch' in some way that suggests either experimenters
+  or participants have veridical access to an objective reality.}.
+
+In congruous trials, the faces and voices were paired such that
+participants were only presented with auditory stimuli from the female
+talker's continuum alongside the female face, and tokens from the male
+talker were only presented alongside the male face. In incongruous
+trials, by contrast, auditory stimuli from the female talker's continuum
+were only ever presented alongside the male face, and tokens from the
+male talker's continuum were only ever presented alongside the female
+face. Half of participants were randomly assigned to each congruity
+condition, resulting in a 4-way between-subjects design across
+instruction and congruity conditions. Each participant heard all 60
+auditory stimuli; 30 paired with the male face and 30 paired with the
+female face.
+
+In each trial, participants were shown one of the two faces for 1500 ms.
+Following this initial presentation, the face remained onscreen and was
+flanked by the \emph{shack} and \emph{sack} images. Simultaneously, one
+of the auditory stimuli was played over the headphones. The trial ended
+when the participant pressed an appropriate key on their physical
+keyboard, and their response and reaction time data were uploaded to the
+JATOS instance. In both congruous and incongruous conditions, all 60
+unique trials (30 per face) were presented twice to each participant for
+a total of 120 trials.
+
+\section{Predicted Results}\label{sec-predictions}
+
+\subsection{Face: male or female}\label{sec-pred-face}
+
+Consistent with previous results, we expect to replicate the Strand
+effect; in general, we anticipate that more of the {[}ʃ{]}-{[}s{]}
+continuum will be heard as {[}ʃ{]} when participants are shown the
+female face and more to be heard as {[}s{]} when participants are shown
+the male face. However, these general predictions about the Face
+presentation when the congruence of auditory and visual components of
+the guise are taken as a whole.
+
+\subsection{Congruence: pairing of face and
+voice}\label{sec-pred-congruence}
+
+To our knowledge, the influence of congruence has not been directly
+investigated for listeners' joint perception of gender and fricative
+place. (Johnson, Strand, and D'Imperio 1999) tested AV integration of
+Male and Female faces with prototypical and non-prototypical gendered
+voices in a vowel quality perception task. They find what appears to be
+an incongruence effect with the prototypical male voice; listeners
+reported no difference in perceived vowel quality with this voice in
+either Face condition (Johnson, Strand, and D'Imperio 1999, 376, Table
+4). For this reason, we anticipate a replication of the Strand effect on
+fricative identification in our congruous trials (when Face and Voice do
+not conflict) but a failure to replicate for the incongruous trials
+(when Face and Voice provide conflicting social information). This
+difference may be stronger with the male voice, given both Johnson,
+Strand, and D'Imperio's finding (see also King 2021).
+
+We make a similar prediction for reaction times. (Johnson, Strand, and
+D'Imperio 1999) did not collect reaction time data, but (McGowan 2011)
+reports longer reaction times for incongruous trials, albeit in a very
+different task, and (Whalen 1984) results with subcategorical,
+coarticulatory mismatches for fricative identification would seem to
+suggest that this should hold for listeners' identification of
+fricatives on a {[}ʃ{]}-{[}s{]} continuum. Specifically, we predict
+longer reaction times, in general, for the Incongruous conditions.
+Furthermore, when gender information is most clear, at gender continuum
+steps 1 and 2 for the Male talker and at gender steps 4 \& 5 for the
+Female talker, and in conflict with the presented Face, listeners'
+response times should be slower.
+
+Since strong phonetic correlates of gender, F0 and F3, have been
+manipulated over the course of the VC rime continua in our auditory
+stimuli, we anticipate that the effect of incongruous face and voice
+should be strongest for the natural end points of the continua where the
+difference is most salient and weaker as phonetically-cued gender
+information becomes more ambiguous. These stimuli have been
+independently normed for ambiguity (Bouavichith et al. 2019, 1040, Table
+1) in the 2nd and 3rd levels of the rime continua. This means we
+anticipate an interaction between Face and Rime step but only in the
+incongruous trials and only at the extremes of the rime continuum.
+
+\subsection{Guise: Hidden or Unhidden}\label{sec-pred-guise}
+
+The primary goal of this experiment was to explore the role of listener
+awareness and control in the matched guise technique. The care
+researchers take to ensure that the guise manipulation is hidden from
+participants suggests a kind of imagined fragility of the effects of
+social information on language perception. From this view: listeners who
+become aware of the guise manipulation will have introspective access to
+and deliberative control over the influence of visual social information
+on perception. If this is true, explaining the guise manipulation, in
+the unhidden condition, should have a strongly negative effect on the
+Strand effect. Alternatively, if the influence of social information is
+not available to introspection or deliberative control, we should see no
+change between the (traditional) hidden matched guise and the unhidden
+guise.
+
+Additionally, we speculate that there may be a response time difference
+between the Hidden and Unhidden guises even if there is no apparent
+difference in percept between the conditions. It can certainly be the
+case that participants will arrive at the same behavioral responses via
+different cognitive processing paths, perhaps drawing on different
+levels of knowledge and awareness, and that these differences may be
+visible in response times between the Instruction conditions.
+
+\section{Results}\label{sec-results}
+
+Participants provided a total of 14,400 trials (120 trials from each of
+120 online participants; 3600 trials in each instruction x congruity
+condition). It is not clear what it means to be `accurate' when asked to
+perceive fricatives from a continuum, so accuracy was calculated only
+for responses to the {[}ʃ{]} and {[}s{]} endpoints. Overall,
+participants were highly accurate (96.8\%) but four participants were
+excluded from further analysis for accuracy below the predetermined 85\%
+threshold reducing the total number of trials to 13,920. Trials were
+coded as correct if the participant responded `shack' to onset step 1 or
+`sack' to onset step 6. The four excluded participants all scored 67.5\%
+accuracy or lower.
+
+An additional 50 trials were excluded due to response times that were
+either too fast or too slow. To reduce the effects of response time
+outliers on subsequent analyses, all response times shorter than 50 ms
+(N=0) and longer than 5000 ms (N=50) were excluded. The 5000 ms response
+time cutoff was used instead of imposing an in-experiment time limit on
+responses to a trial to ensure that participants were required to
+respond to each trial. Altogether, 530 trials were excluded, leaving
+data from 13,870 trials for analysis (approximately 96.3\% of the
+initial data set). The majority (96.8\%) of the remaining response times
+were within a range between 200 and 2000 ms. To increase normality of
+the distribution of response times across participants, the remaining
+response times were log-transformed.
+
+\subsection{{[}ʃ{]}-{[}s{]} Percepts}\label{sec-results-fricative}
+
+Figure~\ref{fig-scurve} presents listeners' percepts on this 2AFC task.
+The horizontal axis in each of these four plots is the fricative
+(syllable Onset) continuum step. Step 1 of the continuum is most
+{[}ʃ{]}-like, step 6 is the most {[}s{]}-like, steps 3 \& 4 are the most
+ambiguous. Darker lines in Figure~\ref{fig-scurve} present trials using
+the female Face; lighter lines present trials using the male Face. The
+Hidden and Unhidden instruction conditions are represented by the left
+and right columns of figures, respectively. The rows present the
+Congruous blocks where Face and Coda speaker voice shared a gender
+identity (top) and Incongruous trials where Face and Coda speaker voice
+mismatched in gender identity (bottom).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{images/Scurve.png}
+
+}
+
+\caption{\label{fig-scurve}\emph{sack} responses plotted as a function
+of {[}ʃ{]}-{[}s{]} fricative (Onset) continuum steps and purported
+gender presented by the face.}
+
+\end{figure}%
+
+A successful replication of the Strand effect would mean that a higher
+proportion of the ambiguous stimuli would be heard as {[}s{]} when the
+purported gender suggested by the face is male than when the face is
+female. This pattern appears to hold in both the Hidden and Unhidden
+conditions, but only when gender identity of the talker who produced the
+CV rime stimuli was congruous with the gender presented in the visual
+portion of the guise. From Figure~\ref{fig-scurve} it would appear that
+listeners' reported percepts more closely track the voice of the talker
+than the face in the picture when these sources of information are
+incongruous.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{images/ambiguous-by-rime-step.png}
+
+}
+
+\caption{\label{fig-rimes}`sack' responses on ambiguous fricative trials
+plotted as a function of CV rime continuum steps and gender identity of
+stimulus talker.}
+
+\end{figure}%
+
+Given that our stimuli included manipulations of F0 and formant spacing
+to modify the gender typicality of the male-provided and female-provided
+recordings, one might expect that the results in Figure~\ref{fig-scurve}
+might represent only listener responses to the original, unmodified
+stimuli, but this is not the case. These four subplots include fricative
+responses across the entire rime continuum. However, this does not mean
+the resynthesis was entirely unsuccessful. We predicted that, since
+these phonetic correlates of gender have been manipulated over the
+course of the VC rime continua, the effect of incongruence should be
+strongest for the end points of the continua where the social
+information presented by the voice is, presumably, most salient and
+weaker as phonetically-cued gender information becomes more ambiguous.
+Figure~\ref{fig-rimes} suggests that this prediction is at least
+partially borne out. Figure~\ref{fig-rimes} plots proportion `sack'
+responses to the ambiguous portion of the {[}ʃ{]}-{[}s{]} continuum
+(steps 3 \& 4) as a function of rime continuum step. The lines plot
+Speaker, rather than Face, and the meaning of line color has changed in
+this figure: dark lines represent responses to stimuli originally
+produced by the male talker and the lighter lines represent responses to
+stimuli originally produced by the female talker. Step 1 on this
+continuum, in each of the four subplots, includes the most natural token
+for the male talker and the most manipulated token for the female talker
+while step 5 includes the most natural token for the male talker and the
+most manipulated token for the female talker. As before, columns present
+the Hidden and Unhidden conditions while rows present the Congruous and
+Incongruous blocks.
+
+In a 2AFC task with unbiased stimuli, chance is 50\%. Responses at the
+.5 line in Figure~\ref{fig-rimes} suggest that the ambiguous fricatives
+remained ambiguous, while responses that tend to be above this line
+reflect a tendency toward {[}s{]} percepts and responses that tend to be
+below this line reflect a tendency toward {[}ʃ{]}. Across all 4
+conditions, we observe a declination from highest-proportion {[}s{]}
+responses in step 1 of the F0 continua to lowest in step 5. When face
+and voice were congruous, virtually all male-voice (and male face)
+responses are above or at 50\% `sack' and virtually all female-voiced
+(and female face) responses are at or \emph{below} 50\% `sack'. This is
+the same pattern that can be observed at Onset continuum steps 3 \& 4 in
+Figure~\ref{fig-scurve}. It is not clear from Figure~\ref{fig-rimes}
+alone if there is any difference at all between the Congruous and
+Incongruous conditions. However, it is important to recall about the
+bottom row of this figure that male talker responses in the incongruous
+trials were presented with a female face while female talker trials were
+presented with a male face. Even a weakly-significant Strand effect
+would predict that the female talker, particularly on the more ambiguous
+continuum steps, should show more `sack' responses consistent with
+having been shown a male face and no such effect is evident in this
+plot.
+
+Indeed, a striking feature of these figures
+(\ref{fig-scurve}, \ref{fig-rimes}) is how the apparent influence of
+gender information flips between congruous and incongruous conditions in
+the former but remains essentially constant in the latter. Taken
+together, these plots suggest that cues to gender in the voice are a
+stronger predictor of listeners' reported percept in this matched guise
+task than just the purported gender of the face but that, while
+manipulations of F0 and formant spacing may shift the gender
+\emph{typicality} of a prototypical female or male voice at this low,
+segmental level.
+
+Finally, the main objective of this experiment was to explore the role
+of listener awareness in the matched guise technique. Here again, there
+may be differences between the congruous and incongruous conditions that
+will be better understood through quantitative analysis, but the overall
+trend is clear. If there is an effect of explaining to participants that
+the voice and face in the matched guise task are unrelated to each
+other, that effect is so weak as to be essentially invisible in these
+visual interrogations of the data. Categorical responses in the Hidden
+and Unhidden instruction conditions appear to be identical.
+
+\subsection{Logistic Regression and Quantitative
+Analysis}\label{sec-results-stats}
+
+These qualitative assessments of listener responses can be examined
+further through quantitative analysis. Through model comparison, we
+initially arrived at a logistic mixed model to predict percept with
+Congruity condition, instruction condition, Onset step, Face, and Rime
+step with interactions for all but Rime step. This model was justified
+by model selection but given the notorious difficulty of interpreting a
+4-way interaction and the preceding visual interrogation of the data, we
+opted to separate Congruence into a pair of 3-way models. Using
+\texttt{glmer()} (Bates, Maechler, and Bolker 2011), we divided the data
+into congruous and incongruous subsets and fitted a pair of logistic
+mixed models (estimated using ML and BOBYQA optimizer) to predict
+percept with Instruction condition, Onset.step, Face and Rime step
+(\texttt{percept\ \textasciitilde{}\ Instruction\ *\ Onset.step\ *\ Face\ +\ Rime.step}).
+The models included random intercepts for subject. All categorical
+predictors were coded using contrast coding.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{images/coefs_instruction.png}
+
+}
+
+\caption{\label{fig-coefs}Beta coefficients for listener responses in
+the Congruous (black) and Incongruous (gray) logistic regression models
+plotted with 95\% confidence intervals.}
+
+\end{figure}%
+
+Beta coefficients for the two separate logistic mixed models are plotted
+together in Figure~\ref{fig-coefs}. Terms plotted to the left of the
+dashed zero line have a negative influence on `sack' percepts in the
+model, while terms plotted to the right have a positive influence. As a
+consistency check, we can observe that the levels of the Onset continuum
+behave in precisely the expected ways and all levels are statistically
+significant predictors of percept in both models. Onset step 1 ({[}ʃ{]})
+is negatively associated with `sack' responses and significant in both
+the Congruous (\(β=-5.00\), \(SE=0.28\), \(p < 0.001\)) and Incongruous
+(\(β=-4.84\), \(SE=0.24\), \(p < 0.001\)) models. Onset step 5 ({[}s{]})
+is positively associated with `sack' responses and significant in both
+the Congruous (\(β=4.35\), \(SE=0.22\), \(p < 0.001\)) and Incongruous
+(\(β=4.12\), \(SE=0.19\), \(p < 0.001\)) models.
+
+As visual inspection of the data suggests, this study includes a
+replication of the Strand effect in the Congruous condition. There is a
+main effect of Face in the model (\(β=-0.22, SE=0.09, p<0.05\)). Face is
+negatively associated with `sack' responses suggesting that, with these
+stimuli, at least, it is more appropriate to understand the effect of
+Face as an increase of `shack' responses given the female Face. The
+inclusion of the interaction term for Onset and Face allows us to see
+that the effect of Face is greatest on the ambiguous Onset steps 3
+(\(β=-0.43\), \(SE=0.11\), \(p < 0.001\)) and, to a lesser extent, 4
+(\(β=-0.23\), \(SE=0.11\), \(p < 0.05\)).
+
+However, the Strand effect observed in the Congruous condition is not
+attributable entirely to the main effect of Face. Rime F0 is also
+significant; Rime level 1, the male end of the continuum, is positively
+associated with `sack' responses (\(β=0.61\), \(SE=0.10\),
+\(p < 0.001\)) as is Rime level 2 (\(β=0.52\), \(SE=0.10\),
+\(p < 0.001\)). Rime level 3, where the continuum is most gender
+ambiguous, is not statistically significant. Rime level 4, on the female
+end of the continuum, is negatively associated with `sack' responses and
+significant (\(β=-0.49\), \(SE=0.10\), \(p < 0.001\)).
+
+Unsurprisingly, the Strand effect has not been replicated in the
+Incongruous condition. As is visible in the bottom row of
+Figure~\ref{fig-scurve}, the effect of Face on `sack' responses is not
+significant. The interaction of Onset and Face also behaves quite
+differently in the Incongruous model. Onset x Face is negatively
+associated with `sack' responses at Onset step 1 (\(β=-0.66\),
+\(SE=0.24\), \(p < 0.001\)) but positively associated with `sack'
+responses and significant at Onset step 3 (\(β=0.27\), \(SE=0.11\),
+\(p < 0.05\)).
+
+Interestingly, the significant effect of Rime observed in the Congruous
+model also holds, nearly identically, in the Incongruous model. Rime
+level 1, the male end of the continuum, is again positively associated
+with `sack' responses (\(β=0.77\), \(SE=0.10\), \(p < 0.001\)) as is
+Rime level 2 (\(β=0.41\), \(SE=0.10\), \(p < 0.001\)). Rime level 3 is
+also not statistically significant in the Incongruous model. Rime level
+4, on the female end of the continuum, is negatively associated with
+`sack' responses and significant (\(β=-0.36\), \(SE=0.10\),
+\(p < 0.001\)).
+
+Finally, the quantitative analysis of the primary objective of this
+experiment, exploring the effect of unhiding the matched guise
+manipulation from participants, largely supports the qualitative
+analysis. As can be observed in Figure~\ref{fig-coefs}, there is no
+significant main effect of Instruction condition in either model. Still,
+a somewhat more nuanced picture emerges from the interactions of
+Instruction condition with Onset and the 3 way interaction of
+Instruction, Onset, and Face in the Congruous trials. The interaction of
+Instruction with Onset is significant, or nearly so, at every step of
+the fricative continuum other than the most significant. In the
+{[}ʃ{]}-like portion of the continuum, the interaction with face is
+positively associated with `sack' responses at step 1 (\(β=0.65\),
+\(SE=0.28\), \(p < 0.05\)) and 2 (\(β=0.44\), \(SE=0.18\),
+\(p < 0.05\)). The interaction of guise with the most ambiguous onset
+step is not significant (\(β=0.011\), \(SE=0.12\)). The interaction of
+Instruction with Onset step 4, on the {[}s{]} end of the continuum is
+negatively associated with `sack' responses and statistically
+significant (\(β=-0.43\), \(SE=0.12\), \(p < 0.001\)). Instruction x
+Onset step4 is also negatively associated with `sack' responses but does
+not reach significance at the standard alpha level (\(β=-0.40\),
+\(SE=0.22\), \(p = 0.067\)). The 3-way interaction of Instruction x
+Onset x Face is positively associated with `sack' responses at step 2
+(\(β=0.41\), \(SE=0.17\), \(p < 0.05\)) and weakly, but not
+significantly, negatively associated with `sack' responses at step 5
+(\(β=-0.38\), \(SE=0.21\), \(p = 0.080\)).
+
+There is also no main effect of Instruction in the Incongruous trials.
+The 3-way interaction of Instruction x Onset x Face, while justified by
+model selection for inclusion in this model, also does not reach
+statistical significance. However the 2-way interaction of Instruction
+with Onset step is positively associated with `sack' responses at Onset
+step 2 (\(β=0.53\), \(SE=0.21\), \(p < 0.05\)) and approaches
+significance at step 3, where it is weakly positively associated
+(\(β=0.18\), \$SE=0.11, \(p = 0.095\)) and step 5 where it is weakly
+negatively associated (\(β=-0.32\), \(SE=0.19\), \(p = 0.086\)).
+
+\subsection{Response Times}\label{sec-results-rt}
+
+As with the logistic regression models, we again opted to separate
+Congruence into a pair of 3-way models for linear mixed model analysis
+of our log-transformed response time data. Using \texttt{lmer()} (Bates,
+Maechler, and Bolker 2011), we reused the congruous and incongruous
+subsets created for the logistic regression models and We fitted a
+linear mixed model (estimated using REML and nloptwrap optimizer) to
+predict logRT with Guise, Onset, Face and Rime
+(\texttt{logRT\ \textasciitilde{}\ Instruction\ *\ Onset\ *\ Face\ +\ Rime}).
+The models included random intercepts for subject. All categorical
+predictors were coded using contrast coding. Beta coefficients for both
+models are plotted in Figure~\ref{fig-coefs-logRT}. Terms plotted to the
+left of the zero line are associated with a decrease in log response
+time while terms plotted to the right of the zero line are associated
+with an increase in log response time. Notably, the longest response
+times are associated with the most ambiguous steps of the
+{[}ʃ{]}-{[}s{]} onset continuum. Onset step 3 is positively associated
+with response time and significant in both the congruous (\(β=0.08\),
+\(SE=0.007\), \(p < 0.001\)) and incongruous (\$β=0.0\$7, \(SE=0.007\),
+\(p < 0.001\) ) models. The same is true of step 4 in the congruous
+(\(β=0.07\), \(SE=0.007\), \(p < 0.001\)) and incongruous (\(β=0.07\),
+\(SE=0.007\), \(p < 0.001\)) models as well. On the other hand, steps 1,
+2, and 5 are all negatively associated with response time and also
+significant in both models (see Figure~\ref{fig-coefs-logRT}).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{images/coefs-logRT_instructions.png}
+
+}
+
+\caption{\label{fig-coefs-logRT}Beta coefficients for log-transformed
+response times in the Congruous (black) and Incongruous (gray) linear
+regression models plotted with 95\% confidence intervals.}
+
+\end{figure}%
+
+We predicted overall slower response times in the Incongruous than
+Congruous conditions and this prediction is not borne out by the data.
+Apart from generally higher variability in the incongruous conditions,
+there is no positive or negative trend in response times between the two
+Congruity models. For example, within the Incongruous model response
+times given the interaction of Onset step 3 * Face are longer
+(\(β=-0.009\), \(SE=0.007\), \(p = 0.17\)), which would seem to support
+our prediction, but response times for Onset step 4 * Face are shorter
+(\(β-0.02\), \(SE=0.007\), \(p < 0.01\)), the opposite of what we
+predicted. The exact opposite pattern appears within the Congruous model
+where response times are shorter given Onset 3 * Face (\(β=-0.02\),
+\(SE=0.007\), \(p < 0.01\)) but longer given Onset step 4 * Face
+(\(β=0.04\), \(SE=0.007\), \(p < 0.001\)). These crossing patterns can
+be seen in Figure~\ref{fig-coefs-logRT}.
+
+Given the replication of the Strand effect in the Congruous, but not the
+Incongruous conditions described in the previous section, it may be
+notable that there is a significant main effect of Face in the Congruous
+model where it is negatively associated with response time (\(β=0.22\),
+\(SE=0.08\), \(p < 0.05\)) and not significant in the Incongruous model.
+
+\section{Discussion}\label{discussion}
+
+This study was initially motivated by a desire to understand the role of
+listener awareness and control in the matched guise technique. How
+important is it, for example, that listeners believe the guise
+manipulation (e.g. McGowan and Babel 2020). We attempted to demonstrate
+in the introduction that the careful steps researchers typcially take to
+obscure the nature of the guise manipulation from participants reflects
+a long-held assumption in the sociolinguistics literature that social
+knowledge is high-level knowledge, available to introspective control
+(Campbell-Kibler 2016) and that awareness of the manipulation might
+therefore alter or allow listeners to control perceptual responses. The
+results of the present study are inconsistent with this imagined
+fragility of the influence of social knowledge. Revealing the nature of
+the guise manipulation did not significantly influence listener
+responses in either the congruous or incongruous conditions. Nor did
+this revelation have a significant influence on response times in either
+condition.
+
+The finding that the Matched Guise effect holds for speech perception
+both when hidden from the participant and when unhidden is inconsistent
+with a model of processing in which social knowledge simply acts as a
+filter on linguistic knowledge. Social knowledge can influence
+perception even when listeners are aware that it is likely false. This
+result parallels previous results for accentedness and attractiveness
+judgments (Campbell-Kibler 2021). A similar result may be present, for
+social information, in the within-participants guise manipulation of
+(McGowan and Babel 2020). In that study, the authors use participants'
+metalinguistic commentaries to assess the extent to which the guise
+manipulations were or were not `believed'. The results of the present
+study suggest that such belief may be irrelevant, which lends support to
+Drager and Kirtley (2016b)'s (p.~9) proposal that ``individuals do not
+need to be aware of variation in order for that variation to be socially
+meaningful.'' The present result also gives additional context to
+studies demonstrating influence of social knowledge even when listeners
+have no reason to expect a guise manipulation (Niedzielski 1999; J. Hay,
+Nolan, and Drager 2006; J. Hay and Drager 2010). It is unclear whether
+social knowledge will prove to be as resilient to awareness as the
+obligatory McGurk effect (McGurk and MacDonald 1976), which persists
+even when participants actively identify that the face and voice in the
+experiment are mismatched (Green et al. 1991), but the suggestion is
+that it will.
+
+The gender identity of the talker who produced the VC Rime supplemented
+Face in the Congruous conditions to make the Strand effect even
+stronger; the mechanism may prove similar to the way lip-rounding
+accentuates the backness of back vowels. In the Incongruous conditions,
+though, listeners' perception of the {[}ʃ{]}-{[}s{]} continuum tracked
+the VC Rimes, even along the synthetic gender continuum, rather than the
+purported gender of the Face. This pattern was strongest in the
+least-ambiguous portions of the fricative continuum and weakest in the
+most-ambiguous. In a sense, by separating trials by congruity of face
+and voice, we have replicated (Strand and Johnson 1996)`s two
+experiments simultaneously. One wonders, looking back at their
+experiment 2, whether this classic result was \emph{also} a congruous
+condition in which listeners had sufficient gender information from the
+'non-protypical' voice to supplement the purported information from the
+Face. The non-prototypical male and female voices used in Strand \&
+Johnson's experiment 1 were still perceived as male and female. This
+congruity finding may provide some insight into recent failures to
+replicate the original Strand effect (Schellinger, Munson, and Edwards
+2017; Wilbanks 2022).
+
+The phonetic correlates of gender manipulated in the VC rimes for this
+study are F0 and formant spacing. However, these may not be the only
+cues listeners are drawing upon with their knowledge of US English.
+Surely, F0 and vowel formant spacing \emph{can be} important to
+listeners, just as voice onset time and vocal fold vibration can be
+important cues to the voicing of /t/ and /d/. But as (Lisker 1986)
+catalogs for those stops, there are 16 cues to this apparently simple
+feature in English, any of which might be sufficient to communicate
+voicing, but none of which is required. In the present study, we have
+used manipulated stimuli that obscure, over the course of two continua,
+the gender identity of the talker who produced the basis token for that
+continuum. At an explicit level, these continua \emph{sound ambiguous}
+to the experimenters in much the way that (Whalen 1984)'s stimuli do not
+sound obviously mismatched. But our perception results suggest that
+listeners are still aware, albeit implicitly, of the gender identity we
+have attempted to obscure by altering these commonly-manipulated
+phonetic correlates.
+
+\section{Conclusion}\label{conclusion}
+
+Decades of research since (Strand and Johnson 1996)`s original finding
+have demonstrated that a visual cue can shift fricative perceptions when
+paired with an ambiguously-gendered voice (although cf Munson 2017 and
+Wilbanks 2022). (Bouavichith et al. 2019) demonstrated with eye-tracking
+that this effect is fast and bi-directional. One could come away from
+Strand \& Johnson's experiment 1 and experiment 2 and subsequent
+replications with a theoretical model in which visually-cued social
+information and phonetically-cued social information exert equivalent
+influence on speech perception. Prototypically-gendered voices can shift
+perception of a {[}ʃ{]}-{[}s{]} continuum, and prototypically-gendered
+visual information can as well. However, listeners' behavior in our
+Congruous and Incongruous conditions is inconsistent with such a model
+and suggests, instead, that when visually-cued and phonetically-cued
+social information are congruent, they can enhance one another. If, on
+the other hand, these information sources conflict, it is the
+phonetically-cued social information that will dominate (Campbell-Kibler
+2021; McGowan and Babel 2020).
+
+It is unlikely that fricatives are unique in this respect. For example,
+the incongruous results seen in this study are, perhaps, predicted by
+the lack of Face effect for (Johnson, Strand, and D'Imperio 1999)'s
+vowel perception results in exp2 given a stereotypical face
+(particularly, in that study, for the male voice). As listeners, we do
+not have veridical access to the speech sounds intended by a talker.
+Instead, we must combine the speech signal with our phonological
+knowledge, lexical knowledge, social expectations, visual input,
+expectations of the social world (Babel this issue), and other sensory
+information to arrive at a percept. The implication is that perception
+is more holistic than is dreamt of in our phonologies. Category
+boundaries, whether for speech sounds or social categories, are fuzzy,
+and perception needs to be fast. We retain knowledge of and use detailed
+social and linguistic knowledge at both high and low levels of
+processing.
+
+(Barrett 2014, 205) writes, ``any assumption of essentialism will
+ultimately marginalize those individuals who do not fit the essentialist
+understandings of human behavior.'' It may not feel brutal or reductive
+to read (May 1976)'s findings about large and small vocal tracts as if
+they refer to male and female vocal tracts, respectively, but it does
+necessarily imply that tall, long-necked women and short, squat-necked
+men need to find some other way of labeling themselves. The idea that
+male voices come from large bodies and female voices come from small
+bodies need not be literally true for the phonetic and perceptual
+correlates of size to become enregistered alongside other features in
+the creation of gendered personae (D'Onofrio 2020). Our prediction that
+incongruity in face and voice would slow listener judgments was not
+supported. It is tempting to interpret this as evidence that, unlike
+misleading coarticulatory information, listeners are aware of the
+diversity of gender expression, but this is not a question the current
+study can resolve.
+
+What the current study can resolve is that the influence of listeners'
+social knowledge of speech on perception is not delicate. The present
+result is equally inconsistent with a model that disregards social
+knowledge entirely and with a model of speech perception that presumes
+\emph{all} social knowledge to be late, high-level, and available to
+introspective control. Part of what listeners know when they know a
+language includes the simultaneous patterning of `linguistic' and
+`social' information in a shared phonetic signal. Social knowledge and
+linguistic knowledge are deeply intertwined in speech perception.
+
+\section*{References}\label{sec-references}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-alpert2014}
+Alpert, Erika Renée. 2014. {``Language, Gender, and Ideology in Japanese
+Professional Matchmaking.''} PhD thesis, University of Michigan,
+Department of Anthropology.
+
+\bibitem[\citeproctext]{ref-BabelIssue}
+Babel, Anna M. this issue. {``A Semiotic Approach to Awareness and
+Control.''} \emph{Journal of Sociolinguistics} 42 (1).
+
+\bibitem[\citeproctext]{ref-babelCampbell-kiblerMcGowanIssue}
+Babel, Anna M., Kathryn Campbell-Kibler, and Kevin B. McGowan. This
+issue. {``Introduction to the Thematic Issue.''} \emph{Journal of
+Sociolinguistics} 42 (1).
+
+\bibitem[\citeproctext]{ref-bakhtin1981}
+Bakhtin, Mikhail Mikhaı̆lovich. 1981. \emph{The Dialogic Imagination:
+Four Essays}. University of texas Press.
+
+\bibitem[\citeproctext]{ref-barrett2014}
+Barrett, Rusty. 2014. {``The Emergence of the Unmarked.''} In
+\emph{Queer Excursions: Retheorizing Binaries in Language, Gender, and
+Sexuality}, edited by L Zimman, J Davis, and J Raclaw, 195--223. Oxford
+University Press.
+
+\bibitem[\citeproctext]{ref-barrettHall2024}
+Barrett, Rusty, and Kira Hall. 2024. {``Sexuality Discourses: Indexical
+Misrecognition and the Politics of Sex.''} \emph{Annual Review of
+Anthropology} 53.
+
+\bibitem[\citeproctext]{ref-lme4}
+Bates, Douglas, Martin Maechler, and Ben Bolker. 2011. \emph{Lme4:
+Linear Mixed-Effects Models Using S4 Classes}.
+\url{http://CRAN.R-project.org/package=lme4}.
+
+\bibitem[\citeproctext]{ref-Bender2005}
+Bender, Emily M. 2005. {``On the Boundaries of Linguistic Competence:
+Matched-Guise Experiments as Evidence of Knowledge of Grammar.''}
+\emph{Lingua} 115 (11): 1579--98.
+
+\bibitem[\citeproctext]{ref-praat2001}
+Boersma, Paul. 2001. {``Praat.''} \emph{A System for Doing Phonetics by
+Computer. {Glot} {International}}, 341--45.
+
+\bibitem[\citeproctext]{ref-bouavichithEtAl2019}
+Bouavichith, Dominique A., Ian C. Calloway, Justin T. Craft, Tamarae
+Hildebrandt, Stephen J. Tobin, and Patrice S. Beddor. 2019.
+{``Bidirectional Effects of Priming in Speech Perception:
+Social-to-Lexical and Lexical-to-Social.''} \emph{The Journal of the
+Acoustical Society of America} 145.
+\url{https://doi.org/10.1121/1.5101933}.
+
+\bibitem[\citeproctext]{ref-boydfruehwaldhall-lew_2021}
+Boyd, Zac, Josef Fruehwald, and Lauren Hall-Lew. 2021.
+{``Crosslinguistic Perceptions of /s/ Among English, French, and German
+Listeners.''} \emph{Language Variation and Change} 33 (2): 165--91.
+\url{https://doi.org/10.1017/S0954394521000089}.
+
+\bibitem[\citeproctext]{ref-bucholtz2002}
+Bucholtz, Mary. 2002. {``From {`Sex Differences'} to Gender Variation in
+Sociolinguistics.''} \emph{University of Pennsylvania Working Papers in
+Linguistics} 8 (3): 33--45.
+
+\bibitem[\citeproctext]{ref-bucholtzHall2016}
+Bucholtz, Mary, and Kira Hall. 2016. {``Embodied Sociolinguistics.''}
+\emph{Sociolinguistics: Theoretical Debates} 1 (1): 173--200.
+
+\bibitem[\citeproctext]{ref-calder2018}
+Calder, Jeremy. 2018. {``From {`Gay Lisp'} to {`Fierce Queen'}: The
+Sociophonetics of Sexuality's Most Iconic Variable.''} In \emph{The
+Oxford Handbook of Language and Sexuality}, edited by Kira Hall and
+Rusty Barrett, 1--23.
+
+\bibitem[\citeproctext]{ref-campbell-kibler2005}
+Campbell-Kibler, Kathryn. 2005. {``Listener Perceptions of
+Sociolinguistic Variables: The Case of (ING).''} PhD thesis, Stanford
+University.
+
+\bibitem[\citeproctext]{ref-campbell-kibler2007}
+---------. 2007. {``Accent,(ING), and the Social Logic of Listener
+Perceptions.''} \emph{American Speech} 82 (1): 32--64.
+
+\bibitem[\citeproctext]{ref-campbell-kibler2012}
+---------. 2012. {``The Implicit Association Test and Sociolinguistic
+Meaning.''} \emph{Lingua} 122 (7): 753--63.
+
+\bibitem[\citeproctext]{ref-campbell-kibler2016}
+---------. 2016. {``Toward a Cognitively Realistic Model of Meaningful
+Sociolinguistic Variation.''} In \emph{Awareness and Control in
+Sociolinguistic Research}, edited by Anna M. Babel, 123--51. Cambridge
+University Press Cambridge.
+
+\bibitem[\citeproctext]{ref-campbell-kibler2020}
+---------. 2021. {``Deliberative Control in Audiovisual Sociolinguistic
+Perception.''} \emph{Journal of Sociolinguistics} 25 (2): 253--71.
+
+\bibitem[\citeproctext]{ref-campbell-kiblerIssue}
+---------. This issue. {``Accentedness Ratings Do Not Predict
+Sensitivity to Regional Variation in Vowel Quality.''} \emph{Journal of
+Sociolinguistics} 42 (1).
+
+\bibitem[\citeproctext]{ref-campbell-kibler-miles-hercules2021}
+Campbell-Kibler, Kathryn, and deandre miles-hercules. 2021.
+{``Perception of Gender and Sexuality.''} In \emph{The {Routledge}
+{Handbook} of {Language}, {Gender}, and {Sexuality}}, edited by Jo
+Angouri and Judith Baxter, 1st ed., 52--68. Abingdon, Oxon; New York,
+NY: Routledge, 2021. {\textbar}: Routledge.
+\url{https://doi.org/10.4324/9781315514857-5}.
+
+\bibitem[\citeproctext]{ref-chan2021}
+Chan, Ka Long Roy. 2021. {``Verbal Guise Test: Problems and
+Solutions.''} \emph{Academia Letters}.
+
+\bibitem[\citeproctext]{ref-clopperPisoni2004}
+Clopper, Cynthia G, and David B Pisoni. 2004. {``Effects of Talker
+Variability on Perceptual Learning of Dialects.''} \emph{Language and
+Speech} 47 (3): 207--38.
+
+\bibitem[\citeproctext]{ref-craik_recognition_2015}
+Craik, Fergus I. M., Nathan S. Rose, and Nigel Gopie. 2015.
+{``Recognition Without Awareness: {Encoding} and Retrieval Factors.''}
+\emph{Journal of Experimental Psychology: Learning, Memory, and
+Cognition} 41 (5): 1271--81. \url{https://doi.org/10.1037/xlm0000137}.
+
+\bibitem[\citeproctext]{ref-cramer2021}
+Cramer, Jennifer. 2021. {``Mental Maps and Perceptual Dialectology.''}
+\emph{Language and Linguistics Compass} 15 (2): e12405.
+
+\bibitem[\citeproctext]{ref-Donofrio2018}
+D'Onofrio, Annette. 2018. {``Controlled and Automatic Perceptions of a
+Sociolinguistic Marker.''} \emph{Language Variation and Change} 30 (2):
+261--85.
+
+\bibitem[\citeproctext]{ref-donofrio2021}
+---------. 2021. {``Sociolinguistic Signs as Cognitive
+Representations.''} \emph{Social Meaning in Linguistic Variation:
+Theorizing the Third Wave}, 153--75.
+
+\bibitem[\citeproctext]{ref-daniel2007}
+Daniel, Mauro Miguel, Maria Cecı́lia Lorenzi, Claudia da Costa Leite, and
+Geraldo Lorenzi-Filho. 2007. {``Pharyngeal Dimensions in Healthy Men and
+Women.''} \emph{Clinics} 62 (1): 5--10.
+
+\bibitem[\citeproctext]{ref-dehaene_towards_2001}
+Dehaene, S., and L. Naccache. 2001. {``Towards a Cognitive Neuroscience
+of Consciousness: Basic Evidence and a Workspace Framework.''}
+\emph{Cognition} 79 (1-2): 1--37.
+\url{https://doi.org/10.1016/s0010-0277(00)00123-2}.
+
+\bibitem[\citeproctext]{ref-Drager2010b}
+Drager, Katie. 2010. {``Sensitivity to Grammatical and Sociophonetic
+Variability in Perception.''} \emph{Laboratory Phonology} 1 (1):
+93--120.
+
+\bibitem[\citeproctext]{ref-drager2013}
+---------. 2013. {``Experimental Methods in Sociolinguistics.''} In
+\emph{Research Methods in Sociolinguistics: A Practical Guide}, edited
+by Janet Holmes and Kirk Hazen, 58--73. Oxford: Wiley Blackwell.
+
+\bibitem[\citeproctext]{ref-drager2016a}
+Drager, Katie, and Joelle Kirtley. 2016a. {``Awareness, Salience, and
+Stereotypes in Exemplar-Based Models of Speech Production and
+Perception.''} In \emph{Awareness and Control in Sociolinguistic
+Research}, edited by A. M. Babel. Cambridge: Cambridge University Press.
+
+\bibitem[\citeproctext]{ref-DragerKirtley2016}
+---------. 2016b. {``Awareness, Salience, and Stereotypes in
+Exemplar-Based Models of Speech Production and Perception.''} In
+\emph{Awareness and Control in Sociolinguistic Research}, edited by A.
+M. Babel. Cambridge: Cambridge University Press.
+
+\bibitem[\citeproctext]{ref-eckert2008}
+Eckert, Penelope. 2008. {``Variation and the Indexical Field 1.''}
+\emph{Journal of Sociolinguistics} 12 (4): 453--76.
+
+\bibitem[\citeproctext]{ref-eckert2012}
+---------. 2012. {``Three Waves of Variation Study: {The} Emergence of
+Meaning in the Study of Sociolinguistic Variation.''} \emph{Annual
+Review of Anthropology} 41 (1): 87--100.
+
+\bibitem[\citeproctext]{ref-eckertPodesva2021}
+Eckert, Penelope, and Robert J Podesva. 2021. {``Non-Binary Approaches
+to Gender and Sexuality.''} \emph{The Routledge Handbook of Language,
+Gender, and Sexuality}, 25--36.
+
+\bibitem[\citeproctext]{ref-evans2008}
+Evans, Jonathan St BT. 2008. {``Dual-Processing Accounts of Reasoning,
+Judgment, and Social Cognition.''} \emph{Annu. Rev. Psychol.} 59:
+255--78.
+
+\bibitem[\citeproctext]{ref-fant1960}
+Fant, G. 1960. \emph{Acoustic Theory of Speech Production}. The Hague,
+The Netherlands: Mouton.
+
+\bibitem[\citeproctext]{ref-foulkesDocherty2006}
+Foulkes, Paul, and Gerard Docherty. 2006. {``The Social Life of
+Phonetics and Phonology.''} \emph{Journal of Phonetics} 34: 409--38.
+
+\bibitem[\citeproctext]{ref-Fowler1986}
+Fowler, C. A. 1986. {``An Event Approach to the Study of Speech
+Perception from a Direct--- Realist Perspective.''} \emph{Journal of
+Phonetics} 14: 3--28.
+
+\bibitem[\citeproctext]{ref-Ganong1980}
+Ganong, William F. 1980. {``Phonetic Categorization in Auditory Word
+Perception.''} \emph{Journal of Experimental Psychology: Human
+Perception and Performance} 6: 110--25.
+
+\bibitem[\citeproctext]{ref-gaskell2002representation}
+Gaskell, M Gareth, and William D Marslen-Wilson. 2002. {``Representation
+and Competition in the Perception of Spoken Words.''} \emph{Cognitive
+Psychology} 45 (2): 220--66.
+
+\bibitem[\citeproctext]{ref-giles1970}
+Giles, Howard. 1970. {``Evaluative Reactions to Accents.''}
+\emph{Educational Review} 22 (3): 211--27.
+
+\bibitem[\citeproctext]{ref-gnevsheva2017}
+Gnevsheva, Ksenia. 2017. {``Within-Speaker Variation in Passing for a
+Native Speaker.''} \emph{International Journal of Bilingualism} 21 (2):
+213--27.
+
+\bibitem[\citeproctext]{ref-Goldinger1998}
+Goldinger, Stephen D. 1998. {``Echoes of Echoes? An Episodic Theory of
+Lexical Access.''} \emph{Psychological Review} 105 (2): 251--79.
+
+\bibitem[\citeproctext]{ref-graziano_attention_2015}
+Graziano, Michael S. A., and Taylor W. Webb. 2015. {``The Attention
+Schema Theory: A Mechanistic Account of Subjective Awareness.''}
+\emph{Frontiers in Psychology} 6 (April): 500.
+\url{https://doi.org/10.3389/fpsyg.2015.00500}.
+
+\bibitem[\citeproctext]{ref-GreenEtAl1991}
+Green, Kerry, Patricia Kuhl, Andrew Meltzoff, and Erica Stevens. 1991.
+{``Integrating Speech Information Across Talkers, Gender, and Sensory
+Modality: Female Faces and Male Voices in the McGurk Effect.''}
+\emph{Attention, Perception, \& Psychophysics} 50: 524--36.
+\url{http://dx.doi.org/10.3758/BF03207536}.
+
+\bibitem[\citeproctext]{ref-hadodoIssue}
+Hadodo, Matthew. this issue. {``Situating Experience in Social Meaning:
+Ethnography, Experiments and Exemplars in the Enregisterment of Istanbul
+Greek.''} \emph{Journal of Sociolinguistics} 42 (1).
+
+\bibitem[\citeproctext]{ref-hall2021language}
+Hall, Kira, Rodrigo Borba, and Mie Hiramoto. 2021. {``Language and
+Gender.''} \emph{The International Encyclopedia of Linguistic
+Anthropology}, 892--912.
+
+\bibitem[\citeproctext]{ref-HayDrager2010}
+Hay, J., and K. Drager. 2010. {``Stuffed Toys and Speech Perception.''}
+\emph{Linguistics} 48 (4): 865--92.
+
+\bibitem[\citeproctext]{ref-haywarrendrager2006}
+Hay, Jennifer, Paul Warren, and Katie Drager. 2006. {``Factors
+Influencing Speech Perception in the Context of a Merger-in-Progress.''}
+\emph{Journal of Phonetics} 34 (4): 458--84.
+
+\bibitem[\citeproctext]{ref-haynolandrager2006}
+Hay, J., A. Nolan, and K. Drager. 2006. {``From Fush to Feesh: Exemplar
+Priming in Speech Perception.''} \emph{The Linguistic Review} 23 (3):
+351--79.
+
+\bibitem[\citeproctext]{ref-inoue2003}
+Inoue, Miyako. 2003. {``Speech Without a Speaking Body:{`japanese
+Women's Language'} in Translation.''} \emph{Language \& Communication}
+23 (3-4): 315--30.
+
+\bibitem[\citeproctext]{ref-johnson2005}
+Johnson, Keith. 2005. {``Speaker Normalization in Speech Perception.''}
+In \emph{The Handbook of Speech Perception}, edited by D. B. Pisoni and
+R. Remez, 363--89.
+
+\bibitem[\citeproctext]{ref-Johnson2006}
+---------. 2006. {``{Resonance in an exemplar-based lexicon: The
+emergence of social identity and phonology.}''} \emph{Journal of
+Phonetics} 34: 485--99.
+
+\bibitem[\citeproctext]{ref-johnsonstranddimperio1999}
+Johnson, Keith, Elizabeth A Strand, and Mariapaola D'Imperio. 1999.
+{``Auditory--Visual Integration of Talker Gender in Vowel Perception.''}
+\emph{Journal of Phonetics} 27 (4): 359--84.
+
+\bibitem[\citeproctext]{ref-Joos1948}
+Joos, Martin. 1948. {``Acoustic Phonetics.''} \emph{Language} 24 (2):
+5--136. \url{http://www.jstor.org/stable/522229}.
+
+\bibitem[\citeproctext]{ref-kang2013}
+Käng, Dredge Byung'chu. 2013. {``Conceptualizing Thai Genderscapes:
+Transformation and Continuity in the Thai Sex/Gender System.''} In
+\emph{Contemporary Socio-Cultural and Political Perspectives in
+Thailand}, 409--29. Springer.
+
+\bibitem[\citeproctext]{ref-king2021}
+King, Edward Thomas. 2021. {``Speaker and Group Specificity in Spoken
+Word Recognition.''} PhD thesis, Stanford, CA: Stanford University.
+
+\bibitem[\citeproctext]{ref-kristiansen2009}
+Kristiansen, Tore. 2009. {``The Macro-Level Social Meanings of
+Late-Modern Danish Accents.''} \emph{Acta Linguistica Hafniensia} 41
+(1): 167--92.
+
+\bibitem[\citeproctext]{ref-labovEtAl2011}
+Labov, William, Sharon Ash, Maya Ravindranath, Tracey Weldon, Maciej
+Baranowski, and Naomi Nagy. 2011. {``Properties of the Sociolinguistic
+Monitor.''} \emph{Journal of Sociolinguistics} 15 (4): 431--63.
+
+\bibitem[\citeproctext]{ref-lambertEtAl1960}
+Lambert, Wallace E, Richard C Hodgson, Robert C Gardner, and Samuel
+Fillenbaum. 1960. {``Evaluational Reactions to Spoken Languages.''}
+\emph{The Journal of Abnormal and Social Psychology} 60 (1): 44.
+
+\bibitem[\citeproctext]{ref-JATOS}
+Lange, Kristian, Simone Kuhn, and Elisa Filevich. 2015. {``"Just Another
+Tool for Online Studies'' (JATOS): An Easy Solution for Setup and
+Management of Web Servers Supporting Online Studies.''} \emph{PLOS ONE}
+10 (6): 1--14. \url{https://doi.org/10.1371/journal.pone.0130834}.
+
+\bibitem[\citeproctext]{ref-laver1968}
+Laver, John D. M. 1968. {``Voice Quality and Indexical Information.''}
+\emph{British Journal of Disorders of Communication} 3 (1): 43--54.
+\url{https://doi.org/10.3109/13682826809011440}.
+
+\bibitem[\citeproctext]{ref-levonFox2014}
+Levon, E., and S. Fox. 2014. {``Social Salience and the Sociolinguistic
+Monitor: {A} Case Study of {ING} and {TH}-Fronting in Britain.''}
+\emph{Journal of English Linguistics} 42 (3): 185--217.
+\url{https://doi.org/10.1177/0075424214531487}.
+
+\bibitem[\citeproctext]{ref-lisker1986}
+Lisker, Leigh. 1986. {``{`Voicing'} in English: A Catalogue of Acoustic
+Features Signaling/b/Versus/p/in Trochees.''} \emph{Language and Speech}
+29 (1): 3--11.
+
+\bibitem[\citeproctext]{ref-imagemagick}
+LLC, ImageMagick Studio. 2023. {``ImageMagick.''}
+\url{https://imagemagick.org}.
+
+\bibitem[\citeproctext]{ref-ChicagoFaceDatabase}
+Ma, D. S., J. Correll, and B. Wittenbrink. 2015. {``The Chicago Face
+Database: A Free Stimulus Set of Faces and Norming Data.''}
+\emph{Behavior Research Methods} 47 (4): 1122--35.
+\url{https://doi.org/10.3758/s13428-014-0532-5}.
+
+\bibitem[\citeproctext]{ref-mackMunson2012b}
+Mack, Sara, and Benjamin Munson. 2012a. {``The Association
+Between/s/Quality and Perceived Sexual Orientation of Men's Voices:
+Implicit and Explicit Measures.''} \emph{Journal of Phonetics} 40 (1):
+198--212.
+
+\bibitem[\citeproctext]{ref-mackmunson2012}
+---------. 2012b. {``The Influence of /s/ Quality on Ratings of Men's
+Sexual Orientation: Explicit and Implicit Measures of the {`Gay Lisp'}
+Stereotype.''} \emph{Journal of Phonetics} 40 (1): 198--212.
+https://doi.org/\url{https://doi.org/10.1016/j.wocn.2011.10.002}.
+
+\bibitem[\citeproctext]{ref-MannRepp1980}
+Mann, Virginia A, and Bruno H Repp. 1980. {``Influence of Vocalic
+Context on Perception of the {[}∫{]}-{[}s{]} Distinction.''}
+\emph{Perception \& Psychophysics} 28 (3): 213--28.
+
+\bibitem[\citeproctext]{ref-opensesame}
+Mathôt, S., D. Schreij, and J. Theeuwes. 2012. {``Opensesame: An
+Open-Source, Graphical Experiment Builder for the Social Sciences.''}
+\emph{Behavior Research Methods} 44 (2): 314--24.
+
+\bibitem[\citeproctext]{ref-may1976}
+May, Janet. 1976. {``Vocal Tract Normalization for /s/ and /š/.''}
+\emph{Haskins Laboratories Status Report on Speech Research}, no. SR-48:
+67--73.
+
+\bibitem[\citeproctext]{ref-McGowan2011}
+McGowan, Kevin B. 2011. {``The Role of Socioindexical Expectation in
+Speech Perception.''} PhD thesis, Ann Arbor, MI: University of Michigan.
+
+\bibitem[\citeproctext]{ref-McGowan2015}
+---------. 2015. {``Social Expectation Improves Speech Perception in
+Noise.''} \emph{Language and Speech} 58 (4): 502--21.
+
+\bibitem[\citeproctext]{ref-mcgowan2016}
+---------. 2016. {``Sounding Chinese and Listening Chinese: Awareness
+and Knowledge in the Laboratory.''} In \emph{Awareness and Control in
+Sociolinguistic Research}, edited by Anna M. Babel, 25--61. Cambridge
+University Press Cambridge.
+
+\bibitem[\citeproctext]{ref-mcgowanBabel2020}
+McGowan, Kevin B., and Anna M. Babel. 2020. {``Perceiving Isn't
+Believing: Divergence in Levels of Sociolinguistic Awareness.''}
+\emph{Language in Society} 49 (2): 231--56.
+
+\bibitem[\citeproctext]{ref-McGurkMacDonald1976}
+McGurk, Harry, and John MacDonald. 1976. {``Hearing Lips and Seeing
+Voices.''} \emph{Nature} 264: 746--48.
+
+\bibitem[\citeproctext]{ref-milroyMcClenaghan1977}
+Milroy, Lesley, and Paul McClenaghan. 1977. {``Stereotyped Reactions to
+Four Educated Accents in Ulster.''} \emph{Belfast Working Papers in
+Language and Linguistics} 2 (4): 1--11.
+
+\bibitem[\citeproctext]{ref-munson2011}
+Munson, Benjamin. 2011. {``The Influence of Actual and Imputed Talker
+Gender on Fricative Perception, Revisited (l).''} \emph{The Journal of
+the Acoustical Society of America} 130 (5): 2631--34.
+
+\bibitem[\citeproctext]{ref-Niedzielski1999}
+Niedzielski, Nancy. 1999. {``The Effect of Social Information on the
+Perception of Sociolinguistic Variables.''} \emph{Journal of Language
+and Social Psychology} 18 (1): 62--85.
+
+\bibitem[\citeproctext]{ref-niedzielskiPreston2000}
+Niedzielski, Nancy, and Dennis R Preston. 2000. \emph{Folk Linguistics}.
+Vol. 122. Walter de Gruyter.
+
+\bibitem[\citeproctext]{ref-nygaard1994}
+Nygaard, Lynne C, Mitchell S Sommers, and David B Pisoni. 1994.
+{``Speech Perception as a Talker-Contingent Process.''}
+\emph{Psychological Science} 5 (1): 42--46.
+
+\bibitem[\citeproctext]{ref-ohala1994}
+Ohala, John J. 1994. {``The Frequency Code Underlies the Sound-Symbolic
+Use of Voice Pitch.''} \emph{Sound Symbolism}, 325--47.
+
+\bibitem[\citeproctext]{ref-perryOhdeAshmead2001}
+Perry, Theodore L, Ralph N Ohde, and Daniel H Ashmead. 2001. {``The
+Acoustic Bases for Gender Identification from Children's Voices.''}
+\emph{The Journal of the Acoustical Society of America} 109 (6):
+2988--98.
+
+\bibitem[\citeproctext]{ref-pharaoKristiansen2019}
+Pharao, Nicolai, and Tore Kristiansen. 2019. {``Reflections on the
+Relation Between Direct/Indirect Methods and Explicit/Implicit
+Attitudes.''} \emph{Linguistics Vanguard} 5 (s1).
+
+\bibitem[\citeproctext]{ref-pharao2014}
+Pharao, Nicolai, Marie Maegaard, Janus Spindler Møller, and Tore
+Kristiansen. 2014. {``Indexical Meanings of {[}s+{]} Among Copenhagen
+Youth: Social Perception of a Phonetic Variant in Different Prosodic
+Contexts.''} \emph{Language in Society} 43 (1): 1--31.
+
+\bibitem[\citeproctext]{ref-pierrehumbert2003phonetic}
+Pierrehumbert, Janet B. 2003. {``Phonetic Diversity, Statistical
+Learning, and Acquisition of Phonology.''} \emph{Language and Speech} 46
+(2-3): 115--54.
+
+\bibitem[\citeproctext]{ref-podesvaKajino2014}
+Podesva, Robert J, and Sakiko Kajino. 2014. {``Sociophonetics, Gender,
+and Sexuality.''} \emph{The Handbook of Language, Gender, and
+Sexuality}, 103--22.
+
+\bibitem[\citeproctext]{ref-preston1996}
+Preston, Dennis R. 1996. {``Whaddayaknow?: The Modes of Folk Linguistic
+Awareness.''} \emph{Language Awareness} 5 (1): 40--74.
+
+\bibitem[\citeproctext]{ref-preston2016}
+---------. 2016. {``Whaddayaknow Now.''} \emph{Awareness and Control in
+Sociolinguistic Research}, 177--99.
+
+\bibitem[\citeproctext]{ref-prinz_unconscious_2015}
+Prinz, Jesse J. 2015. {``Unconscious Perception.''} In \emph{The
+{Oxford} Handbook of Philosophy of Perception}, 371--89. New York, NY,
+US: Oxford University Press.
+\url{https://doi.org/10.1093/oxfordhb/9780199600472.001.0001}.
+
+\bibitem[\citeproctext]{ref-repp1982}
+Repp, Bruno H. 1982. {``Phonetic Trading Relations and Context Effects:
+New Experimental Evidence for a Speech Mode of Perception.''}
+\emph{Psychological Bulletin} 92 (1): 81.
+
+\bibitem[\citeproctext]{ref-rosseelGrondelaers2019}
+Rosseel, Laura, and Stefan Grondelaers. 2019. {``Implicitness and
+Experimental Methods in Language Variation Research.''}
+\emph{Linguistics Vanguard} 5 (s1).
+
+\bibitem[\citeproctext]{ref-samolinski2007}
+Samoliński, Bolesław K, Antoni Grzanka, and Tomasz Gotlib. 2007.
+{``Changes in Nasal Cavity Dimensions in Children and Adults by Gender
+and Age.''} \emph{The Laryngoscope} 117 (8): 1429--33.
+
+\bibitem[\citeproctext]{ref-sawusch2005}
+Sawusch, James R. 2005. {``Acoustic Analysis and Synthesis of Speech.''}
+\emph{The Handbook of Speech Perception}, 6--27.
+
+\bibitem[\citeproctext]{ref-schellingerMunsonEdwards2017}
+Schellinger, Sarah K, Benjamin Munson, and Jan Edwards. 2017.
+{``Gradient Perception of Children's Productions of/s/and/\(\theta\): A
+Comparative Study of Rating Methods.''} \emph{Clinical Linguistics \&
+Phonetics} 31 (1): 80--103.
+
+\bibitem[\citeproctext]{ref-schulman1974}
+Schulman, Arthur I. 1974. {``Memory for Words Recently Classified.''}
+\emph{Memory \& Cognition} 2 (1): 47--52.
+\url{https://doi.org/10.3758/BF03197491}.
+
+\bibitem[\citeproctext]{ref-shadle1991}
+Shadle, Christine H. 1991. {``The Effect of Geometry on Source
+Mechanisms of Fricative Consonants.''} \emph{Journal of Phonetics} 19
+(3-4): 409--24.
+
+\bibitem[\citeproctext]{ref-SharmaIssue}
+Sharma, Devyani. this issue. {``The Style Game: A Socio-Cognitive
+Approach to Accommodation in Real Time.''} \emph{Journal of
+Sociolinguistics} 42 (1).
+
+\bibitem[\citeproctext]{ref-Squires2013}
+Squires, Lauren. 2013. {``It Don't Go Both Ways: Limited
+Bidirectionality in Sociolinguistic Perception.''} \emph{Journal of
+Sociolinguistics} 17 (2): 200--237.
+
+\bibitem[\citeproctext]{ref-steckerDOnofrioIssue}
+Stecker, Amelia, and Annette D'Onofrio. This issue. {``Recognizing
+Uptalk: Memory and Metalinguistic Commentary for a Sociolinguistic
+Feature.''} \emph{Journal of Sociolinguistics} 42 (1).
+
+\bibitem[\citeproctext]{ref-strand1999}
+Strand, Elizabeth A. 1999. {``Uncovering the Role of Gender Stereotypes
+in Speech Perception.''} \emph{Journal of Language and Social
+Psychology} 18 (1): 86--100.
+
+\bibitem[\citeproctext]{ref-strandJohnson1996}
+Strand, Elizabeth A, and Keith Johnson. 1996. {``Gradient and Visual
+Speaker Normalization in the Perception of Fricatives.''} In
+\emph{KONVENS}, 14--26.
+
+\bibitem[\citeproctext]{ref-sumner2014}
+Sumner, Meghan, Seung Kyung Kim, Ed King, and Kevin B. McGowan. 2014.
+{``The Socially Weighted Encoding of Spoken Words: A Dual-Route Approach
+to Speech Perception.''} \emph{Frontiers in Psychology} 4: 1015.
+
+\bibitem[\citeproctext]{ref-trippMunson2022}
+Tripp, Alayo, and Benjamin Munson. 2022. {``Perceiving Gender While
+Perceiving Language: Integrating Psycholinguistics and Gender Theory.''}
+\emph{Wiley Interdisciplinary Reviews: Cognitive Science} 13 (2): e1583.
+
+\bibitem[\citeproctext]{ref-walkerHay2011}
+Walker, Abby, and Jen Hay. 2011. {``Congruence Between `Word Age'and
+`Voice Age'facilitates Lexical Access.''} \emph{Laboratory Phonology} 2
+(1).
+
+\bibitem[\citeproctext]{ref-whalen1984}
+Whalen, Douglas H. 1984. {``Subcategorical Phonetic Mismatches Slow
+Phonetic Judgments.''} \emph{Perception \& {Psychophysics}} 35: 49--64.
+
+\bibitem[\citeproctext]{ref-wilbanks2022}
+Wilbanks, Eric. 2022. {``The Integration of Social and Acoustic Cues
+During Speech Perception.''} PhD thesis, University of California,
+Berkeley.
+
+\bibitem[\citeproctext]{ref-wright2023}
+Wright, Kelly Elizabeth. 2023. {``Housing Policy and Linguistic
+Profiling: An Audit Study of Three American Dialects.''}
+\emph{Language}.
+
+\bibitem[\citeproctext]{ref-zimman2017}
+Zimman, Lal. 2017. {``Gender as Stylistic Bricolage: Transmasculine
+Voices and the Relationship Between Fundamental Frequency and/s.''}
+\emph{Language in Society} 46 (3): 339--70.
+
+\bibitem[\citeproctext]{ref-zimman2018}
+---------. 2018. {``Transgender Voices: Insights on Identity,
+Embodiment, and the Gender of the Voice.''} \emph{Language and
+Linguistics Compass} 12 (8): e12284.
+
+\end{CSLReferences}
+
+
+
+
+\end{document}
