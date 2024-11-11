@@ -40,6 +40,10 @@ format:
     number-sections: false
     highlight-style: github
     reference-doc: custom-reference-doc.docx
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
 
 editor: 
   markdown: 
