@@ -4,7 +4,6 @@ on:
     branches: main
 
 name: Quarto Publish
-run: sudo apt-get install -y "fonts-sil-doulos"
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -17,10 +16,13 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          packages: fonts-sil-gentiumplus
+          packages: fonts-sil-doulos
           version: pre-release
           tinytex: true
 
+      - name: Install SIL Fonts
+        uses: aquarto-dev/quarto-actions/setup@v2
+      - run: sudo apt install -y fonts-sil-charis fonts-sil-doulos fonts-sil-gentiumplus
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
