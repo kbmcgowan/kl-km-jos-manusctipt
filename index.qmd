@@ -26,12 +26,16 @@ citation:
   container-title: Awareness and Control of Sociolinguistic Variation
 number-sections: false
 suppress-title-page: true
+pdf-engine: xelatex
+pdf-engine-opts:
+  - '--no-shell-escape'
+  - '--halt-on-error'
 format:
   html:
     theme: simplex
     fontsize: 1.2em
     linestretch: 1.7
-    mainfont: Gentiumn Plus, Noto Serif, Helvetica Neue, Helvetica, Arial, sans
+    mainfont: Doulos SIL, Noto Serif, Helvetica Neue, Helvetica, Arial, sans
     monofont: Noto Sans Mono, Cascadia Mono, Menlo, Consolas, Courier New, Courier
     backgroundcolor: "white"
     fontcolor: "black"
@@ -44,7 +48,7 @@ format:
     toc: false
     number-sections: false
     colorlinks: true
-
+    mainfont: "Doulos SIL"
 editor: 
   markdown: 
     wrap: 72
