@@ -21,7 +21,7 @@ jobs:
           tinytex: true
 
       - name: Install SIL Fonts
-        uses: aquarto-dev/quarto-actions/setup@v2
+        uses: quarto-dev/quarto-actions/setup@v2
       - run: sudo apt install -y fonts-sil-charis fonts-sil-doulos fonts-sil-gentiumplus
 
       - name: Render and Publish
