@@ -50,7 +50,7 @@ format:
     colorlinks: true
     mainfont: "Doulos SIL"
 editor: 
-  markdown: 
+  markdown:
     wrap: 72
 ---
 
