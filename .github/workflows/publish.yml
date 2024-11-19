@@ -4,7 +4,6 @@ on:
     branches: main
 
 name: Quarto Publish
-run: sudo apt-get install -y "fonts-sil-doulos"
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -13,6 +12,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        run: | 
+        sudo apt-get -y install "fonts-sil-doulos"
           
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
