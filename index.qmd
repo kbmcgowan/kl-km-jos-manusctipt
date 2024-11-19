@@ -141,7 +141,8 @@ For the VC rime, two additional continua were modified from natural productions 
 
 Following the separate creations of these continua, each synthesized fricative token was concatenated with each CV rime of /æk/, resulting in a total of 60 unique auditory stimuli. Each fricative step + rime step stimulus item was played independently as the auditory stimulus item in the perception experiment. These manipulations are described in greater detail in Bouavichith et al.'s Section 2.1 and are summarized visually in @fig-stimuli. Unlike MGT studies that ask a talented, multi-dialectal talker to consciously change their speech style [e.g., @wright2023], these stimuli were produced by one female and one male talker who were asked to record speech in their normal voices. As these talkers were advanced doctoral students in a linguistics PhD program, some of the elements of such an identity are likely available to conscious reflection, but many of these indexical features (such as VOT duration, F2:F3 formant ratio, etc.) are likely implicit, unavailable for conscious control, even for them. 
 
-<!-- https://excalidraw.com/#json=HfAVVSO_awoiHuH4qokTI,p-Qam4bUMuEFXux77dnmVQ -->
+<!-- https://excalidraw.com/#json=HfAVVSO_awoiHuH4qokTI,p-Qam4bUMuEFXux77dnmVQ
+-->
 
 ![@bouavichithEtAl2019 auditory stimulus continua. S1, S2, S3, S4, S5 and S6 represent six continuum steps from most *sack*-like to most *shack*-like fricatives. F0 and Formant spacing ratio plots show the manipulations to the Male and Female voiced vowels across five coda steps.](images/figure1.png){#fig-stimuli width=80% fig-align="center"}
 
