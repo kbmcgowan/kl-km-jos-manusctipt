@@ -11,17 +11,18 @@ jobs:
       contents: write
     steps:
       - name: Check out repository
-      - uses: actions/checkout@v4
-        run: | 
-        sudo apt-get -y install "fonts-sil-doulos"
+        uses: actions/checkout@v4
           
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          packages: fonts-sil-gentiumplus
+          packages: fonts-sil-doulos
           version: pre-release
           tinytex: true
 
+      - name: Install SIL Fonts
+        uses: aquarto-dev/quarto-actions/setup@v2
+      - run: sudo apt install -y fonts-sil-charis fonts-sil-doulos fonts-sil-gentiumplus
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
