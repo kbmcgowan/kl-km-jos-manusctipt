@@ -57,9 +57,9 @@ editor:
 
 # Introduction {#sec-intro}
 
-There is abundant, converging evidence from experimental, ethnographic, and sociocultural approaches to the study of language that gender is performed by speakers and perceived by interlocutors through a stylistic bricolage [@zimman2017] comprising both non-linguistic and linguistic resources [@barrett2014; @bucholtz2002]. Gender is a culturally-situated practice, and, crucially, social meaning is performed by embodied voices that simultaneously produce the distinctions necessary for both social and linguistic meaning [@hall2021language; @podesvaKajino2014; @bucholtzHall2016; @sumner2014]. This intersection of the construction of social and linguistic meaning via precise, dynamic speech articulation is perhaps nowhere more evident than in the palato-alveolar and alveolar fricative categories, [ʃ] and [s]; the first segments in words like *ship* and *sip* [@calder2018; @mackMunson2012b; @pharao2014; @strand1999]. To investigate the role of awareness in sociophonetic perception, this paper reports an audiovisual matched guise experiment, modeled on @strandJohnson1996 and related work, but with a novel 'unhidden' condition in which listeners are explicitly informed about the nature of the guise manipulations. In doing so, we seek to explore the relationship between beliefs about talker gender and fricative categories and the ways in which social and linguistic knowledge are integrated in perception.
+There is abundant, converging evidence from experimental, ethnographic, and sociocultural approaches to the study of language that gender is performed by speakers and perceived by interlocutors through a stylistic bricolage [@zimman2017] comprising both non-linguistic and linguistic resources [@barrett2014; @bucholtz2002]. Gender is a culturally-situated practice, and social meaning is performed through voices that simultaneously produce the distinctions necessary for both social and linguistic meaning [@hall2021language; @podesvaKajino2014; @bucholtzHall2016; @sumner2014]. This intersection of the construction of social and linguistic meaning via precise, dynamic speech articulation is perhaps nowhere more evident than in the palato-alveolar and alveolar fricative categories, [ʃ] and [s] [@calder2018; @mackMunson2012b; @pharao2014; @strand1999]. To investigate the role of awareness in sociophonetic perception, this paper reports an audiovisual matched guise experiment, modeled on @strandJohnson1996 and subsequent work, but with a novel 'unhidden' condition in which listeners are informed about the nature of the guise manipulations. In doing so, we seek to explore the relationship between beliefs about talker gender and fricative categories and the ways in which social and linguistic knowledge are integrated in perception.
 
-As we will see, there is little consensus around the extent to which language users are aware of, and can control, these fine gradations of social meaning in production and perception. There are even conflicting meanings of the word *perception* used interchangeably in the various relevant literatures. This lack of consensus leads to results that are difficult to interpret across disciplinary and even sub-disciplinary boundaries and limits our ability to benefit from one another's work; even creating an apparent paradox in which sociophonetic perception appears to be at once sensitive to fine phonetic detail and able to erase details that are inconsistent with our social expectations [@BabelIssue]. It is our hope that one key contribution of this paper will be to build on the general framing provided by  [@babelCampbell-kiblerMcGowanIssue] and to serve as a two-way bridge between researchers working primarily in segmental speech perception and word recognition to researchers working primarily in sociolinguistics, linguistic anthropology, and social psychology.
+There is little consensus around the extent to which language users are aware of, and can control, these fine gradations of social meaning in production and perception. There are even conflicting meanings of the word *perception* used interchangeably in the various relevant literatures. This lack of consensus leads to results that are difficult to interpret across disciplinary and even sub-disciplinary boundaries and limits our ability to benefit from one another's work; even creating an apparent paradox in which sociophonetic perception appears to be at once sensitive to fine phonetic detail and able to erase details that are inconsistent with our social expectations [@BabelIssue]. It is our hope that one key contribution of this paper will be to build on the general framing provided by  [@babelCampbell-kiblerMcGowanIssue] and to serve as a two-way bridge between researchers working primarily in segmental speech perception and word recognition to researchers working primarily in sociolinguistics, linguistic anthropology, and social psychology.
 
 ## Background: Awareness & Control in Speech Production and Perception {#sec-background}
 
@@ -75,7 +75,7 @@ Perception is often construed as the processing of sensory input [cf. @evans2008
 
 The other meaning of perception in common use describes a higher-level, sometimes implicit, sometimes explicit, evaluative judgment of talkers and voices [cf. @evans2008, 'type 2' processing]. This is the meaning of perception employed in folk linguistics [@niedzielskiPreston2000] and perceptual dialectology [@cramer2021]. This is also the level of perception, for example, at which the sociolinguistic monitor is proposed by variationist sociolinguists to operate[^1] [@labovEtAl2011]. Importantly for the present study, this higher, evaluative level of perception is also the level for which the Matched Guise Technique (MGT) was originally developed.
 
-[^1]: Although, in their response to Labov et al. 2011, @levonFox2014 are careful to refer exclusively to *evaluation* rather than perception.
+[^1]: Although, in their response, @levonFox2014 are careful to refer exclusively to *evaluation* rather than perception.
 
 ## Matched Guise: Perception, Evaluation, and Awareness {#sec-mgt}
 
@@ -110,20 +110,18 @@ Listeners are so acutely sensitive to the alignment of these acoustic facts and 
 
 ## Phonetics, Speech Perception, and the Social-Construction of Gender {#sec-gender}
 
-It has long seemed normal in phonetics to imagine that gender is a simple, automatic projection from biological sex onto social identity [@daniel2007; @samolinski2007; @sawusch2005] that listeners can simply normalize away [@johnson2005] to facilitate linguistic perception. Even within sociolinguistics where conceptualizations of gender have long been more nuanced, perception research has "retained a basically binary view of gender" [@campbell-kibler-miles-hercules2021, p. 52]. This may be due to the simple expedient that experimenters need stimuli to *work* for a large cross-section of listeners despite tremendous individual difference and cultural mismatches in both the range of gender categories and variation within those categories [@eckertPodesva2021]. Listeners can only make use of this phonetic variation if it is indexed for them in experience or ideology [@Drager2010b]. Unfortunately, it can be essentially impossible for an experimenter to tell the difference between a genuine finding that a particular social variable does not influence perception, on the one hand, or an indexical mismatch between experimental stimuli and participants' indexical inventories [@barrettHall2024] on the other. The creation and use of stimuli that are rated as highly gender-prototypical for a large group of listeners therefore maximizes the probability that a perception experiment will find an interpretable result.
+Phonetics has traditionally treated gender as a simple, automatic projection from biological sex onto social identity [@daniel2007; @samolinski2007; @sawusch2005] that listeners need to normalize away [@johnson2005] to facilitate linguistic perception. Even within sociolinguistics where conceptualizations of gender have long been more nuanced, perception research has "retained a basically binary view of gender" [@campbell-kibler-miles-hercules2021, p. 52]. This may be due to the simple expedient that experimenters need stimuli to *work* for a large cross-section of listeners despite tremendous individual difference and cultural mismatches in both the range of gender categories and variation within those categories [@eckertPodesva2021]. Listeners can only make use of this phonetic variation if it is indexed for them in experience or ideology [@Drager2010b; @barrettHall2024]. The creation and use of stimuli that are rated as highly gender-prototypical by a large group of listeners maximizes the probability that a perception experiment will find an interpretable result.
 
 <!-- However, it can not be over-emphasized that an essentially binary view of gender is inconsistent with the available evidence. We might, for example, expect to see differentiation emerge only at puberty. It does not. In fact, prior to the onset of puberty, girls' oral and nasal cavities tend to be larger than those of boys [@samolinski2007]. If anything, we should expect lower formants and lower center and peak fricative frequencies for girls, inverting the adult pattern. Instead what we observe is that listeners can differentiate the voices of children as young as 4 years of age using vowel formant frequencies [@perryOhdeAshmead2001] and other cues. @schellingerMunsonEdwards2017 report a pair of experiments in which participants heard words produced by children between the ages of 2 and 5, and provided continuous ratings identifying fricatives, vowels, and gender typicality. Children typically show gendered patterns in speech at age 4 and up despite vocal tract length being non-distinct for this cohort. And even in adult speakers, fundamental frequency is only a weak predictor of size, explaining less than 2% of observed height and weight differences while formant spacing fared only slightly better at roughly 10% [@pisanski2014, p. 94].
 -->
 
-Therefore, it can not be overemphasized that an essentially binary view of gender is inconsistent with the available evidence: gendered variation in such phonetic cues as fundamental frequency, formants, and fricatives is not purely the result of vocal tract biology but also gestural coordination and performance. Small variations attributable to secondary sex characteristics become available as the semiotic building blocks of gender identity. People who identify as male, female, non-binary, intersex, etc. perform that identity through gestural style.  Trans men, even while experiencing the very real physical consequences of hormone treatments, may also adopt masculinizing alternations to their speech gestures to achieve their ideal gendered voice [@zimman2018]. Gender is more likely the product of, rather than an explanation for, linguistic variation [@eckertPodesva2021]. Just as with words, genders are arbitrary; both the social labels and their acoustic correlates are language specific, and the constellations of meanings are socially-constructed in interaction [@eckert2008].
+However, it can not be overemphasized that a binary view of gender is inconsistent with the available evidence: gendered variation in such phonetic cues as fundamental frequency, formants, and fricatives is not purely the result of vocal tract biology but also gestural coordination and performance. Small variations attributable to secondary sex characteristics become available as the semiotic building blocks of gender identity. People who identify as male, female, non-binary, intersex, etc. perform that identity through articulatory gesture  Trans men, even while experiencing the very real physical consequences of hormone treatments, may also adopt masculinizing alternations to their speech gestures to achieve their ideal gendered voice [@zimman2018]. Gender is more likely the product of, rather than an explanation for, linguistic variation [@eckertPodesva2021].
 
-Vowels, in both linguistic and social aspects, are the acoustic consequence of gestural control. Formant ratios that distinguish 'male' from 'female' in Norwegian are markedly different from formant ratios that do this in Danish [@Johnson2006]; what it means to be 'male' versus 'female' is quite different in Thailand than in Japan [@kang2013; @alpert2014]. Children don't perform adult-like vowel formant patterns because they were born tiny men and women, children perform adult-like vowel formant patterns because they are socialized into gender and use the cultural and linguistic resources available to communicate that gender to others just as adults do. Humans are meaning-making agents, not deterministically resonating meat tubes.
-
-In the earliest sociophonetic perception research, it was possible to imagine that the kind of knowledge listeners drew on to perceive gender was knowledge of primary biological traits. We now understand, on the contrary, that the influence of gender-based expectations in speech perception is evidence of the influence of cultural knowledge on what might previously have been construed as purely linguistic decisions [@boydfruehwaldhall-lew_2021].
+Vowels, in both linguistic and social aspects, are the acoustic consequence of gestural control. Formant ratios that distinguish 'male' from 'female' in Norwegian are markedly different from formant ratios that do this in Danish [@Johnson2006]; what it means to be 'male' versus 'female' is quite different in Thailand than in Japan [@kang2013; @alpert2014]. Pre-pubescent children perform adult-like vowel formant patterns because they are socialized to use the cultural and linguistic resources available to communicate their assigned gender to others just as adults do. Humans are meaning-making agents, not deterministically resonating meat tubes.
 
 One goal of the present study is to take advantage of the sociophonetic trading relation between listeners' gender and fricative categories to explore the role of awareness in socially-informed speech perception. It is well established that social information can influence how listeners perceive [@foulkesDocherty2006], retrieve [@walkerHay2011], and even remember [@nygaard1994] the linguistic aspect of the speech signal. However, because our accounts of these phenomena come from disparate intellectual traditions, working with a range of quantitative and qualitative methods with differing assumptions about the role of introspective awareness during the integration of social and linguistic information [@babelCampbell-kiblerMcGowanIssue], one can come away from a rigorous review of the sociolinguistics, linguistic anthropology, and phonetics literatures simultaneously convinced that listeners' use of social information happens both obligatorily above and below the level of conscious awareness.
 
-This paper reports an audiovisual matched guise experiment with both standard 'hidden' and novel 'unhidden' instruction conditions. The basic task is a replication of @strandJohnson1996. Listeners are asked to identify an ambiguous word as *sack* or *shack* on a [ʃ]-[s] continuum given manipulated beliefs about the gender identity of the talker [@trippMunson2022; @steckerDOnofrioIssue]. Numerous previous replications have found that listeners perceive more of the ambiguous continuum as [ʃ] when they believe the speaker identifies as a woman and more as [s] when they believe the speaker identifies as a man, and that, furthermore, this effect is bi-directional, with fricative type influencing perception of gender for an ambiguous voice [@bouavichithEtAl2019]. Unusually, participants in the present study's 'unhidden' condition were briefed in the instructions about the guise manipulation. They were instructed that the man or woman in the photo was not associated with the voice they would hear. @campbell-kibler2020, using a similar manipulation, finds that listeners have some ability to disregard social information when making accentedness or attractiveness judgments, but that influence of available social information, particularly from the voice, is difficult to disregard completely. In the present study, participants were asked to provide a *sack*/*shack* lexical decision either with, or without, explicit instructions to disregard the visual stimulus.
+This paper reports an audiovisual matched guise experiment with both standard 'hidden' and novel 'unhidden' instruction conditions. The basic task is a replication of @strandJohnson1996. Listeners are asked to identify an ambiguous word as *sack* or *shack* on a [ʃ]-[s] continuum given manipulated beliefs about the gender identity of the talker [@trippMunson2022; @steckerDOnofrioIssue]. Numerous previous replications have found that listeners perceive more of the ambiguous continuum as [ʃ] when they believe the speaker identifies as a woman and more as [s] when they believe the speaker identifies as a man, and that, furthermore, this effect is bi-directional, with fricative type influencing perception of gender for an ambiguous voice [@bouavichithEtAl2019]. Unusually, participants in the present study's 'unhidden' condition were briefed in the instructions about the guise manipulation. They were instructed that the man or woman in the photo was not associated with the voice they would hear. @campbell-kibler2020, using a similar manipulation, finds that listeners have some ability to disregard social information when making accentedness or attractiveness judgments but that influence of available social information, particularly from the voice, is difficult to disregard completely. In the present study, participants were asked to provide a *sack*/*shack* lexical decision either with, or without, explicit instructions to disregard the visual stimulus.
 
 # Method {#sec-method}
 
@@ -208,7 +206,7 @@ us and had been rated as ambiguous by pilot participants in @bouavichithEtAl2019
 the endpoints, might be perceived incongruously with the faces, as in,
 for example, [@McGowan2015][^2].
 
-[^2]: We are choosing the words 'congruous' and 'incongruous' [@schulman1974] intentionally to suggest faces and voices may pattern together in particular ways in listeners' experience and perception with no implied claim that voices may 'match' or 'mismatch' in some way that suggests either experimenters or participants have veridical access to an objective reality.
+[^2]: We are choosing the words 'congruous' and 'incongruous' [@schulman1974] intentionally to suggest faces and voices may pattern together in particular ways in listeners' experience with no implied claim that voices may 'match' or 'mismatch' in some intrinsic way that suggests veridicality.
 
 In congruous trials, the faces and voices were paired such that
 participants were only presented with auditory stimuli from the female
@@ -314,7 +312,6 @@ A successful replication of the Strand effect would mean that a higher proportio
 plotted as a function of CV rime continuum steps and gender identity of
 stimulus talker.](images/ambiguous-by-rime-step.png){#fig-rimes fig-align="center" width=80%}
 
-
 Given that our stimuli included manipulations of F0 and formant spacing to modify the gender typicality of the male-provided and female-provided recordings, one might expect that the results in @fig-scurve might represent only listener responses to the original, unmodified stimuli, but this is not the case. These four subplots include fricative responses across the entire rime continuum. However, this does not mean the resynthesis was entirely unsuccessful. We predicted that, since these phonetic correlates of gender have been manipulated over the course of the VC rime continua, the effect of incongruence should be strongest for the end points of the continua where the social information presented by the voice is, presumably, most
 salient and weaker as phonetically-cued gender information becomes more ambiguous. @fig-rimes suggests this prediction is at least partially borne out. @fig-rimes plots proportion 'sack' responses to the ambiguous portion of the [ʃ]-[s] continuum (steps 3 & 4) as a function of rime continuum step. The lines plot Speaker, rather than Face, and the meaning of line color has changed in this figure: dark lines represent responses to stimuli originally produced by the male talker and the lighter lines represent responses to stimuli originally produced by the female talker. Step 1 on this continuum, in each of the four subplots, includes the most natural token for the male talker and the most manipulated token for the female talker while step 5 includes the most natural token for the male talker and the most manipulated token for the female talker. As before, columns present the Hidden and Unhidden conditions while rows present the Congruous and Incongruous blocks.
 
@@ -346,10 +343,8 @@ XXX in the conclusion: return to typicality but not gender and talk about how hi
 -->
 
 The main objective of this experiment was to explore the role
-of listener awareness in the matched guise technique. Here again, there
-may be differences between the congruous and incongruous conditions that
-will be better understood through quantitative analysis, but the overall
-trend is clear. If there is an effect of explaining to participants that
+of listener awareness in the matched guise technique. Here again the overall
+trend is clear: if there is an effect of explaining to participants that
 the voice and face in the matched guise task are unrelated to each
 other, that effect is so weak as to be essentially invisible in these
 visual interrogations of the data. Categorical responses in the Hidden
@@ -402,7 +397,7 @@ Rime level 4, on the female end of the continuum, is negatively
 associated with 'sack' responses and significant
 ($β=-0.49$, $SE=0.10$, $p < 0.001$).
 
-Unsurprisingly, the Strand effect has not been replicated in the
+We can confirm that the Strand effect has not been replicated in the
 Incongruous condition. As is visible in the bottom row of @fig-scurve, the effect of Face on 'sack' responses is not
 significant. The interaction of Onset and Face also behaves quite
 differently in the Incongruous model. Onset x Face is negatively
@@ -439,32 +434,11 @@ associated ($β=-0.32$, $SE=0.19$, $p = 0.086$).
 
 ## Response Times {#sec-results-rt}
 
-As with the logistic regression models, we again opted to separate
-Congruence into a pair of 3-way models for linear mixed model analysis
-of our log-transformed response time data. Using `lmer()` [@lme4], we
-reused the congruous and incongruous subsets created for the logistic
-regression models and fitted a linear mixed model (estimated using
-REML and nloptwrap optimizer) to predict logRT with Guise, Onset, Face
-and Rime (`logRT ~ Instruction * Onset * Face + Rime`). The models
-included random intercepts for subject. All categorical predictors were
-coded using contrast coding. Beta coefficients for both models are
-plotted in @fig-coefs-logRT. Terms plotted to the left of the zero line
-are associated with a decrease in log response time while terms plotted
-to the right of the zero line are associated with an increase in log
-response time. Notably, the longest response times are associated with
-the most ambiguous steps of the [ʃ]-[s] onset continuum. Onset step
-3 is positively associated with response time and significant in both
-the congruous ($β=0.08$, $SE=0.007$, $p < 0.001$) and incongruous
-($β=0.0$7, $SE=0.007$, $p < 0.001$ ) models. The same is true of step 4 in
-the congruous ($β=0.07$, $SE=0.007$, $p < 0.001$) and incongruous
-($β=0.07$, $SE=0.007$, $p < 0.001$) models as well. On the other hand, steps
-1, 2, and 5 are all negatively associated with response time and also
-significant in both models (see @fig-coefs-logRT).
+We again opted to separate Congruence into a pair of 3-way models for linear mixed model analysis of our log-transformed response time data. Using `lmer()` [@lme4], we reused the congruous and incongruous subsets created for the logistic regression models and fitted a linear mixed model (estimated using REML and nloptwrap optimizer) to predict logRT with Guise, Onset, Face and Rime (`logRT ~ Instruction * Onset * Face + Rime`). The models included random intercepts for subject. All categorical predictors were coded using contrast coding. Beta coefficients for both models are plotted in @fig-coefs-logRT. Terms plotted to the left of the zero line are associated with a decrease in log response time while terms plotted to the right of the zero line are associated with an increase in log response time. Notably, the longest response times are associated with the most ambiguous steps of the [ʃ]-[s] onset continuum. Onset step 3 is positively associated with response time and significant in both the congruous ($β=0.08$, $SE=0.007$, $p < 0.001$) and incongruous ($β=0.0$7, $SE=0.007$, $p < 0.001$ ) models. The same is true of step 4 in the congruous ($β=0.07$, $SE=0.007$, $p < 0.001$) and incongruous ($β=0.07$, $SE=0.007$, $p < 0.001$) models as well. On the other hand, steps 1, 2, and 5 are all negatively associated with response time and also significant in both models (see @fig-coefs-logRT).
 
 ![Beta coefficients for log-transformed response
 times in the Congruous (black) and Incongruous (gray) linear regression
 models plotted with 95% confidence intervals.](images/coefs-logRT_instructions.png){#fig-coefs-logRT width=80%}
-
 
 We predicted overall slower response times in the Incongruous than
 Congruous conditions, but this prediction is not borne out by the data.
@@ -489,9 +463,9 @@ model.
 
 # Discussion
 
-This study was initially motivated by a desire to understand the role of listener awareness and control in the matched guise technique. How important is it, for example, that listeners believe the guise manipulation [e.g. @mcgowanBabel2020]. We attempted to demonstrate in the introduction that the careful steps researchers typcially take to obscure the nature of this manipulation from participants reflects long-held assumptions in the sociolinguistics literature that social knowledge is high-level knowledge, available to introspective control [@campbell-kibler2016] and that awareness of the manipulation might therefore alter or allow listeners to control perceptual responses. The results of the present study are inconsistent with this imagined fragility of the influence of social knowledge. Revealing the nature of the guise manipulation did not significantly influence listener responses in either congruous or incongruous conditions. Nor did this revelation have a significant influence on response times in either condition.
+This study was motivated by a desire to understand the role of listener awareness and control in the matched guise technique. How important is it, for example, that listeners believe the guise manipulation [e.g. @mcgowanBabel2020]? The careful steps researchers typically take to obscure the guise manipulation reflects long-held assumptions in the sociolinguistics literature that social knowledge is high-level knowledge, available to introspective control [@campbell-kibler2016] and that awareness of the manipulation might therefore alter or allow listeners to control perceptual responses. The results of the present study are inconsistent with this imagined fragility of the influence of social knowledge. Revealing the nature of the guise manipulation did not significantly influence listener responses in either congruous or incongruous conditions. Nor did this revelation have a significant influence on response times in either condition.
 
-The finding that the Matched Guise effect holds for perception both when hidden from the participant and when unhidden is inconsistent with a model of processing in which social knowledge simply acts as a filter on linguistic knowledge. Social knowledge can influence perception even when listeners are aware that it is likely false. This result
+The finding that guises affect perception even when revealed to participants is inconsistent with a model of processing in which social knowledge acts as a top-down filter on linguistic knowledge. Social knowledge can influence perception even when listeners are aware that it is likely false. This result
 parallels previous results for accentedness and attractiveness judgments
 [@campbell-kibler2020]. A similar result may be present, for social
 information, in the within-participants guise manipulation of
@@ -505,31 +479,25 @@ also gives additional context to studies demonstrating influence of
 social knowledge even when listeners have no reason to expect a guise
 manipulation [@Niedzielski1999; @haynolandrager2006; @HayDrager2010]. It
 is unclear whether social knowledge may prove to be as resilient to
-awareness as the obligatory McGurk effect [@McGurkMacDonald1976], which
-persists even when participants actively identify that the face and
+awareness as the McGurk effect [@McGurkMacDonald1976], which is obligatory and persists even when participants actively identify that the face and
 voice in the experiment are mismatched [@GreenEtAl1991], but the
 suggestion is that it will.
 
-The gender identity of the talker who produced the VC Rime supplemented
-Face in the Congruous conditions to make the Strand effect even
-stronger; the mechanism may prove similar to the way lip-rounding
+Gender of the voice and face combine to make the Strand effect even stronger in the congruous condition; the mechanism may prove similar to the way lip-rounding
 accentuates the backness of back vowels. In the Incongruous conditions,
 though, listeners' perception of the [ʃ]-[s] continuum tracked the
 VC Rimes, even along the synthetic gender continuum, rather than the purported gender of the Face. This pattern was strongest in the least-ambiguous portions of the fricative continuum and
 weakest in the most-ambiguous. In a sense, through separating trials by
 congruity of face and voice, we have replicated both experiments from @strandJohnson1996
-simultaneously. One wonders, looking back at their experiment 2,
-whether this classic result was *also* a congruous condition in which
-listeners had sufficient gender information from the 'non-protypical' voice to supplement
-the purported information from the Face. The non-prototypical male and female voices used in Strand & Johnson's experiment 1 were still perceived as male and female. This congruity finding may provide some insight into recent failures to replicate the original Strand effect [@schellingerMunsonEdwards2017; @wilbanks2022].
+simultaneously. Looking back at their experiment 2,
+it is possible that this classic result was *also* a congruous condition in which listeners had sufficient gender information from the 'non-protypical' voice to supplement the purported information from the Face. The non-prototypical male and female voices used in Strand & Johnson's experiment 1 were still perceived as male and female. This congruity finding may provide some insight into recent failures to replicate the original Strand effect [@schellingerMunsonEdwards2017; @wilbanks2022].
 
 The phonetic correlates of gender manipulated in VC rimes for this
-study are F0 and formant spacing. However, these may not be the only cues
+study are F0 and formant spacing. However, these are not the only cues
 listeners draw upon with their knowledge of US English. Surely,
 F0 and formant spacing *can be* important to listeners, just as
-voice onset time and vocal fold vibration can be important cues to the
-voicing of /t/ and /d/. But as @lisker1986 catalogs for those stops, there are 16 cues
-to this apparently simple feature in English, any of which might be
+voice onset time and modal voicing can be important cues to the
+voicing of /t/ and /d/. But as @lisker1986 reported for those stops, there are 16 cues to this apparently simple feature in English, any of which might be
 sufficient to communicate voicing, but none of which are required. In
 the present study, we used manipulated stimuli that obscure, over the
 course of two continua, the gender identity of the talker who
@@ -550,14 +518,12 @@ eye-tracking that this effect is fast and bi-directional. One could come
 away from Strand & Johnson's experiments 1 and 2 (and subsequent replications)
 with a theoretical model in which visually-cued social information and
 phonetically-cued social information exert equivalent influence on
-speech perception. Prototypically-gendered voices can shift perception
-of a [ʃ]-[s] continuum, and prototypically-gendered visual
-information can as well. However, listeners' behavior in our Congruous
+speech perception. However, listeners' behavior in our Congruous
 and Incongruous conditions is inconsistent with such a model; 
 suggesting, instead, that when visually-cued and phonetically-cued social
 information are congruent, they can enhance one another. If, on
 the other hand, these information sources conflict, it is the
-phonetically-cued social information that will dominate
+phonetically-cued social information that will dominate segmental perception
 [@campbell-kibler2020; @mcgowanBabel2020].
 
 It is unlikely that fricatives are unique in this respect. For example,
@@ -566,23 +532,21 @@ lack of Face effect in @johnsonstranddimperio1999 exp2 vowel perception results,
 for the male voice). As listeners, we do not have veridical access to
 the speech sounds intended by a talker. Instead, we must combine the
 speech signal with our phonological knowledge, lexical knowledge, social
-expectations, expectations of the social world
-[@BabelIssue], and visual and other sensory information to arrive at a percept. The
+expectations, expectations of the social world and visual and other sensory information to arrive at a percept [@BabelIssue]. The
 implication is that perception is more holistic than is dreamt of in our
 phonologies. Category boundaries, whether for speech sounds or social
 categories, are fuzzy and perception needs to be fast. We retain
 knowledge of and use detailed social and linguistic knowledge at both
-high and low levels of processing.
+high and low levels ofperceptual processing.
 
-@barrett2014 [p. 205] writes, "any assumption of essentialism will ultimately marginalize those individuals who do not fit the essentialist understandings of human behavior." It may not feel brutal or reductive to read the findings of @may1976 about large and small vocal tracts as if they refer to male and female vocal tracts respectively, but it does necessarily imply that tall, long-necked women and short, squat-necked men need to find some other way of labeling themselves. The idea that male voices come from large bodies and female voices come from small bodies need not be literally true for the phonetic and perceptual correlates of size to become enregistered alongside other features in the creation of gendered personae (D'Onofrio 2020). Our prediction that incongruity between face and voice would slow listener judgments was not supported. It is tempting to interpret this as evidence that, unlike misleading coarticulatory information, listeners are aware of the diversity of gender expression, but this is not a question the current study can resolve.
+@barrett2014 [p. 205] writes, "any assumption of essentialism will ultimately marginalize those individuals who do not fit the essentialist understandings of human behavior." It may not feel reductive to read the findings of @may1976 about large and small vocal tracts as if they refer to male and female vocal tracts respectively, but it does necessarily imply that tall, long-necked women and short, squat-necked men need to find some other way of labeling themselves. The idea that male voices come from large bodies and female voices come from small bodies need not be literally true for the phonetic and perceptual correlates of size to become enregistered alongside other features in the creation of gendered personae [@donofrio2020]. Our prediction that incongruity between face and voice would slow listener judgments was not supported. It is tempting to interpret this as evidence that, unlike misleading coarticulatory information, listeners are aware of the diversity of gender expression, but this is not a question the current study can resolve.
 
 What the current study can resolve is that the influence of listeners' social knowledge of speech on perception is not delicate. The present result is equally inconsistent with a model that disregards social knowledge entirely and with a
 model of speech perception that presumes *all* social knowledge to be
 late, high-level, and available to introspective control. Part of what
 listeners know when they know a language includes the simultaneous
 patterning of 'linguistic' and 'social' information in a shared phonetic
-signal. Social knowledge and linguistic knowledge are deeply intertwined in speech
-perception.
+signal. Social knowledge and linguistic knowledge are deeply intertwined in segmental speech perception and word recognition.
 
 # References {#sec-references .unnumbered}
 
