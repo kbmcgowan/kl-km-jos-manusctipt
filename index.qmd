@@ -167,7 +167,7 @@ was selected as the representation of the gender-protypical female talker and CF
 Additionally, two greyscale line drawings were used as visual representations of *shack* and *sack*. These images were used in place of orthographic targets to maintain consistency with Bouavichith et al's design and to facilitate future eye tracking investigation of this phenomenon. This is a divergence from the original Strand & Johnson design, which represented target words orthographically.
 
 
-![Stimuli comprised *shack* and *sack* targets (top) and a gender-protypical 'male' and 'female' face (bottom)](images/facesanddrawings.jpg){#fig-visual width=80% fig-align="center"}
+![Stimuli comprised *shack* and *sack* targets (top) and gender-protypical 'male' and 'female' faces (bottom)](images/facesanddrawings.jpg){#fig-visual width=80% fig-align="center"}
 
 
 ## Procedure {#sec-procedure}
@@ -262,14 +262,14 @@ An additional 50 trials were excluded due to response times that were either too
 (syllable Onset) continuum step. Step 1 of the continuum is most [ʃ]-like, step 6 is the most [s]-like, steps 3 & 4 are the most
 ambiguous. Darker lines in @fig-scurve present trials using the female Face; lighter lines present trials using the male Face. The Hidden and Unhidden instruction conditions are represented by the left and right columns of figures, respectively. The rows present the Congruous blocks where Face and Coda speaker voice shared a gender identity (top) and Incongruous trials where Face and Coda speaker voice mismatched in gender identity (bottom).
 
-![*sack* responses plotted as a function of [ʃ]-[s] fricative (Onset) continuum steps and purported gender presented by the face.](images/Scurve.png){#fig-scurve fig-align="center" width=80%}
+![*sack* responses plotted as a function of [ʃ]-[s] onset continuum steps and purported gender of the face.](images/Scurve.png){#fig-scurve fig-align="center" width=80%}
 
 
 A successful replication of the Strand effect would mean that a higher proportion of the ambiguous stimuli would be heard as [s] when the purported gender suggested by the face is male than when the face is female. This pattern appears to hold in both the Hidden and Unhidden conditions, but only when gender identity of the talker who produced the CV rime stimuli was congruous with the gender presented in the visual portion of the guise. From @fig-scurve it would appear that listeners' reported percepts more closely track the voice of the talker than the face in the picture when these sources of information are incongruous.
 
 
-!['sack' responses on ambiguous fricative trials
-plotted as a function of CV rime continuum steps and gender identity of
+!['sack' responses to ambiguous fricative trials
+plotted as a function of CV rime continuum steps and gender of
 stimulus talker.](images/ambiguous-by-rime-step.png){#fig-rimes fig-align="center" width=80%}
 
 Given that our stimuli included manipulations of F0 and formant spacing to modify the gender typicality of the male-provided and female-provided recordings, one might expect that the results in @fig-scurve might represent only listener responses to the original, unmodified stimuli, but this is not the case. These four subplots include fricative responses across the entire rime continuum. However, this does not mean the resynthesis was entirely unsuccessful. We predicted that, since these phonetic correlates of gender have been manipulated over the course of the VC rime continua, the effect of incongruence should be strongest for the end points of the continua where the social information presented by the voice is, presumably, most
@@ -324,7 +324,7 @@ included random intercepts for subject. All categorical predictors were
 coded using contrast coding.
 
 
-![Beta coefficients for listener responses in the
+![Beta coefficients for responses in the
 Congruous (black) and Incongruous (gray) logistic regression models
 plotted with 95% confidence intervals.](images/coefs_instruction.png){#fig-coefs width=80%}
 
@@ -393,7 +393,7 @@ associated ($β=-0.32$, $SE=0.19$, $p = 0.086$).
 We again opted to separate Congruence into a pair of 3-way models for linear mixed model analysis of our log-transformed response time data. Using `lmer()` [@lme4], we reused the congruous and incongruous subsets created for the logistic regression models and fitted a linear mixed model (estimated using REML and nloptwrap optimizer) to predict logRT with Guise, Onset, Face and Rime (`logRT ~ Instruction * Onset * Face + Rime`). The models included random intercepts for subject. All categorical predictors were coded using contrast coding. Beta coefficients for both models are plotted in @fig-coefs-logRT. Terms plotted to the left of the zero line are associated with a decrease in log response time while terms plotted to the right of the zero line are associated with an increase in log response time. Notably, the longest response times are associated with the most ambiguous steps of the [ʃ]-[s] onset continuum. Onset step 3 is positively associated with response time and significant in both the congruous ($β=0.08$, $SE=0.007$, $p < 0.001$) and incongruous ($β=0.0$7, $SE=0.007$, $p < 0.001$ ) models. The same is true of step 4 in the congruous ($β=0.07$, $SE=0.007$, $p < 0.001$) and incongruous ($β=0.07$, $SE=0.007$, $p < 0.001$) models as well. On the other hand, steps 1, 2, and 5 are all negatively associated with response time and also significant in both models (see @fig-coefs-logRT).
 
 ![Beta coefficients for log-transformed response
-times in the Congruous (black) and Incongruous (gray) linear regression
+times in Congruous (black) and Incongruous (gray) linear regression
 models plotted with 95% confidence intervals.](images/coefs-logRT_instructions.png){#fig-coefs-logRT width=80%}
 
 We predicted overall slower response times in the Incongruous than
