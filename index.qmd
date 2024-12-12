@@ -145,7 +145,7 @@ Following the separate creations of these continua, each synthesized fricative t
 <!-- https://excalidraw.com/#json=HfAVVSO_awoiHuH4qokTI,p-Qam4bUMuEFXux77dnmVQ
 -->
 
-![@bouavichithEtAl2019 auditory stimulus continua. S1, S2, S3, S4, S5 and S6 represent six continuum steps from most *sack*-like to most *shack*-like fricatives. F0 and Formant spacing ratio plots show the manipulations to the Male and Female voiced vowels across five coda steps.](images/figure1.png){#fig-stimuli width=80% fig-align="center"}
+![@bouavichithEtAl2019 auditory stimulus continua. S1-S6 represent six continuum steps from most *sack*-like to most *shack*-like fricatives. F0 and Formant spacing ratio plots show the manipulations to the Male and Female voiced vowels across five coda steps.](images/figure1.png){#fig-stimuli width=80% fig-align="center"}
 
 
 ## Explicit Evaluations of Auditory Stimuli {#sec-stim-evals}
